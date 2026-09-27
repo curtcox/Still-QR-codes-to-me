@@ -39,3 +39,44 @@ test('CLI creates a self-contained image SVG and reports refinement outcome', as
   assert.ok(result.stderr.includes('all checks passed'));
   await assert.rejects(cli('x', '--refine'), (error: any) => error.code === 1 && error.stderr.includes('--artwork'));
 });
+
+test('CLI supports ECC, whole-pixel modules, no frame, and deterministic PNG sidecars', async () => {
+  const dir = await mkdtemp(join(tmpdir(), 'film-cli-'));
+  try {
+    for (const ecc of ['L','M','Q','H']) {
+      const file=join(dir,`${ecc}.png`);
+      await cli('https://example.com/film','--style','bat','--ecc',ecc,'--module-px','6','--frame','none','-o',file,'--check');
+      const meta=JSON.parse(await readFile(join(dir,`${ecc}.json`),'utf8'));
+      assert.equal(meta.ecc,ecc); assert.equal(meta.modulePx,6); assert.equal(meta.codeBox.x,0);
+      assert.equal(meta.image.width,(meta.moduleCount+8)*6);
+      assert.deepEqual(meta.frame,{top:0,right:0,bottom:0,left:0});
+      const copy=join(dir,`${ecc}-copy.png`);
+      await cli('https://example.com/film','--style','bat','--ecc',ecc,'--module-px','6','--frame','none','-o',copy);
+      assert.deepEqual(await readFile(file),await readFile(copy));
+    }
+    for (const args of [['--ecc','X'],['--module-px','0'],['--module-px','1.5'],['--module-px','6','--size','380'],['--frame','bad']]) await assert.rejects(cli('x',...args));
+  } finally { await rm(dir,{recursive:true,force:true}); }
+});
+test('CLI batch writes exact-payload reports, overwritable sidecars, and a contact sheet', async () => {
+  const dir=await mkdtemp(join(tmpdir(),'film-batch-'));
+  try {
+    const entries=[{id:'sample',style:'gills',text:'Exact café 🌿',ecc:'M',mode:'shelf',caption:'Not painted'}, {id:'large',style:'bat',text:'https://example.com/feature',ecc:'H',mode:'feature',caption:'Feature'}];
+    const manifest=join(dir,'manifest.json'),out=join(dir,'out');
+    await writeFile(manifest,JSON.stringify(entries));
+    await cli('--batch',manifest,'--out-dir',out);
+    const reportBytes=await readFile(join(out,'report.json'));
+    const report=JSON.parse(reportBytes.toString());
+    assert.deepEqual(report.summary,{entries:2,styles:2,passed:2,failed:0});
+    assert.deepEqual(report.entries[1].checks.map((c:any)=>c.size),[380,480]);
+    assert.equal(JSON.parse(await readFile(join(out,'sample.json'),'utf8')).text,entries[0].text);
+    assert.equal((await readFile(join(out,'sheet.png'))).subarray(1,4).toString(),'PNG');
+    const png=await readFile(join(out,'sample.png'));
+    await cli('--batch',manifest,'--out-dir',out);
+    assert.deepEqual(await readFile(join(out,'report.json')),reportBytes);
+    assert.deepEqual(await readFile(join(out,'sample.png')),png);
+    await assert.rejects(cli('--batch',manifest));
+    await writeFile(manifest,JSON.stringify([{...entries[0],text:'https://example.com/'+ 'abcdef0123456789'.repeat(70)}]));
+    await assert.rejects(cli('--batch',manifest,'--out-dir',out,'--module-px','1'), (error:any)=>error.code===2);
+    assert.equal(JSON.parse(await readFile(join(out,'report.json'),'utf8')).summary.failed,1);
+  } finally { await rm(dir,{recursive:true,force:true}); }
+});

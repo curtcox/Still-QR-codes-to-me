@@ -70,4 +70,4 @@ A future asset provider can generate local textures or illustrations for a borde
 
 ## Independent decoder assessment
 
-Run `npm run assess` after adding a style to compare jsQR and ZXing-C++ under identical conditions. Both must match the exact payload; a failure is written to `examples/generated/decoder-report.json` and produces exit status 2. ZXing is development-only and its WASM loads from the installed package. See [the second survey](STYLE-RESEARCH-2.md) for implemented shapes, source attribution, and validation limits.
+Run `npm run assess` after adding a style to compare jsQR and ZXing-C++ under identical conditions. Both must match the exact payload; a failure is written to `examples/generated/decoder-report.json` and produces exit status 2. ZXing is a Node runtime dependency for film batch generation and assessment; its WASM loads from the installed package and is not included in the browser bundle. See [the second survey](STYLE-RESEARCH-2.md) for implemented shapes, source attribution, and validation limits.

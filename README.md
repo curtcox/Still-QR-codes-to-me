@@ -2,7 +2,7 @@
 
 **A code with character.** An offline TypeScript toolkit and visual playground for distinctive QR codes that remain testable as QR codes.
 
-Forty-five presets span **31 module geometries, 10 material modes, 4 finder-eye systems, 5 depth/light effects, and 3 motion modes**. Bamboo, oak, beans, ants, fire, ice, clouds, ripples, and leaves carry recognizable internal structure rather than palette changes. Research-derived additions cover classy joins, symbols, polygons, craft patterns, isometric blocks, embossing, shadows, neon, and animated SVG. A separate image-art mode integrates local photographs and illustrations using protected module centers and scan-guided refinement. Eight borders, four surround textures, gradients, palettes, and deterministic seeds compose with the other controls. Not every combination or payload is guaranteed to scan: the project includes real decoding checks to measure the result.
+Ninety presets span **36 module geometries, 10 material modes, 4 finder-eye systems, 5 depth/light effects, and 3 motion modes**. Bamboo, oak, beans, ants, fire, ice, clouds, ripples, and leaves carry recognizable internal structure rather than palette changes. Research-derived additions cover classy joins, symbols, polygons, craft patterns, isometric blocks, embossing, shadows, neon, and animated SVG. A separate image-art mode integrates local photographs and illustrations using protected module centers and scan-guided refinement. Eight general borders plus 47 film scenes, four surround textures, gradients, palettes, and deterministic seeds compose with the other controls. Not every combination or payload is guaranteed to scan: the project includes real decoding checks to measure the result.
 
 ## Start the studio
 
@@ -18,7 +18,7 @@ Open the local URL printed by Vite. Enter a payload, pick a style, remix the con
 ```sh
 npm run build        # library/CLI → dist/; static playground → web-dist/
 npm run preview      # serve the built playground locally
-npm run gallery      # 45 styles + 3 image compositions + scan reports → examples/generated/
+npm run gallery      # 90 styles + 3 image compositions + scan reports → examples/generated/
 ```
 
 ## CLI
@@ -55,6 +55,17 @@ const checks = await checkScannability(code.svg, text);
 
 The root export is browser-compatible. The `/node` export adds Sharp-based PNG output and scan checks. Locally, build first and import `./dist/core/index.js` and `./dist/core/node.js` directly, or install the local package into another project.
 
+## Film production
+
+The [Frog or Axolotl brief and exports](examples/film/README.md) add 47 themed styles (45 new IDs plus restyled `circuit` and `honeycomb`). Frames and unlettered props sit outside the quiet zone; scanner-facing ink is flat and at least 7:1 against its paper.
+
+```sh
+npm run qr -- --batch examples/film/manifest.json --out-dir examples/film/out
+npm run qr -- 'https://example.com' --style bat --ecc M --module-px 6 --frame none -o bat.png
+```
+
+Batch writes PNGs, geometry sidecars, per-condition reports, and a 47-style contact sheet. It checks all 117 exact manifest payloads at 380px, plus 480px for features, with jsQR and ZXing. `--module-px` gives integral module pitch; `--frame none` keeps only the code and its four-module quiet zone. Ordinary procedural PNG exports also get same-stem JSON sidecars. Single exports preserve existing files; batch exports may overwrite them. See the [film output contract](examples/film/README.md) for coordinates, exit codes, and deterministic reproduction.
+
 ## Image integration
 
 ```sh
@@ -76,11 +87,11 @@ This is CPU-based image projection, **not a diffusion model**. Read the [researc
 
 ## More styles and an independent decoder
 
-The [second research survey](docs/STYLE-RESEARCH-2.md) reviews 15 additional or revisited tools and sources. Ten new credited presets reproduce gapped tiles, neighbor-aware contours, connected capsules, diagonal hatching, sketched curves, flowers, segmented grids, arrows, and waves. These bring the collection to 45 presets and 31 independently selectable shapes.
+The [second research survey](docs/STYLE-RESEARCH-2.md) reviews 15 additional or revisited tools and sources. Ten new credited presets reproduce gapped tiles, neighbor-aware contours, connected capsules, diagonal hatching, sketched curves, flowers, segmented grids, arrows, and waves. That milestone brought the collection to 45 presets and 31 shapes; the film collection now expands it to 90 presets and 36 shapes.
 
 ![New styles and source credits](docs/style-expansion.png)
 
-Run `npm run assess` to compare jsQR and ZXing-C++ on all presets under four render conditions and four payloads. Results go to `examples/generated/decoder-report.json`; either decoder failing returns status 2. ZXing loads its installed WASM locally and is used only by development tools/tests. Run `npm run style-sheet` to regenerate the comparison image.
+Run `npm run assess` to compare jsQR and ZXing-C++ on all presets under four render conditions and four payloads. Results go to `examples/generated/decoder-report.json`; either decoder failing returns status 2. ZXing loads its installed WASM locally for assessment, film batch generation, and tests; it is not included in the browser bundle. Run `npm run style-sheet` to regenerate the comparison image.
 
 ## The collection
 
@@ -147,7 +158,7 @@ npx playwright install chromium  # one-time browser install, if needed
 npm run test:browser # desktop/mobile studio, every preset's browser scan, downloads
 ```
 
-The core suite covers 180 preset/payload pairs under four scan conditions, every module shape in a mixed recipe, additional remixes, dense payloads, XML escaping, invalid recipes, seeded determinism, custom artwork clipping, structural/quiet-zone preservation, and image composition/refinement. Browser tests exercise real SVG rasterization, scan checks, recipes, downloads, filters, and a mobile viewport. GitHub Actions runs both suites.
+The film suite additionally checks all 117 manifest entries at their required ECC and sizes with both decoders, quiet-zone pixels, geometry, and batch determinism. The core suite covers 360 preset/payload pairs under four scan conditions, every module shape in a mixed recipe, additional remixes, dense payloads, XML escaping, invalid recipes, seeded determinism, custom artwork clipping, structural/quiet-zone preservation, and image composition/refinement. Browser tests exercise real SVG rasterization, scan checks, recipes, downloads, filters, and a mobile viewport. GitHub Actions runs both suites.
 
 ## Repository map
 

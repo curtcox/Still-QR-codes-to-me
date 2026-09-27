@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "style": "filing-drawers",
+  "text": "https://www.lesswrong.com/posts/k6EPphHiBH4WWYFCj/gazp-vs-glut",
+  "codeBox": {
+    "x": 55.65217391304348,
+    "y": 55.65217391304348,
+    "width": 368.69565217391306,
+    "height": 368.69565217391306
+  },
+  "moduleCount": 45,
+  "modulePx": 6.956521739130435,
+  "version": 7,
+  "ecc": "H",
+  "frame": {
+    "top": 55.65217391304348,
+    "right": 55.65217391304348,
+    "bottom": 55.65217391304348,
+    "left": 55.65217391304348
+  },
+  "image": {
+    "width": 480,
+    "height": 480
+  },
+  "id": "gazp-glut",
+  "mode": "feature"
+}

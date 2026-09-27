@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "style": "compass",
+  "text": "https://theinsideview.ai/connor2",
+  "codeBox": {
+    "x": 67.36842105263158,
+    "y": 67.36842105263158,
+    "width": 345.2631578947368,
+    "height": 345.2631578947368
+  },
+  "moduleCount": 33,
+  "modulePx": 8.421052631578947,
+  "version": 4,
+  "ecc": "H",
+  "frame": {
+    "top": 67.36842105263158,
+    "right": 67.36842105263158,
+    "bottom": 67.36842105263158,
+    "left": 67.36842105263158
+  },
+  "image": {
+    "width": 480,
+    "height": 480
+  },
+  "id": "connor2",
+  "mode": "feature"
+}

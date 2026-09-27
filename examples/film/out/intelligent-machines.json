@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "style": "mic",
+  "text": "https://twit.tv/shows/intelligent-machines",
+  "codeBox": {
+    "x": 62.950819672131146,
+    "y": 62.950819672131146,
+    "width": 354.0983606557377,
+    "height": 354.0983606557377
+  },
+  "moduleCount": 37,
+  "modulePx": 7.868852459016393,
+  "version": 5,
+  "ecc": "H",
+  "frame": {
+    "top": 62.950819672131146,
+    "right": 62.950819672131146,
+    "bottom": 62.950819672131146,
+    "left": 62.950819672131146
+  },
+  "image": {
+    "width": 480,
+    "height": 480
+  },
+  "id": "intelligent-machines",
+  "mode": "feature"
+}

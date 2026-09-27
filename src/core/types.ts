@@ -1,5 +1,6 @@
-export const shapes = ['square', 'rounded', 'dots', 'diamond', 'squircle', 'horizontal', 'vertical', 'weave', 'mosaic', 'circuit', 'petal', 'halftone', 'classy', 'fluid', 'star', 'heart', 'cross', 'hexagon', 'stitch', 'bead', 'cube', 'gapped', 'contour', 'horizontal-pill', 'vertical-pill', 'diagonal', 'scribble', 'flower', 'gridlet', 'arrow', 'wave'] as const;
-export const borders = ['none', 'frame', 'botanical', 'postage', 'orbit', 'deco', 'grid', 'ticket'] as const;
+export const filmStyles = ['bat', 'beauty-mark', 'blueprint', 'boxing-ring', 'butterfly', 'calendar', 'car-wash', 'chrome-red-eye', 'circuit', 'claw', 'compass', 'cube-lattice', 'dial', 'door', 'egg', 'electron-shells', 'enigma', 'feathers', 'field-radio', 'filing-drawers', 'flame', 'gills', 'goalposts', 'gold-android', 'gold-scales', 'grass', 'hashchain', 'honeycomb', 'lobster-shell', 'mask', 'maze', 'mic', 'mirror', 'ocean', 'oom-bars', 'paw-prints', 'pulp', 'rulebook', 'signpost', 'song-waves', 'staircase', 'switchboard', 'tentacles', 'thermometer', 'tv', 'two-mics', 'winged-sandal'] as const;
+export const shapes = ['square', 'rounded', 'dots', 'diamond', 'squircle', 'horizontal', 'vertical', 'weave', 'mosaic', 'circuit', 'petal', 'halftone', 'classy', 'fluid', 'star', 'heart', 'cross', 'hexagon', 'stitch', 'bead', 'cube', 'gapped', 'contour', 'horizontal-pill', 'vertical-pill', 'diagonal', 'scribble', 'flower', 'gridlet', 'arrow', 'wave', 'feather', 'grass-blade', 'fish-scale', 'paw', 'shell'] as const;
+export const borders = ['none', 'frame', 'botanical', 'postage', 'orbit', 'deco', 'grid', 'ticket', ...filmStyles.map(id => `film-${id}` as const)] as const;
 export const textures = ['none', 'paper', 'speckle', 'lines'] as const;
 export const materials = ['none', 'bamboo', 'oak', 'beans', 'ants', 'fire', 'ice', 'clouds', 'ripples', 'leaves'] as const;
 export const eyes = ['square', 'rounded', 'dots', 'diamond'] as const;
@@ -46,6 +47,8 @@ export interface GenerateOptions {
   style?: string;
   recipe?: Partial<Recipe>;
   size?: number;
+  modulePx?: number;
+  frame?: 'none' | 'preset';
   errorCorrection?: 'L' | 'M' | 'Q' | 'H';
   /** Trusted code hook. Replaces data-module artwork only; structural modules remain intact. */
   moduleRenderer?: ModuleRenderer;
@@ -69,4 +72,10 @@ export interface GeneratedQR {
   size: number;
   contrast: number;
   warnings: string[];
+  geometry: {
+    codeBox: { x: number; y: number; width: number; height: number };
+    moduleCount: number; modulePx: number; version: number; ecc: 'L' | 'M' | 'Q' | 'H';
+    frame: { top: number; right: number; bottom: number; left: number };
+    image: { width: number; height: number };
+  };
 }

@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "style": "two-mics",
+  "text": "https://en.wikipedia.org/wiki/Sydney_(Microsoft)",
+  "codeBox": {
+    "x": 53.333333333333336,
+    "y": 53.333333333333336,
+    "width": 273.33333333333337,
+    "height": 273.33333333333337
+  },
+  "moduleCount": 33,
+  "modulePx": 6.666666666666667,
+  "version": 4,
+  "ecc": "M",
+  "frame": {
+    "top": 53.333333333333336,
+    "right": 53.333333333333336,
+    "bottom": 53.333333333333336,
+    "left": 53.333333333333336
+  },
+  "image": {
+    "width": 380,
+    "height": 380
+  },
+  "id": "sydney",
+  "mode": "shelf"
+}

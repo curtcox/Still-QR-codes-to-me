@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "style": "lobster-shell",
+  "text": "https://arxiv.org/abs/2602.07432",
+  "codeBox": {
+    "x": 57.35849056603774,
+    "y": 57.35849056603774,
+    "width": 265.2830188679245,
+    "height": 265.2830188679245
+  },
+  "moduleCount": 29,
+  "modulePx": 7.169811320754717,
+  "version": 3,
+  "ecc": "M",
+  "frame": {
+    "top": 57.35849056603774,
+    "right": 57.35849056603774,
+    "bottom": 57.35849056603774,
+    "left": 57.35849056603774
+  },
+  "image": {
+    "width": 380,
+    "height": 380
+  },
+  "id": "moltbook-illusion",
+  "mode": "shelf"
+}

@@ -1,0 +1,7120 @@
+{
+  "schemaVersion": 1,
+  "summary": {
+    "entries": 117,
+    "styles": 47,
+    "passed": 117,
+    "failed": 0
+  },
+  "entries": [
+    {
+      "id": "stochastic-parrots",
+      "style": "feathers",
+      "text": "https://doi.org/10.1145/3442188.3445922",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "On the Dangers of Stochastic Parrots",
+      "image": "stochastic-parrots.png",
+      "sidecar": "stochastic-parrots.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "mirror-test",
+      "style": "mirror",
+      "text": "https://en.wikipedia.org/wiki/Mirror_test",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "The mirror test",
+      "image": "mirror-test.png",
+      "sidecar": "mirror-test.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "axolotl",
+      "style": "gills",
+      "text": "https://en.wikipedia.org/wiki/Axolotl",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Axolotl",
+      "image": "axolotl.png",
+      "sidecar": "axolotl.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "256t",
+      "style": "hashchain",
+      "text": "https://256t.org",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "256t.org",
+      "image": "256t.png",
+      "sidecar": "256t.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "hashbin",
+      "style": "hashchain",
+      "text": "https://hashbin.org",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "hashbin.org",
+      "image": "hashbin.png",
+      "sidecar": "hashbin.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "content-addressable",
+      "style": "hashchain",
+      "text": "https://en.wikipedia.org/wiki/Content-addressable_storage",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Content-addressable storage",
+      "image": "content-addressable.png",
+      "sidecar": "content-addressable.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "gadolinium",
+      "style": "electron-shells",
+      "text": "https://en.wikipedia.org/wiki/Gadolinium",
+      "ecc": "H",
+      "mode": "feature",
+      "caption": "Gadolinium",
+      "image": "gadolinium.png",
+      "sidecar": "gadolinium.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 480,
+          "existing": [
+            {
+              "name": "Export (480px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "electron-configuration",
+      "style": "electron-shells",
+      "text": "https://en.wikipedia.org/wiki/Electron_configuration",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Electron configuration",
+      "image": "electron-configuration.png",
+      "sidecar": "electron-configuration.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "aufbau",
+      "style": "electron-shells",
+      "text": "https://en.wikipedia.org/wiki/Aufbau_principle",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "The filling order (Aufbau)",
+      "image": "aufbau.png",
+      "sidecar": "aufbau.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "campbell",
+      "style": "pulp",
+      "text": "https://en.wikipedia.org/wiki/John_W._Campbell",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "John W. Campbell",
+      "image": "campbell.png",
+      "sidecar": "campbell.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "life-3",
+      "style": "signpost",
+      "text": "https://en.wikipedia.org/wiki/Life_3.0",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Life 3.0 (Tegmark)",
+      "image": "life-3.png",
+      "sidecar": "life-3.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "the-stranger",
+      "style": "mask",
+      "text": "https://en.wikipedia.org/wiki/The_Stranger_(Billy_Joel_song)",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "The Stranger (Billy Joel)",
+      "image": "the-stranger.png",
+      "sidecar": "the-stranger.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "shoggoth",
+      "style": "tentacles",
+      "text": "https://en.wikipedia.org/wiki/Shoggoth",
+      "ecc": "H",
+      "mode": "feature",
+      "caption": "The shoggoth meme",
+      "image": "shoggoth.png",
+      "sidecar": "shoggoth.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 480,
+          "existing": [
+            {
+              "name": "Export (480px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "song-of-myself",
+      "style": "grass",
+      "text": "https://en.wikipedia.org/wiki/Song_of_Myself",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Song of Myself (Whitman)",
+      "image": "song-of-myself.png",
+      "sidecar": "song-of-myself.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "astounding",
+      "style": "pulp",
+      "text": "https://en.wikipedia.org/wiki/Astounding_Science_Fiction",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Astounding, Campbell's magazine",
+      "image": "astounding.png",
+      "sidecar": "astounding.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "code-talkers",
+      "style": "field-radio",
+      "text": "https://en.wikipedia.org/wiki/Code_talker",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Navajo code talkers",
+      "image": "code-talkers.png",
+      "sidecar": "code-talkers.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "chinese-room",
+      "style": "rulebook",
+      "text": "https://plato.stanford.edu/entries/chinese-room/",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "The Chinese Room",
+      "image": "chinese-room.png",
+      "sidecar": "chinese-room.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "blockhead",
+      "style": "filing-drawers",
+      "text": "https://en.wikipedia.org/wiki/Blockhead_(thought_experiment)",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Blockhead",
+      "image": "blockhead.png",
+      "sidecar": "blockhead.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "gazp-glut",
+      "style": "filing-drawers",
+      "text": "https://www.lesswrong.com/posts/k6EPphHiBH4WWYFCj/gazp-vs-glut",
+      "ecc": "H",
+      "mode": "feature",
+      "caption": "GAZP vs. GLUT",
+      "image": "gazp-glut.png",
+      "sidecar": "gazp-glut.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 480,
+          "existing": [
+            {
+              "name": "Export (480px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "debate-llm-segment",
+      "style": "tv",
+      "text": "https://youtu.be/oxHKesSpqBM?t=1154",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "The debate: do LLMs understand?",
+      "image": "debate-llm-segment.png",
+      "sidecar": "debate-llm-segment.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "doom-debates",
+      "style": "tv",
+      "text": "https://www.youtube.com/@DoomDebates",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Doom Debates",
+      "image": "doom-debates.png",
+      "sidecar": "doom-debates.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "turing",
+      "style": "enigma",
+      "text": "https://en.wikipedia.org/wiki/Alan_Turing",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Alan Turing",
+      "image": "turing.png",
+      "sidecar": "turing.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "monroe",
+      "style": "beauty-mark",
+      "text": "https://en.wikipedia.org/wiki/Marilyn_Monroe",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Marilyn Monroe",
+      "image": "monroe.png",
+      "sidecar": "monroe.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "data",
+      "style": "gold-android",
+      "text": "https://memory-alpha.fandom.com/wiki/Data",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Lt. Commander Data",
+      "image": "data.png",
+      "sidecar": "data.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "tines",
+      "style": "paw-prints",
+      "text": "https://en.wikipedia.org/wiki/A_Fire_Upon_the_Deep",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "The Tines (A Fire Upon the Deep)",
+      "image": "tines.png",
+      "sidecar": "tines.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "solaris",
+      "style": "ocean",
+      "text": "https://en.wikipedia.org/wiki/Solaris_(novel)",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Solaris",
+      "image": "solaris.png",
+      "sidecar": "solaris.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "formic",
+      "style": "honeycomb",
+      "text": "https://en.wikipedia.org/wiki/Formics",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "The Formics (Ender's Game)",
+      "image": "formic.png",
+      "sidecar": "formic.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "borg-queen",
+      "style": "cube-lattice",
+      "text": "https://memory-alpha.fandom.com/wiki/Borg_Queen",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "The Borg Queen",
+      "image": "borg-queen.png",
+      "sidecar": "borg-queen.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "rachni",
+      "style": "song-waves",
+      "text": "https://masseffect.fandom.com/wiki/Rachni",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "The Rachni Queen",
+      "image": "rachni.png",
+      "sidecar": "rachni.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "xenomorph-queen",
+      "style": "egg",
+      "text": "https://en.wikipedia.org/wiki/Alien_(creature_in_Alien_franchise)",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "The Alien Queen",
+      "image": "xenomorph-queen.png",
+      "sidecar": "xenomorph-queen.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "stanislaw-lem",
+      "style": "ocean",
+      "text": "https://en.wikipedia.org/wiki/Stanis%C5%82aw_Lem",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Stanisław Lem",
+      "image": "stanislaw-lem.png",
+      "sidecar": "stanislaw-lem.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "vernor-vinge",
+      "style": "paw-prints",
+      "text": "https://en.wikipedia.org/wiki/Vernor_Vinge",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Vernor Vinge",
+      "image": "vernor-vinge.png",
+      "sidecar": "vernor-vinge.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "orson-scott-card",
+      "style": "honeycomb",
+      "text": "https://en.wikipedia.org/wiki/Orson_Scott_Card",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Orson Scott Card",
+      "image": "orson-scott-card.png",
+      "sidecar": "orson-scott-card.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "enders-game",
+      "style": "honeycomb",
+      "text": "https://en.wikipedia.org/wiki/Ender%27s_Game",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Ender's Game",
+      "image": "enders-game.png",
+      "sidecar": "enders-game.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "speaker-for-the-dead",
+      "style": "honeycomb",
+      "text": "https://en.wikipedia.org/wiki/Speaker_for_the_Dead",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Speaker for the Dead",
+      "image": "speaker-for-the-dead.png",
+      "sidecar": "speaker-for-the-dead.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "aliens-film",
+      "style": "egg",
+      "text": "https://en.wikipedia.org/wiki/Aliens_(film)",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Aliens (1986)",
+      "image": "aliens-film.png",
+      "sidecar": "aliens-film.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "first-contact",
+      "style": "cube-lattice",
+      "text": "https://en.wikipedia.org/wiki/Star_Trek:_First_Contact",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Star Trek: First Contact",
+      "image": "first-contact.png",
+      "sidecar": "first-contact.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "hive-mind",
+      "style": "honeycomb",
+      "text": "https://en.wikipedia.org/wiki/Hive_mind",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Hive minds",
+      "image": "hive-mind.png",
+      "sidecar": "hive-mind.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "mass-effect",
+      "style": "song-waves",
+      "text": "https://en.wikipedia.org/wiki/Mass_Effect",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Mass Effect",
+      "image": "mass-effect.png",
+      "sidecar": "mass-effect.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "nagel-bat",
+      "style": "bat",
+      "text": "https://en.wikipedia.org/wiki/What_Is_It_Like_to_Be_a_Bat%3F",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "What Is It Like to Be a Bat?",
+      "image": "nagel-bat.png",
+      "sidecar": "nagel-bat.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "hieropedia-crustafarianism",
+      "style": "lobster-shell",
+      "text": "https://hieropedia.org/religions/crustafarianism/",
+      "ecc": "H",
+      "mode": "feature",
+      "caption": "Crustafarianism",
+      "image": "hieropedia-crustafarianism.png",
+      "sidecar": "hieropedia-crustafarianism.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 480,
+          "existing": [
+            {
+              "name": "Export (480px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "forbes-crustafarianism",
+      "style": "lobster-shell",
+      "text": "https://curtcox.github.io/axol-f/r/forbes/",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "AI Agents Created Their Own Religion",
+      "image": "forbes-crustafarianism.png",
+      "sidecar": "forbes-crustafarianism.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "moltbook",
+      "style": "lobster-shell",
+      "text": "https://www.moltbook.com/",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Moltbook",
+      "image": "moltbook.png",
+      "sidecar": "moltbook.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "hermes-memory",
+      "style": "winged-sandal",
+      "text": "https://hermes-agent.nousresearch.com/docs/user-guide/features/memory",
+      "ecc": "H",
+      "mode": "feature",
+      "caption": "Hermes Agent: Persistent Memory",
+      "image": "hermes-memory.png",
+      "sidecar": "hermes-memory.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 480,
+          "existing": [
+            {
+              "name": "Export (480px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "hermes-agent",
+      "style": "winged-sandal",
+      "text": "https://hermes-agent.org/",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Hermes Agent",
+      "image": "hermes-agent.png",
+      "sidecar": "hermes-agent.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "openclaw",
+      "style": "claw",
+      "text": "https://openclaw.ai/",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "OpenClaw",
+      "image": "openclaw.png",
+      "sidecar": "openclaw.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "dyson",
+      "style": "circuit",
+      "text": "https://terminator.fandom.com/wiki/Miles_Dyson",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Miles Bennett Dyson",
+      "image": "dyson.png",
+      "sidecar": "dyson.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "t800",
+      "style": "chrome-red-eye",
+      "text": "https://en.wikipedia.org/wiki/Terminator_(character)",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "The T-800",
+      "image": "t800.png",
+      "sidecar": "t800.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "moltbook-wiki",
+      "style": "lobster-shell",
+      "text": "https://en.wikipedia.org/wiki/Moltbook",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Moltbook (Wikipedia)",
+      "image": "moltbook-wiki.png",
+      "sidecar": "moltbook-wiki.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "moltbook-illusion",
+      "style": "lobster-shell",
+      "text": "https://arxiv.org/abs/2602.07432",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "The Moltbook Illusion",
+      "image": "moltbook-illusion.png",
+      "sidecar": "moltbook-illusion.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "nous-research",
+      "style": "winged-sandal",
+      "text": "https://nousresearch.com/",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Nous Research, maker of Hermes",
+      "image": "nous-research.png",
+      "sidecar": "nous-research.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "openclaw-wiki",
+      "style": "claw",
+      "text": "https://en.wikipedia.org/wiki/OpenClaw",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "OpenClaw (Wikipedia)",
+      "image": "openclaw-wiki.png",
+      "sidecar": "openclaw-wiki.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "hermes-skills",
+      "style": "winged-sandal",
+      "text": "https://hermes-agent.nousresearch.com/docs/user-guide/features/skills",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Hermes: skills",
+      "image": "hermes-skills.png",
+      "sidecar": "hermes-skills.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "terminator-2",
+      "style": "chrome-red-eye",
+      "text": "https://en.wikipedia.org/wiki/Terminator_2:_Judgment_Day",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Terminator 2: Judgment Day",
+      "image": "terminator-2.png",
+      "sidecar": "terminator-2.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "skynet",
+      "style": "circuit",
+      "text": "https://en.wikipedia.org/wiki/Skynet_(Terminator)",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Skynet",
+      "image": "skynet.png",
+      "sidecar": "skynet.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "constitutional-classifiers",
+      "style": "switchboard",
+      "text": "https://www.anthropic.com/research/constitutional-classifiers",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Constitutional Classifiers",
+      "image": "constitutional-classifiers.png",
+      "sidecar": "constitutional-classifiers.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "fable-mythos-5-1",
+      "style": "switchboard",
+      "text": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Claude Fable 5.1 and Mythos 5.1",
+      "image": "fable-mythos-5-1.png",
+      "sidecar": "fable-mythos-5-1.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "solidgoldmagikarp",
+      "style": "gold-scales",
+      "text": "https://www.lesswrong.com/posts/aPeJE8bSo6rAFoLqg",
+      "ecc": "H",
+      "mode": "feature",
+      "caption": "SolidGoldMagikarp",
+      "image": "solidgoldmagikarp.png",
+      "sidecar": "solidgoldmagikarp.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 480,
+          "existing": [
+            {
+              "name": "Export (480px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "car-wash",
+      "style": "car-wash",
+      "text": "https://opper.ai/blog/car-wash-test",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "The Car Wash Test (53 models)",
+      "image": "car-wash.png",
+      "sidecar": "car-wash.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "landauer",
+      "style": "thermometer",
+      "text": "https://en.wikipedia.org/wiki/Landauer%27s_principle",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Landauer's principle",
+      "image": "landauer.png",
+      "sidecar": "landauer.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "lyapunov",
+      "style": "butterfly",
+      "text": "https://en.wikipedia.org/wiki/Lyapunov_time",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Lyapunov time",
+      "image": "lyapunov.png",
+      "sidecar": "lyapunov.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "p-vs-np",
+      "style": "maze",
+      "text": "https://en.wikipedia.org/wiki/P_versus_NP_problem",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "P versus NP",
+      "image": "p-vs-np.png",
+      "sidecar": "p-vs-np.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "scaling-laws",
+      "style": "staircase",
+      "text": "https://arxiv.org/abs/2001.08361",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Scaling Laws for Neural Language Models",
+      "image": "scaling-laws.png",
+      "sidecar": "scaling-laws.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "magikarp",
+      "style": "gold-scales",
+      "text": "https://en.wikipedia.org/wiki/Magikarp",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Magikarp (with a k)",
+      "image": "magikarp.png",
+      "sidecar": "magikarp.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "glitch-token",
+      "style": "gold-scales",
+      "text": "https://en.wikipedia.org/wiki/Glitch_token",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Glitch tokens",
+      "image": "glitch-token.png",
+      "sidecar": "glitch-token.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "chaos-theory",
+      "style": "butterfly",
+      "text": "https://en.wikipedia.org/wiki/Chaos_theory",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Chaos theory",
+      "image": "chaos-theory.png",
+      "sidecar": "chaos-theory.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "limits-of-computation",
+      "style": "thermometer",
+      "text": "https://en.wikipedia.org/wiki/Limits_of_computation",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Limits of computation",
+      "image": "limits-of-computation.png",
+      "sidecar": "limits-of-computation.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "arxiv-aide2",
+      "style": "blueprint",
+      "text": "https://arxiv.org/abs/2609.26457",
+      "ecc": "H",
+      "mode": "feature",
+      "caption": "Recursive self-improvement of AI research agents",
+      "image": "arxiv-aide2.png",
+      "sidecar": "arxiv-aide2.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 480,
+          "existing": [
+            {
+              "name": "Export (480px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "arxiv-bounded",
+      "style": "blueprint",
+      "text": "https://arxiv.org/abs/2607.07663",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "From Bounded Self-Refinement to Autonomous Research Loops",
+      "image": "arxiv-bounded.png",
+      "sidecar": "arxiv-bounded.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "mittr-rsi",
+      "style": "blueprint",
+      "text": "https://www.technologyreview.com/2026/08/18/1142188/ai-recursive-self-improvement/",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "MIT Technology Review",
+      "image": "mittr-rsi.png",
+      "sidecar": "mittr-rsi.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "datacamp-rsi",
+      "style": "blueprint",
+      "text": "https://www.datacamp.com/tutorial/recursive-self-improvement",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "DataCamp: Recursive Self-Improvement",
+      "image": "datacamp-rsi.png",
+      "sidecar": "datacamp-rsi.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "foom-debate",
+      "style": "flame",
+      "text": "https://intelligence.org/ai-foom-debate/",
+      "ecc": "H",
+      "mode": "feature",
+      "caption": "The Hanson–Yudkowsky AI-Foom Debate",
+      "image": "foom-debate.png",
+      "sidecar": "foom-debate.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 480,
+          "existing": [
+            {
+              "name": "Export (480px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "situational-awareness",
+      "style": "oom-bars",
+      "text": "https://situational-awareness.ai/",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Situational Awareness",
+      "image": "situational-awareness.png",
+      "sidecar": "situational-awareness.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "dwarkesh-leopold",
+      "style": "mic",
+      "text": "https://www.dwarkesh.com/p/leopold-aschenbrenner",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Dwarkesh × Leopold",
+      "image": "dwarkesh-leopold.png",
+      "sidecar": "dwarkesh-leopold.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "rsi-wiki",
+      "style": "blueprint",
+      "text": "https://en.wikipedia.org/wiki/Recursive_self-improvement",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Recursive self-improvement",
+      "image": "rsi-wiki.png",
+      "sidecar": "rsi-wiki.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "anthropic-rsi",
+      "style": "blueprint",
+      "text": "https://www.anthropic.com/institute/recursive-self-improvement",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Anthropic: When AI builds itself",
+      "image": "anthropic-rsi.png",
+      "sidecar": "anthropic-rsi.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "intelligence-explosion",
+      "style": "flame",
+      "text": "https://en.wikipedia.org/wiki/Technological_singularity",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "The intelligence explosion",
+      "image": "intelligence-explosion.png",
+      "sidecar": "intelligence-explosion.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "takeoff-speeds",
+      "style": "flame",
+      "text": "https://sideways-view.com/2018/02/24/takeoff-speeds/",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Christiano: Takeoff speeds",
+      "image": "takeoff-speeds.png",
+      "sidecar": "takeoff-speeds.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "order-of-magnitude",
+      "style": "oom-bars",
+      "text": "https://en.wikipedia.org/wiki/Order_of_magnitude",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Orders of magnitude (OOM)",
+      "image": "order-of-magnitude.png",
+      "sidecar": "order-of-magnitude.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "dwarkesh-patel",
+      "style": "mic",
+      "text": "https://en.wikipedia.org/wiki/Dwarkesh_Patel",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Dwarkesh Patel",
+      "image": "dwarkesh-patel.png",
+      "sidecar": "dwarkesh-patel.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "aschenbrenner",
+      "style": "oom-bars",
+      "text": "https://en.wikipedia.org/wiki/Leopold_Aschenbrenner",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Leopold Aschenbrenner",
+      "image": "aschenbrenner.png",
+      "sidecar": "aschenbrenner.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "intelligent-machines",
+      "style": "mic",
+      "text": "https://twit.tv/shows/intelligent-machines",
+      "ecc": "H",
+      "mode": "feature",
+      "caption": "Intelligent Machines",
+      "image": "intelligent-machines.png",
+      "sidecar": "intelligent-machines.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 480,
+          "existing": [
+            {
+              "name": "Export (480px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "im-888",
+      "style": "mic",
+      "text": "https://twit.tv/shows/intelligent-machines/episodes/888",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Intelligent Machines #888",
+      "image": "im-888.png",
+      "sidecar": "im-888.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "im-889",
+      "style": "mic",
+      "text": "https://twit.tv/shows/intelligent-machines/episodes/889",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Intelligent Machines #889",
+      "image": "im-889.png",
+      "sidecar": "im-889.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "tescreal",
+      "style": "boxing-ring",
+      "text": "https://en.wikipedia.org/wiki/TESCREAL",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "TESCREAL",
+      "image": "tescreal.png",
+      "sidecar": "tescreal.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "roose-sydney",
+      "style": "two-mics",
+      "text": "https://www.nytimes.com/2023/02/16/technology/bing-chatbot-microsoft-chatgpt.html",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Roose's Sydney conversation",
+      "image": "roose-sydney.png",
+      "sidecar": "roose-sydney.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "machine-gods-promo",
+      "style": "two-mics",
+      "text": "https://youtu.be/1T-WWVZHj0g",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "This is Machine Gods",
+      "image": "machine-gods-promo.png",
+      "sidecar": "machine-gods-promo.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "pascals-mugging",
+      "style": "door",
+      "text": "https://en.wikipedia.org/wiki/Pascal%27s_mugging",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Pascal's mugging",
+      "image": "pascals-mugging.png",
+      "sidecar": "pascals-mugging.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "orthogonality",
+      "style": "door",
+      "text": "https://www.lesswrong.com/w/orthogonality-thesis",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "The orthogonality thesis",
+      "image": "orthogonality.png",
+      "sidecar": "orthogonality.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "twit-network",
+      "style": "mic",
+      "text": "https://en.wikipedia.org/wiki/TWiT.tv",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "TWiT",
+      "image": "twit-network.png",
+      "sidecar": "twit-network.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "leo-laporte",
+      "style": "mic",
+      "text": "https://en.wikipedia.org/wiki/Leo_Laporte",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Leo Laporte",
+      "image": "leo-laporte.png",
+      "sidecar": "leo-laporte.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "jeff-jarvis",
+      "style": "mic",
+      "text": "https://en.wikipedia.org/wiki/Jeff_Jarvis",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Jeff Jarvis",
+      "image": "jeff-jarvis.png",
+      "sidecar": "jeff-jarvis.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "robert-ballecer",
+      "style": "mic",
+      "text": "https://en.wikipedia.org/wiki/Robert_Ballecer",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Fr. Robert Ballecer",
+      "image": "robert-ballecer.png",
+      "sidecar": "robert-ballecer.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "twistedpear",
+      "style": "hashchain",
+      "text": "https://github.com/curtcox/TwistedPear",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "TwistedPear",
+      "image": "twistedpear.png",
+      "sidecar": "twistedpear.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "hubris",
+      "style": "boxing-ring",
+      "text": "https://en.wikipedia.org/wiki/Hubris",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Hubris",
+      "image": "hubris.png",
+      "sidecar": "hubris.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "kevin-roose",
+      "style": "two-mics",
+      "text": "https://en.wikipedia.org/wiki/Kevin_Roose",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Kevin Roose",
+      "image": "kevin-roose.png",
+      "sidecar": "kevin-roose.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "casey-newton",
+      "style": "two-mics",
+      "text": "https://en.wikipedia.org/wiki/Casey_Newton",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Casey Newton",
+      "image": "casey-newton.png",
+      "sidecar": "casey-newton.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "sydney",
+      "style": "two-mics",
+      "text": "https://en.wikipedia.org/wiki/Sydney_(Microsoft)",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Sydney (Bing's chatbot)",
+      "image": "sydney.png",
+      "sidecar": "sydney.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "platformer",
+      "style": "two-mics",
+      "text": "https://www.platformer.news/",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Platformer (Newton)",
+      "image": "platformer.png",
+      "sidecar": "platformer.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "ai-x-risk",
+      "style": "door",
+      "text": "https://en.wikipedia.org/wiki/Existential_risk_from_artificial_intelligence",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Existential risk from AI",
+      "image": "ai-x-risk.png",
+      "sidecar": "ai-x-risk.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "superintelligence",
+      "style": "door",
+      "text": "https://en.wikipedia.org/wiki/Superintelligence",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Superintelligence",
+      "image": "superintelligence.png",
+      "sidecar": "superintelligence.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "global-catastrophic-risk",
+      "style": "door",
+      "text": "https://en.wikipedia.org/wiki/Global_catastrophic_risk",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Global catastrophic risks",
+      "image": "global-catastrophic-risk.png",
+      "sidecar": "global-catastrophic-risk.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "connor2",
+      "style": "compass",
+      "text": "https://theinsideview.ai/connor2",
+      "ecc": "H",
+      "mode": "feature",
+      "caption": "Connor Leahy on Dignity and Conjecture",
+      "image": "connor2.png",
+      "sidecar": "connor2.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 480,
+          "existing": [
+            {
+              "name": "Export (480px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "ai-futures-wiki",
+      "style": "calendar",
+      "text": "https://en.wikipedia.org/wiki/AI_Futures_Project",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "AI Futures Project",
+      "image": "ai-futures-wiki.png",
+      "sidecar": "ai-futures-wiki.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "apolo-ai2027",
+      "style": "calendar",
+      "text": "https://www.apolo.us/blog-posts/ai-2027-in-2026-one-year-left-for-humanity",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Apolo: AI 2027 in 2026",
+      "image": "apolo-ai2027.png",
+      "sidecar": "apolo-ai2027.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "officechai-kokotajlo",
+      "style": "calendar",
+      "text": "https://curtcox.github.io/axol-f/r/officechai/",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "OfficeChai: Kokotajlo",
+      "image": "officechai-kokotajlo.png",
+      "sidecar": "officechai-kokotajlo.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "metaculus-weak",
+      "style": "dial",
+      "text": "https://www.metaculus.com/questions/3479/date-weakly-general-ai-is-publicly-known/",
+      "ecc": "M",
+      "mode": "card",
+      "caption": "Metaculus: weak AGI",
+      "image": "metaculus-weak.png",
+      "sidecar": "metaculus-weak.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "metaculus-strong",
+      "style": "dial",
+      "text": "https://www.metaculus.com/questions/5121/date-of-artificial-general-intelligence/",
+      "ecc": "M",
+      "mode": "card",
+      "caption": "Metaculus: strong AGI",
+      "image": "metaculus-strong.png",
+      "sidecar": "metaculus-strong.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "openai-charter",
+      "style": "goalposts",
+      "text": "https://openai.com/charter/",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "OpenAI Charter",
+      "image": "openai-charter.png",
+      "sidecar": "openai-charter.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "dnd-alignment",
+      "style": "compass",
+      "text": "https://en.wikipedia.org/wiki/Alignment_(Dungeons_%26_Dragons)",
+      "ecc": "M",
+      "mode": "card",
+      "caption": "Alignment charts (D&D)",
+      "image": "dnd-alignment.png",
+      "sidecar": "dnd-alignment.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "connor-leahy",
+      "style": "compass",
+      "text": "https://en.wikipedia.org/wiki/Connor_Leahy",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Connor Leahy",
+      "image": "connor-leahy.png",
+      "sidecar": "connor-leahy.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "inside-view",
+      "style": "compass",
+      "text": "https://theinsideview.ai/",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "The Inside View (Michaël Trazzi)",
+      "image": "inside-view.png",
+      "sidecar": "inside-view.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "accelerationism",
+      "style": "compass",
+      "text": "https://en.wikipedia.org/wiki/Effective_accelerationism",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Effective accelerationism",
+      "image": "accelerationism.png",
+      "sidecar": "accelerationism.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "kokotajlo",
+      "style": "calendar",
+      "text": "https://en.wikipedia.org/wiki/Daniel_Kokotajlo_(researcher)",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Daniel Kokotajlo",
+      "image": "kokotajlo.png",
+      "sidecar": "kokotajlo.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "metaculus",
+      "style": "dial",
+      "text": "https://en.wikipedia.org/wiki/Metaculus",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Metaculus",
+      "image": "metaculus.png",
+      "sidecar": "metaculus.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "moving-goalposts",
+      "style": "goalposts",
+      "text": "https://en.wikipedia.org/wiki/Moving_the_goalposts",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "Moving the goalposts",
+      "image": "moving-goalposts.png",
+      "sidecar": "moving-goalposts.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": "ai-effect",
+      "style": "goalposts",
+      "text": "https://en.wikipedia.org/wiki/AI_effect",
+      "ecc": "M",
+      "mode": "shelf",
+      "caption": "The AI effect",
+      "image": "ai-effect.png",
+      "sidecar": "ai-effect.json",
+      "passed": true,
+      "checks": [
+        {
+          "size": 380,
+          "existing": [
+            {
+              "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        }
+      ]
+    }
+  ]
+}

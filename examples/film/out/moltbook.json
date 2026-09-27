@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "style": "lobster-shell",
+  "text": "https://www.moltbook.com/",
+  "codeBox": {
+    "x": 62.04081632653061,
+    "y": 62.04081632653061,
+    "width": 255.91836734693877,
+    "height": 255.91836734693877
+  },
+  "moduleCount": 25,
+  "modulePx": 7.755102040816326,
+  "version": 2,
+  "ecc": "M",
+  "frame": {
+    "top": 62.04081632653061,
+    "right": 62.04081632653061,
+    "bottom": 62.04081632653061,
+    "left": 62.04081632653061
+  },
+  "image": {
+    "width": 380,
+    "height": 380
+  },
+  "id": "moltbook",
+  "mode": "shelf"
+}

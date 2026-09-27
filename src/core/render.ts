@@ -1,7 +1,8 @@
+import { filmScene } from './film.js';
 import { materialModule, materialField, materialSurround } from './materials.js';
 import QRCode from 'qrcode';
 import { getPreset } from './presets.js';
-import { animations, borders, effects, eyes, shapes, textures, materials, type GenerateOptions, type GeneratedQR, type ModuleContext, type Recipe } from './types.js';
+import { filmStyles, animations, borders, effects, eyes, shapes, textures, materials, type GenerateOptions, type GeneratedQR, type ModuleContext, type Recipe } from './types.js';
 
 export function escapeXML(value: string): string {
   return value.replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&apos;' })[c]!);
@@ -38,6 +39,11 @@ function moduleSVG(shape: Recipe['shape'], { x, y, row, column, random, darkAt }
   const circle = (r: number) => `<circle cx="${x + .5}" cy="${y + .5}" r="${r}"/>`;
   switch (shape) {
     // Independently drawn geometry; origins and deliberate differences are in docs/STYLE-RESEARCH-2.md.
+    case 'feather': return `<path d="M${x+.16} ${y+.94}L${x+.08} ${y+.65}L${x+.16} ${y+.64}L${x+.08} ${y+.43}Q${x+.3} ${y+.03} ${x+.84} ${y+.04}Q${x+.98} ${y+.5} ${x+.64} ${y+.87}L${x+.45} ${y+.85}L${x+.4} ${y+.96}Z"/>`;
+    case 'grass-blade': return `<path d="M${x+.05} ${y+.97}Q${x+.02} ${y+.4} ${x+.18} ${y+.06}L${x+.4} ${y+.42}L${x+.55} ${y+.02}Q${x+.8} ${y+.3} ${x+.72} ${y+.57}L${x+.94} ${y+.2}L${x+.93} ${y+.97}Z"/>`;
+    case 'fish-scale': return `<path d="M${x+.03} ${y+.03}H${x+.97}V${y+.45}Q${x+.97} ${y+.91} ${x+.5} ${y+.98}Q${x+.03} ${y+.91} ${x+.03} ${y+.45}Z"/>`;
+    case 'paw': return `<ellipse cx="${x+.5}" cy="${y+.64}" rx=".39" ry=".33"/>` + [[.19,.28],[.4,.18],[.64,.18],[.84,.31]].map(([dx,dy]) => `<circle cx="${x+dx}" cy="${y+dy}" r=".15"/>`).join('');
+    case 'shell': return `<path d="M${x+.03} ${y+.2}Q${x+.5} ${y-.08} ${x+.97} ${y+.2}L${x+.9} ${y+.93}Q${x+.5} ${y+.73} ${x+.1} ${y+.93}Z"/>`;
     case 'gapped': return rect(.1, .1, .8, .8);
     case 'contour': {
       const north = darkAt(row - 1, column), south = darkAt(row + 1, column);
@@ -134,17 +140,26 @@ function texture(recipe: Recipe, size: number): string {
 }
 export function generateQR(options: GenerateOptions): GeneratedQR {
   if (typeof options.text !== 'string' || options.text.length === 0) throw new Error('Enter a URL or some text to encode.');
-  const size = options.size ?? 1024;
+  let size = options.size ?? 1024;
+  if (options.frame !== undefined && !['none', 'preset'].includes(options.frame)) throw new Error('Frame must be none or preset.');
+  if (options.modulePx !== undefined && (!Number.isInteger(options.modulePx) || options.modulePx < 1 || options.modulePx > 128)) throw new Error('modulePx must be an integer from 1 to 128.');
   if (!Number.isInteger(size) || size < 128 || size > 4096) throw new Error('Export size must be an integer between 128 and 4096 pixels.');
   const errorCorrection = options.errorCorrection ?? 'H';
   if (!['L', 'M', 'Q', 'H'].includes(errorCorrection)) throw new Error('Error correction must be L, M, Q, or H.');
   const style = getPreset(options.style);
   const recipe = { ...style.recipe, ...options.recipe };
   validate(recipe);
+  const film = (filmStyles as readonly string[]).includes(style.id);
+  if (film && (contrastRatio(recipe.foreground, recipe.background) < 7 || recipe.gradient || recipe.texture !== 'none' || recipe.effect !== 'none' || recipe.animation !== 'none' || recipe.material !== 'none' || recipe.eye === 'diamond')) throw new Error('Film styles require flat ink, no material effects, and at least 7:1 contrast.');
   const code = QRCode.create(options.text, { errorCorrectionLevel: errorCorrection });
   const n = code.modules.size;
-  const border = recipe.material !== 'none' ? 6 : recipe.border === 'none' && recipe.texture === 'none' ? 0 : 4;
+  const border = options.frame === 'none' ? 0 : recipe.border.startsWith('film-') ? 8 : recipe.material !== 'none' ? 6 : recipe.border === 'none' && recipe.texture === 'none' ? 0 : 4;
   const offset = border + 4, dimension = n + offset * 2;
+  if (options.modulePx !== undefined) {
+    if (options.size !== undefined) throw new Error('Choose size or modulePx, not both.');
+    size = dimension * options.modulePx;
+    if (size > 4096) throw new Error('Whole-pixel export exceeds 4096 pixels. Reduce modulePx.');
+  }
   const darkAt = (row: number, column: number) => row >= 0 && column >= 0 && row < n && column < n && !!code.modules.get(row, column);
   const paths: string[] = [];
   const clips: string[] = [];
@@ -192,6 +207,10 @@ export function generateQR(options: GenerateOptions): GeneratedQR {
   const depth = recipe.effect === 'extrude' ? `<g fill="${recipe.accent}" color="${recipe.accent}" opacity=".4" transform="translate(.11 .11)">${dataArt}<path d="${structural.join('')}"/>${finder.join('')}</g>` : recipe.effect === 'emboss' ? `<g fill="white" color="white" opacity=".28" transform="translate(-.07 -.07)">${dataArt}${finder.join('')}</g><g fill="${recipe.accent}" color="${recipe.accent}" opacity=".35" transform="translate(.07 .07)">${dataArt}${finder.join('')}</g>` : '';
   const filteredInk = recipe.effect === 'neon' || recipe.effect === 'shadow' ? `<g filter="url(#fx-${inkId})">${baseInk}</g>` : baseInk;
   const animatedInk = recipe.animation === 'pulse' ? `<g>${filteredInk}<animate attributeName="opacity" values="1;.88;1" dur="2.4s" repeatCount="indefinite"/></g>` : filteredInk;
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 ${dimension} ${dimension}" role="img" aria-label="Stylized QR code"><title>${escapeXML(style.name)} QR code</title><desc>${escapeXML(options.text)}</desc><defs>${clips.join('')}<linearGradient id="${inkId}" x1="0" y1="0" x2="1" y2="1">${gradientMotion}<stop stop-color="${recipe.foreground}"/><stop offset="1" stop-color="${recipe.accent}"/></linearGradient>${filterDefs}</defs><rect width="${dimension}" height="${dimension}" fill="${recipe.background}"/>${texture(recipe, dimension)}${decoration(recipe, dimension)}${materialSurround(recipe, dimension)}<rect x="${border}" y="${border}" width="${n + 8}" height="${n + 8}" fill="${recipe.background}"/>${depth}${animatedInk}</svg>`;
-  return { svg, recipe, style, size, moduleCount: n, version: code.version, contrast, warnings };
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 ${dimension} ${dimension}" role="img" aria-label="Stylized QR code"><title>${escapeXML(style.name)} QR code</title><desc>${escapeXML(options.text)}</desc><defs>${clips.join('')}<linearGradient id="${inkId}" x1="0" y1="0" x2="1" y2="1">${gradientMotion}<stop stop-color="${recipe.foreground}"/><stop offset="1" stop-color="${recipe.accent}"/></linearGradient>${filterDefs}</defs><rect width="${dimension}" height="${dimension}" fill="${recipe.background}"/>${options.frame === 'none' ? '' : recipe.border.startsWith('film-') ? filmScene(recipe.border.slice(5), dimension, recipe) : texture(recipe, dimension) + decoration(recipe, dimension) + materialSurround(recipe, dimension)}<rect x="${border}" y="${border}" width="${n + 8}" height="${n + 8}" fill="${recipe.background}"/>${depth}${animatedInk}</svg>`;
+  const scale = size / dimension, extent = border * scale;
+  return { svg, recipe, style, size, moduleCount: n, version: code.version, contrast, warnings,
+    geometry: { codeBox: { x: extent, y: extent, width: (n + 8) * scale, height: (n + 8) * scale },
+      moduleCount: n, modulePx: scale, version: code.version, ecc: errorCorrection,
+      frame: { top: extent, right: extent, bottom: extent, left: extent }, image: { width: size, height: size } } };
 }

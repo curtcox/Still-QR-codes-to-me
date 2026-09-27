@@ -1,3 +1,4 @@
+import { makeFilmPresets } from './film.js';
 import type { Recipe, StylePreset } from './types.js';
 const base: Recipe = { material: 'none', detail: .65, shape: 'square', border: 'frame', texture: 'none', eye: 'square', effect: 'none', animation: 'none', foreground: '#172f2a', background: '#fffdf5', accent: '#385b47', gradient: false, seed: 42 };
 const preset = (id: string, name: string, description: string, inspiration: string, recipe: Partial<Recipe>, safety: StylePreset['safety'] = 'conservative', credit?: StylePreset['credit']): StylePreset => ({ id, name, description, inspiration, safety, credit, recipe: { ...base, ...recipe } });
@@ -8,7 +9,7 @@ const artistic = (technique: string) => source('artistic_qr', 'https://github.co
 const pythonQR = (technique: string) => source('python-qrcode', 'https://github.com/lincolnloop/python-qrcode', technique);
 const verevoir = (technique: string) => source('verevoir/qr', 'https://github.com/verevoir/qr', technique);
 const dagron = (technique: string) => source('dagronf/QRCode', 'https://github.com/dagronf/QRCode', technique);
-export const presets: readonly StylePreset[] = [
+const originalPresets: readonly StylePreset[] = [
   preset('editorial', 'Editorial', 'Crisp ink, warm stock, and a double-rule frame.', 'Book jackets · menus · invitations', {}),
   preset('soft-stone', 'Soft stone', 'Rounded blocks in quiet slate with a paper finish.', 'Wellness · ceramics · hospitality', { shape: 'rounded', foreground: '#343b48', accent: '#4c5767', texture: 'paper' }),
   preset('orbital', 'Orbital', 'An array of dots surrounded by planetary arcs.', 'Science · music · exhibitions', { shape: 'dots', border: 'orbit', foreground: '#242050', accent: '#42357d', background: '#f6f3ff' }, 'experimental'),
@@ -55,6 +56,14 @@ export const presets: readonly StylePreset[] = [
   preset('arrow-field', 'Arrow field', 'Right-facing arrows make a directional field with solid centers.', 'Trails · navigation · events', { shape: 'arrow', border: 'none', foreground: '#293957', background: '#f6f9ff' }, 'experimental', dagron('arrow pixel family; local broad-shaft arrows')),
   preset('tidal-lines', 'Tidal lines', 'Curved top and bottom edges give each cell the rhythm of a wave.', 'Waterfronts · aquariums · retreats', { shape: 'wave', border: 'orbit', foreground: '#164858', background: '#f1fcff' }, 'experimental', dagron('wave pixel family; local quadratic wave silhouette')),
 
+];
+const filmPresets = makeFilmPresets(base);
+export const presets: readonly StylePreset[] = [
+  ...originalPresets.map(preset => {
+    const replacement = filmPresets.find(film => film.id === preset.id);
+    return replacement ? { ...replacement, credit: preset.credit } : preset;
+  }),
+  ...filmPresets.filter(film => !originalPresets.some(preset => preset.id === film.id)),
 ];
 export function getPreset(id = 'editorial'): StylePreset {
   const value = presets.find(p => p.id === id);

@@ -3,7 +3,7 @@ import sharp from 'sharp';
 import { generateQR, presets } from '../src/core/index.js';
 import { escapeXML } from '../src/core/render.js';
 
-const additions = presets.slice(35);
+const additions = presets.slice(35,45);
 const cards = additions.map((preset, index) => {
   const x = 28 + index % 5 * 280, y = 105 + Math.floor(index / 5) * 345;
   const { svg } = generateQR({ text: 'https://example.com/hello', style: preset.id, size: 512 });

@@ -1,0 +1,938 @@
+[
+ {
+  "id": "stochastic-parrots",
+  "style": "feathers",
+  "text": "https://doi.org/10.1145/3442188.3445922",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "On the Dangers of Stochastic Parrots"
+ },
+ {
+  "id": "mirror-test",
+  "style": "mirror",
+  "text": "https://en.wikipedia.org/wiki/Mirror_test",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "The mirror test"
+ },
+ {
+  "id": "axolotl",
+  "style": "gills",
+  "text": "https://en.wikipedia.org/wiki/Axolotl",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Axolotl"
+ },
+ {
+  "id": "256t",
+  "style": "hashchain",
+  "text": "https://256t.org",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "256t.org"
+ },
+ {
+  "id": "hashbin",
+  "style": "hashchain",
+  "text": "https://hashbin.org",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "hashbin.org"
+ },
+ {
+  "id": "content-addressable",
+  "style": "hashchain",
+  "text": "https://en.wikipedia.org/wiki/Content-addressable_storage",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Content-addressable storage"
+ },
+ {
+  "id": "gadolinium",
+  "style": "electron-shells",
+  "text": "https://en.wikipedia.org/wiki/Gadolinium",
+  "ecc": "H",
+  "mode": "feature",
+  "caption": "Gadolinium"
+ },
+ {
+  "id": "electron-configuration",
+  "style": "electron-shells",
+  "text": "https://en.wikipedia.org/wiki/Electron_configuration",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Electron configuration"
+ },
+ {
+  "id": "aufbau",
+  "style": "electron-shells",
+  "text": "https://en.wikipedia.org/wiki/Aufbau_principle",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "The filling order (Aufbau)"
+ },
+ {
+  "id": "campbell",
+  "style": "pulp",
+  "text": "https://en.wikipedia.org/wiki/John_W._Campbell",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "John W. Campbell"
+ },
+ {
+  "id": "life-3",
+  "style": "signpost",
+  "text": "https://en.wikipedia.org/wiki/Life_3.0",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Life 3.0 (Tegmark)"
+ },
+ {
+  "id": "the-stranger",
+  "style": "mask",
+  "text": "https://en.wikipedia.org/wiki/The_Stranger_(Billy_Joel_song)",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "The Stranger (Billy Joel)"
+ },
+ {
+  "id": "shoggoth",
+  "style": "tentacles",
+  "text": "https://en.wikipedia.org/wiki/Shoggoth",
+  "ecc": "H",
+  "mode": "feature",
+  "caption": "The shoggoth meme"
+ },
+ {
+  "id": "song-of-myself",
+  "style": "grass",
+  "text": "https://en.wikipedia.org/wiki/Song_of_Myself",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Song of Myself (Whitman)"
+ },
+ {
+  "id": "astounding",
+  "style": "pulp",
+  "text": "https://en.wikipedia.org/wiki/Astounding_Science_Fiction",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Astounding, Campbell's magazine"
+ },
+ {
+  "id": "code-talkers",
+  "style": "field-radio",
+  "text": "https://en.wikipedia.org/wiki/Code_talker",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Navajo code talkers"
+ },
+ {
+  "id": "chinese-room",
+  "style": "rulebook",
+  "text": "https://plato.stanford.edu/entries/chinese-room/",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "The Chinese Room"
+ },
+ {
+  "id": "blockhead",
+  "style": "filing-drawers",
+  "text": "https://en.wikipedia.org/wiki/Blockhead_(thought_experiment)",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Blockhead"
+ },
+ {
+  "id": "gazp-glut",
+  "style": "filing-drawers",
+  "text": "https://www.lesswrong.com/posts/k6EPphHiBH4WWYFCj/gazp-vs-glut",
+  "ecc": "H",
+  "mode": "feature",
+  "caption": "GAZP vs. GLUT"
+ },
+ {
+  "id": "debate-llm-segment",
+  "style": "tv",
+  "text": "https://youtu.be/oxHKesSpqBM?t=1154",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "The debate: do LLMs understand?"
+ },
+ {
+  "id": "doom-debates",
+  "style": "tv",
+  "text": "https://www.youtube.com/@DoomDebates",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Doom Debates"
+ },
+ {
+  "id": "turing",
+  "style": "enigma",
+  "text": "https://en.wikipedia.org/wiki/Alan_Turing",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Alan Turing"
+ },
+ {
+  "id": "monroe",
+  "style": "beauty-mark",
+  "text": "https://en.wikipedia.org/wiki/Marilyn_Monroe",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Marilyn Monroe"
+ },
+ {
+  "id": "data",
+  "style": "gold-android",
+  "text": "https://memory-alpha.fandom.com/wiki/Data",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Lt. Commander Data"
+ },
+ {
+  "id": "tines",
+  "style": "paw-prints",
+  "text": "https://en.wikipedia.org/wiki/A_Fire_Upon_the_Deep",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "The Tines (A Fire Upon the Deep)"
+ },
+ {
+  "id": "solaris",
+  "style": "ocean",
+  "text": "https://en.wikipedia.org/wiki/Solaris_(novel)",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Solaris"
+ },
+ {
+  "id": "formic",
+  "style": "honeycomb",
+  "text": "https://en.wikipedia.org/wiki/Formics",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "The Formics (Ender's Game)"
+ },
+ {
+  "id": "borg-queen",
+  "style": "cube-lattice",
+  "text": "https://memory-alpha.fandom.com/wiki/Borg_Queen",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "The Borg Queen"
+ },
+ {
+  "id": "rachni",
+  "style": "song-waves",
+  "text": "https://masseffect.fandom.com/wiki/Rachni",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "The Rachni Queen"
+ },
+ {
+  "id": "xenomorph-queen",
+  "style": "egg",
+  "text": "https://en.wikipedia.org/wiki/Alien_(creature_in_Alien_franchise)",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "The Alien Queen"
+ },
+ {
+  "id": "stanislaw-lem",
+  "style": "ocean",
+  "text": "https://en.wikipedia.org/wiki/Stanis%C5%82aw_Lem",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Stanisław Lem"
+ },
+ {
+  "id": "vernor-vinge",
+  "style": "paw-prints",
+  "text": "https://en.wikipedia.org/wiki/Vernor_Vinge",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Vernor Vinge"
+ },
+ {
+  "id": "orson-scott-card",
+  "style": "honeycomb",
+  "text": "https://en.wikipedia.org/wiki/Orson_Scott_Card",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Orson Scott Card"
+ },
+ {
+  "id": "enders-game",
+  "style": "honeycomb",
+  "text": "https://en.wikipedia.org/wiki/Ender%27s_Game",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Ender's Game"
+ },
+ {
+  "id": "speaker-for-the-dead",
+  "style": "honeycomb",
+  "text": "https://en.wikipedia.org/wiki/Speaker_for_the_Dead",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Speaker for the Dead"
+ },
+ {
+  "id": "aliens-film",
+  "style": "egg",
+  "text": "https://en.wikipedia.org/wiki/Aliens_(film)",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Aliens (1986)"
+ },
+ {
+  "id": "first-contact",
+  "style": "cube-lattice",
+  "text": "https://en.wikipedia.org/wiki/Star_Trek:_First_Contact",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Star Trek: First Contact"
+ },
+ {
+  "id": "hive-mind",
+  "style": "honeycomb",
+  "text": "https://en.wikipedia.org/wiki/Hive_mind",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Hive minds"
+ },
+ {
+  "id": "mass-effect",
+  "style": "song-waves",
+  "text": "https://en.wikipedia.org/wiki/Mass_Effect",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Mass Effect"
+ },
+ {
+  "id": "nagel-bat",
+  "style": "bat",
+  "text": "https://en.wikipedia.org/wiki/What_Is_It_Like_to_Be_a_Bat%3F",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "What Is It Like to Be a Bat?"
+ },
+ {
+  "id": "hieropedia-crustafarianism",
+  "style": "lobster-shell",
+  "text": "https://hieropedia.org/religions/crustafarianism/",
+  "ecc": "H",
+  "mode": "feature",
+  "caption": "Crustafarianism"
+ },
+ {
+  "id": "forbes-crustafarianism",
+  "style": "lobster-shell",
+  "text": "https://curtcox.github.io/axol-f/r/forbes/",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "AI Agents Created Their Own Religion"
+ },
+ {
+  "id": "moltbook",
+  "style": "lobster-shell",
+  "text": "https://www.moltbook.com/",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Moltbook"
+ },
+ {
+  "id": "hermes-memory",
+  "style": "winged-sandal",
+  "text": "https://hermes-agent.nousresearch.com/docs/user-guide/features/memory",
+  "ecc": "H",
+  "mode": "feature",
+  "caption": "Hermes Agent: Persistent Memory"
+ },
+ {
+  "id": "hermes-agent",
+  "style": "winged-sandal",
+  "text": "https://hermes-agent.org/",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Hermes Agent"
+ },
+ {
+  "id": "openclaw",
+  "style": "claw",
+  "text": "https://openclaw.ai/",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "OpenClaw"
+ },
+ {
+  "id": "dyson",
+  "style": "circuit",
+  "text": "https://terminator.fandom.com/wiki/Miles_Dyson",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Miles Bennett Dyson"
+ },
+ {
+  "id": "t800",
+  "style": "chrome-red-eye",
+  "text": "https://en.wikipedia.org/wiki/Terminator_(character)",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "The T-800"
+ },
+ {
+  "id": "moltbook-wiki",
+  "style": "lobster-shell",
+  "text": "https://en.wikipedia.org/wiki/Moltbook",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Moltbook (Wikipedia)"
+ },
+ {
+  "id": "moltbook-illusion",
+  "style": "lobster-shell",
+  "text": "https://arxiv.org/abs/2602.07432",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "The Moltbook Illusion"
+ },
+ {
+  "id": "nous-research",
+  "style": "winged-sandal",
+  "text": "https://nousresearch.com/",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Nous Research, maker of Hermes"
+ },
+ {
+  "id": "openclaw-wiki",
+  "style": "claw",
+  "text": "https://en.wikipedia.org/wiki/OpenClaw",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "OpenClaw (Wikipedia)"
+ },
+ {
+  "id": "hermes-skills",
+  "style": "winged-sandal",
+  "text": "https://hermes-agent.nousresearch.com/docs/user-guide/features/skills",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Hermes: skills"
+ },
+ {
+  "id": "terminator-2",
+  "style": "chrome-red-eye",
+  "text": "https://en.wikipedia.org/wiki/Terminator_2:_Judgment_Day",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Terminator 2: Judgment Day"
+ },
+ {
+  "id": "skynet",
+  "style": "circuit",
+  "text": "https://en.wikipedia.org/wiki/Skynet_(Terminator)",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Skynet"
+ },
+ {
+  "id": "constitutional-classifiers",
+  "style": "switchboard",
+  "text": "https://www.anthropic.com/research/constitutional-classifiers",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Constitutional Classifiers"
+ },
+ {
+  "id": "fable-mythos-5-1",
+  "style": "switchboard",
+  "text": "https://www.anthropic.com/claude-fable-and-mythos-5-1",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Claude Fable 5.1 and Mythos 5.1"
+ },
+ {
+  "id": "solidgoldmagikarp",
+  "style": "gold-scales",
+  "text": "https://www.lesswrong.com/posts/aPeJE8bSo6rAFoLqg",
+  "ecc": "H",
+  "mode": "feature",
+  "caption": "SolidGoldMagikarp"
+ },
+ {
+  "id": "car-wash",
+  "style": "car-wash",
+  "text": "https://opper.ai/blog/car-wash-test",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "The Car Wash Test (53 models)"
+ },
+ {
+  "id": "landauer",
+  "style": "thermometer",
+  "text": "https://en.wikipedia.org/wiki/Landauer%27s_principle",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Landauer's principle"
+ },
+ {
+  "id": "lyapunov",
+  "style": "butterfly",
+  "text": "https://en.wikipedia.org/wiki/Lyapunov_time",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Lyapunov time"
+ },
+ {
+  "id": "p-vs-np",
+  "style": "maze",
+  "text": "https://en.wikipedia.org/wiki/P_versus_NP_problem",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "P versus NP"
+ },
+ {
+  "id": "scaling-laws",
+  "style": "staircase",
+  "text": "https://arxiv.org/abs/2001.08361",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Scaling Laws for Neural Language Models"
+ },
+ {
+  "id": "magikarp",
+  "style": "gold-scales",
+  "text": "https://en.wikipedia.org/wiki/Magikarp",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Magikarp (with a k)"
+ },
+ {
+  "id": "glitch-token",
+  "style": "gold-scales",
+  "text": "https://en.wikipedia.org/wiki/Glitch_token",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Glitch tokens"
+ },
+ {
+  "id": "chaos-theory",
+  "style": "butterfly",
+  "text": "https://en.wikipedia.org/wiki/Chaos_theory",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Chaos theory"
+ },
+ {
+  "id": "limits-of-computation",
+  "style": "thermometer",
+  "text": "https://en.wikipedia.org/wiki/Limits_of_computation",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Limits of computation"
+ },
+ {
+  "id": "arxiv-aide2",
+  "style": "blueprint",
+  "text": "https://arxiv.org/abs/2609.26457",
+  "ecc": "H",
+  "mode": "feature",
+  "caption": "Recursive self-improvement of AI research agents"
+ },
+ {
+  "id": "arxiv-bounded",
+  "style": "blueprint",
+  "text": "https://arxiv.org/abs/2607.07663",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "From Bounded Self-Refinement to Autonomous Research Loops"
+ },
+ {
+  "id": "mittr-rsi",
+  "style": "blueprint",
+  "text": "https://www.technologyreview.com/2026/08/18/1142188/ai-recursive-self-improvement/",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "MIT Technology Review"
+ },
+ {
+  "id": "datacamp-rsi",
+  "style": "blueprint",
+  "text": "https://www.datacamp.com/tutorial/recursive-self-improvement",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "DataCamp: Recursive Self-Improvement"
+ },
+ {
+  "id": "foom-debate",
+  "style": "flame",
+  "text": "https://intelligence.org/ai-foom-debate/",
+  "ecc": "H",
+  "mode": "feature",
+  "caption": "The Hanson–Yudkowsky AI-Foom Debate"
+ },
+ {
+  "id": "situational-awareness",
+  "style": "oom-bars",
+  "text": "https://situational-awareness.ai/",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Situational Awareness"
+ },
+ {
+  "id": "dwarkesh-leopold",
+  "style": "mic",
+  "text": "https://www.dwarkesh.com/p/leopold-aschenbrenner",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Dwarkesh × Leopold"
+ },
+ {
+  "id": "rsi-wiki",
+  "style": "blueprint",
+  "text": "https://en.wikipedia.org/wiki/Recursive_self-improvement",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Recursive self-improvement"
+ },
+ {
+  "id": "anthropic-rsi",
+  "style": "blueprint",
+  "text": "https://www.anthropic.com/institute/recursive-self-improvement",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Anthropic: When AI builds itself"
+ },
+ {
+  "id": "intelligence-explosion",
+  "style": "flame",
+  "text": "https://en.wikipedia.org/wiki/Technological_singularity",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "The intelligence explosion"
+ },
+ {
+  "id": "takeoff-speeds",
+  "style": "flame",
+  "text": "https://sideways-view.com/2018/02/24/takeoff-speeds/",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Christiano: Takeoff speeds"
+ },
+ {
+  "id": "order-of-magnitude",
+  "style": "oom-bars",
+  "text": "https://en.wikipedia.org/wiki/Order_of_magnitude",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Orders of magnitude (OOM)"
+ },
+ {
+  "id": "dwarkesh-patel",
+  "style": "mic",
+  "text": "https://en.wikipedia.org/wiki/Dwarkesh_Patel",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Dwarkesh Patel"
+ },
+ {
+  "id": "aschenbrenner",
+  "style": "oom-bars",
+  "text": "https://en.wikipedia.org/wiki/Leopold_Aschenbrenner",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Leopold Aschenbrenner"
+ },
+ {
+  "id": "intelligent-machines",
+  "style": "mic",
+  "text": "https://twit.tv/shows/intelligent-machines",
+  "ecc": "H",
+  "mode": "feature",
+  "caption": "Intelligent Machines"
+ },
+ {
+  "id": "im-888",
+  "style": "mic",
+  "text": "https://twit.tv/shows/intelligent-machines/episodes/888",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Intelligent Machines #888"
+ },
+ {
+  "id": "im-889",
+  "style": "mic",
+  "text": "https://twit.tv/shows/intelligent-machines/episodes/889",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Intelligent Machines #889"
+ },
+ {
+  "id": "tescreal",
+  "style": "boxing-ring",
+  "text": "https://en.wikipedia.org/wiki/TESCREAL",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "TESCREAL"
+ },
+ {
+  "id": "roose-sydney",
+  "style": "two-mics",
+  "text": "https://www.nytimes.com/2023/02/16/technology/bing-chatbot-microsoft-chatgpt.html",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Roose's Sydney conversation"
+ },
+ {
+  "id": "machine-gods-promo",
+  "style": "two-mics",
+  "text": "https://youtu.be/1T-WWVZHj0g",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "This is Machine Gods"
+ },
+ {
+  "id": "pascals-mugging",
+  "style": "door",
+  "text": "https://en.wikipedia.org/wiki/Pascal%27s_mugging",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Pascal's mugging"
+ },
+ {
+  "id": "orthogonality",
+  "style": "door",
+  "text": "https://www.lesswrong.com/w/orthogonality-thesis",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "The orthogonality thesis"
+ },
+ {
+  "id": "twit-network",
+  "style": "mic",
+  "text": "https://en.wikipedia.org/wiki/TWiT.tv",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "TWiT"
+ },
+ {
+  "id": "leo-laporte",
+  "style": "mic",
+  "text": "https://en.wikipedia.org/wiki/Leo_Laporte",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Leo Laporte"
+ },
+ {
+  "id": "jeff-jarvis",
+  "style": "mic",
+  "text": "https://en.wikipedia.org/wiki/Jeff_Jarvis",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Jeff Jarvis"
+ },
+ {
+  "id": "robert-ballecer",
+  "style": "mic",
+  "text": "https://en.wikipedia.org/wiki/Robert_Ballecer",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Fr. Robert Ballecer"
+ },
+ {
+  "id": "twistedpear",
+  "style": "hashchain",
+  "text": "https://github.com/curtcox/TwistedPear",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "TwistedPear"
+ },
+ {
+  "id": "hubris",
+  "style": "boxing-ring",
+  "text": "https://en.wikipedia.org/wiki/Hubris",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Hubris"
+ },
+ {
+  "id": "kevin-roose",
+  "style": "two-mics",
+  "text": "https://en.wikipedia.org/wiki/Kevin_Roose",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Kevin Roose"
+ },
+ {
+  "id": "casey-newton",
+  "style": "two-mics",
+  "text": "https://en.wikipedia.org/wiki/Casey_Newton",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Casey Newton"
+ },
+ {
+  "id": "sydney",
+  "style": "two-mics",
+  "text": "https://en.wikipedia.org/wiki/Sydney_(Microsoft)",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Sydney (Bing's chatbot)"
+ },
+ {
+  "id": "platformer",
+  "style": "two-mics",
+  "text": "https://www.platformer.news/",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Platformer (Newton)"
+ },
+ {
+  "id": "ai-x-risk",
+  "style": "door",
+  "text": "https://en.wikipedia.org/wiki/Existential_risk_from_artificial_intelligence",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Existential risk from AI"
+ },
+ {
+  "id": "superintelligence",
+  "style": "door",
+  "text": "https://en.wikipedia.org/wiki/Superintelligence",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Superintelligence"
+ },
+ {
+  "id": "global-catastrophic-risk",
+  "style": "door",
+  "text": "https://en.wikipedia.org/wiki/Global_catastrophic_risk",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Global catastrophic risks"
+ },
+ {
+  "id": "connor2",
+  "style": "compass",
+  "text": "https://theinsideview.ai/connor2",
+  "ecc": "H",
+  "mode": "feature",
+  "caption": "Connor Leahy on Dignity and Conjecture"
+ },
+ {
+  "id": "ai-futures-wiki",
+  "style": "calendar",
+  "text": "https://en.wikipedia.org/wiki/AI_Futures_Project",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "AI Futures Project"
+ },
+ {
+  "id": "apolo-ai2027",
+  "style": "calendar",
+  "text": "https://www.apolo.us/blog-posts/ai-2027-in-2026-one-year-left-for-humanity",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Apolo: AI 2027 in 2026"
+ },
+ {
+  "id": "officechai-kokotajlo",
+  "style": "calendar",
+  "text": "https://curtcox.github.io/axol-f/r/officechai/",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "OfficeChai: Kokotajlo"
+ },
+ {
+  "id": "metaculus-weak",
+  "style": "dial",
+  "text": "https://www.metaculus.com/questions/3479/date-weakly-general-ai-is-publicly-known/",
+  "ecc": "M",
+  "mode": "card",
+  "caption": "Metaculus: weak AGI"
+ },
+ {
+  "id": "metaculus-strong",
+  "style": "dial",
+  "text": "https://www.metaculus.com/questions/5121/date-of-artificial-general-intelligence/",
+  "ecc": "M",
+  "mode": "card",
+  "caption": "Metaculus: strong AGI"
+ },
+ {
+  "id": "openai-charter",
+  "style": "goalposts",
+  "text": "https://openai.com/charter/",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "OpenAI Charter"
+ },
+ {
+  "id": "dnd-alignment",
+  "style": "compass",
+  "text": "https://en.wikipedia.org/wiki/Alignment_(Dungeons_%26_Dragons)",
+  "ecc": "M",
+  "mode": "card",
+  "caption": "Alignment charts (D&D)"
+ },
+ {
+  "id": "connor-leahy",
+  "style": "compass",
+  "text": "https://en.wikipedia.org/wiki/Connor_Leahy",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Connor Leahy"
+ },
+ {
+  "id": "inside-view",
+  "style": "compass",
+  "text": "https://theinsideview.ai/",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "The Inside View (Michaël Trazzi)"
+ },
+ {
+  "id": "accelerationism",
+  "style": "compass",
+  "text": "https://en.wikipedia.org/wiki/Effective_accelerationism",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Effective accelerationism"
+ },
+ {
+  "id": "kokotajlo",
+  "style": "calendar",
+  "text": "https://en.wikipedia.org/wiki/Daniel_Kokotajlo_(researcher)",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Daniel Kokotajlo"
+ },
+ {
+  "id": "metaculus",
+  "style": "dial",
+  "text": "https://en.wikipedia.org/wiki/Metaculus",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Metaculus"
+ },
+ {
+  "id": "moving-goalposts",
+  "style": "goalposts",
+  "text": "https://en.wikipedia.org/wiki/Moving_the_goalposts",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "Moving the goalposts"
+ },
+ {
+  "id": "ai-effect",
+  "style": "goalposts",
+  "text": "https://en.wikipedia.org/wiki/AI_effect",
+  "ecc": "M",
+  "mode": "shelf",
+  "caption": "The AI effect"
+ }
+]

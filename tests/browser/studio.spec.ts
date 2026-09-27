@@ -46,7 +46,7 @@ test('gallery, remix controls, validation, exact-payload scans and downloads wor
 });
 
 test('all presets pass browser rendering and scanning', async ({ page }) => {
-  test.setTimeout(90000);
+  test.setTimeout(180000);
   await page.goto('/');
   const ids = await page.locator('[data-style]').evaluateAll(elements => elements.map(el => (el as HTMLElement).dataset.style!));
   for (const id of ids) {
@@ -69,7 +69,7 @@ test('mobile layout fits viewport and supports generation', async ({ page }) => 
 
 
 test('material selection and local image refinement preserve working exports', async ({ page }) => {
-  test.setTimeout(90000);
+  test.setTimeout(180000);
   await page.goto('/');
   await page.getByRole('button', { name: 'Materials', exact: true }).click();
   await expect(page.locator('[data-style]')).toHaveCount(9);
