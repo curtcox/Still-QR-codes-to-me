@@ -34,7 +34,7 @@ Usage: still-qr "https://example.com" --style botanical -o code.svg --check
 Payload and artwork stay local. No network calls or API keys required.`);
     return;
   }
-  if (values.list) { for (const p of presets) console.log(`${p.id.padEnd(14)} ${p.name.padEnd(14)} ${p.safety} — ${p.description}`); return; }
+  if (values.list) { for (const p of presets) console.log(`${p.id.padEnd(18)} ${p.name.padEnd(18)} ${p.safety} — ${p.description}${p.credit ? ` [after ${p.credit.name}: ${p.credit.url}]` : ''}`); return; }
   if (positionals.length !== 1) throw new Error('Supply one quoted payload. Run with --help for usage.');
   if (values.out && !['.svg', '.png'].includes(extname(values.out).toLowerCase())) throw new Error('Output filename must end in .svg or .png.');
   const recipe = values.recipe ? JSON.parse(await readFile(values.recipe, 'utf8')) as Partial<Recipe> : undefined;

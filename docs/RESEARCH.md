@@ -1,6 +1,6 @@
 # Research: from decorated squares to integrated materials
 
-Reviewed September 27, 2026. These primary sources informed the second milestone; this is a focused survey, not an exhaustive benchmark or a claim of parity with the best diffusion systems.
+Reviewed September 27, 2026. These primary sources informed the image-integration milestone; this is not a claim of parity with the best diffusion systems. The expanded [style atlas and source credits](STYLE-ATLAS.md) covers the larger survey of parametric, depth, motion, product, and physical-craft techniques and identifies every local replication.
 
 ## What existing work can do
 

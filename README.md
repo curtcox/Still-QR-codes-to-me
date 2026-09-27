@@ -2,7 +2,7 @@
 
 **A code with character.** An offline TypeScript toolkit and visual playground for distinctive QR codes that remain testable as QR codes.
 
-Twenty-one presets span **12 geometric styles and 9 material treatments**: bamboo, oak, beans, ants, fire, ice, clouds, ripples, and leaves. Materials have actual fibers, grain, creases, limbs, flames, fractures, cloud lobes, wave fronts, or veins inside the QR matrix. A separate image-art mode integrates local photographs and illustrations using protected module centers and scan-guided refinement. The geometric engine still provides 12 shapes × 8 borders × 4 surround textures, plus palettes, gradients, and seeds. Not every combination or payload is guaranteed to scan: the project includes real decoding checks to measure the result.
+Thirty-five presets span **21 module geometries, 10 material modes, 4 finder-eye systems, 5 depth/light effects, and 3 motion modes**. Bamboo, oak, beans, ants, fire, ice, clouds, ripples, and leaves carry recognizable internal structure rather than palette changes. Research-derived additions cover classy joins, symbols, polygons, craft patterns, isometric blocks, embossing, shadows, neon, and animated SVG. A separate image-art mode integrates local photographs and illustrations using protected module centers and scan-guided refinement. Eight borders, four surround textures, gradients, palettes, and deterministic seeds compose with the other controls. Not every combination or payload is guaranteed to scan: the project includes real decoding checks to measure the result.
 
 ## Start the studio
 
@@ -18,7 +18,7 @@ Open the local URL printed by Vite. Enter a payload, pick a style, remix the con
 ```sh
 npm run build        # library/CLI → dist/; static playground → web-dist/
 npm run preview      # serve the built playground locally
-npm run gallery      # 21 styles + 3 image compositions + scan reports → examples/generated/
+npm run gallery      # 35 styles + 3 image compositions + scan reports → examples/generated/
 ```
 
 ## CLI
@@ -72,7 +72,7 @@ console.log(result.passed, result.attempts, result.svg);
 
 The compositor center-crops the image, selects a legal QR mask that reduces tonal conflict, and changes local brightness around data-module centers. Structural cells remain solid. Greater image freedom retains more original detail between centers. Refinement tests a finite sequence of decreasing freedom values, stopping at the first setting that passes all four conditions, or reporting failure. Even a failed result is available for inspection. Source artwork stays local; SVG output is self-contained.
 
-This is CPU-based image projection, **not a diffusion model**. Read the [research comparison](docs/RESEARCH.md) for QRBTF, Text2QR, DiffQRCoder, what we implemented, and the remaining gap. The three bundled source images were made with the built-in imagegen tool; [exact prompts and provenance](public/artwork/PROVENANCE.md) are included.
+This is CPU-based image projection, **not a diffusion model**. Read the [research comparison](docs/RESEARCH.md) for QRBTF, Text2QR, DiffQRCoder, what we implemented, and the remaining gap. The broader [style atlas and source credits](docs/STYLE-ATLAS.md) records the vector, image, motion, depth, and craft systems surveyed and maps them to independent local implementations. The three bundled source images were made with the built-in imagegen tool; [exact prompts and provenance](public/artwork/PROVENANCE.md) are included.
 
 ## The collection
 
@@ -105,14 +105,23 @@ The nine additional experimental material presets use these mechanisms:
 | Ripples | Local wavelets and continuous overlapping wave fronts |
 | Leaves | Alternating leaves, central ribs, branching veins |
 
+Fourteen additional source-credited presets demonstrate the expanded tools:
+
+| Family | Presets | New controls |
+| --- | --- | --- |
+| Joined and symbolic geometry | Classy noir, Honeycomb, Constellation, Love letter, Waypoint, Liquid ink | Classy, hexagon, star, heart, cross, and fluid modules; rounded, circular, and diamond eyes |
+| Physical craft | Cross stitch, Perler beads | Thread crosses, glossy beads, fabric/paper texture, grid surround |
+| Depth and lighting | Isometric blocks, Debossed paper, Floating sticker, Neon beacon | Cube faces, extrusion, bevel layers, shadows, glow |
+| Motion | Gradient sweep, Slow pulse | Self-contained SVG animation with a stable initial frame |
+
 Choose a material independently of the preset palette. Material geometry replaces the module shape control; detail controls highlights, and the seed varies supported features such as bean rotation, grain, and fracture placement. Built-in material illustrations remain vector SVGs.
 
-These are independently composable techniques, not an assertion of historical novelty. Conservative/experimental labels describe the extent of stylization, not a scan guarantee.
+These are independently composable techniques, not an assertion of historical novelty. Each research-derived preset carries a clickable source in the studio and structured credit in the library data. Conservative/experimental labels describe the extent of stylization, not a scan guarantee.
 
 ## Reliability by construction, then by measurement
 
 - The encoder is [node-qrcode](https://github.com/soldair/node-qrcode). High (`H`) error correction is the default. This is not permission to erase an arbitrary percentage of the artwork.
-- Finder, separator, timing, alignment, format, version, and other reserved modules remain unchanged.
+- Separator, timing, alignment, format, version, and other reserved modules remain exact. Finder eyes can use square, rounded, circular, or diamond outer/inner symbols while keeping a high-contrast 7×7 footprint.
 - A solid four-module quiet zone surrounds the encoded matrix. Borders and surround textures stay outside that zone; material detail is also drawn inside data cells. Structural modules use solid ink even with a gradient.
 - The built-in controls require a light background and at least 4.5:1 ink-to-paper contrast (including both gradient endpoints). This is a base-palette guardrail, not a measurement of every highlight or a QR standards compliance test. Image mode instead uses local tone projection and requires its own scan checks.
 - [jsQR](https://github.com/cozmo/jsQR) decodes rasterized output and compares the exact payload. The four checks are native export resolution, reduced resolution (up to 256 px), mild blur, and reduced contrast. Browser Canvas and Sharp use different blur/rasterization implementations, so their results can differ.
@@ -130,7 +139,7 @@ npx playwright install chromium  # one-time browser install, if needed
 npm run test:browser # desktop/mobile studio, every preset's browser scan, downloads
 ```
 
-The core suite covers 84 preset/payload pairs under four scan conditions, additional remixes, dense payloads, XML escaping, invalid recipes, seeded determinism, custom artwork clipping, structural/quiet-zone preservation, and image composition/refinement. Browser tests exercise real SVG rasterization, scan checks, recipes, downloads, filters, and a mobile viewport. GitHub Actions runs both suites.
+The core suite covers 140 preset/payload pairs under four scan conditions, every module shape in a mixed recipe, additional remixes, dense payloads, XML escaping, invalid recipes, seeded determinism, custom artwork clipping, structural/quiet-zone preservation, and image composition/refinement. Browser tests exercise real SVG rasterization, scan checks, recipes, downloads, filters, and a mobile viewport. GitHub Actions runs both suites.
 
 ## Repository map
 

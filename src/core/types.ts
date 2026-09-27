@@ -1,11 +1,17 @@
-export const shapes = ['square', 'rounded', 'dots', 'diamond', 'squircle', 'horizontal', 'vertical', 'weave', 'mosaic', 'circuit', 'petal', 'halftone'] as const;
+export const shapes = ['square', 'rounded', 'dots', 'diamond', 'squircle', 'horizontal', 'vertical', 'weave', 'mosaic', 'circuit', 'petal', 'halftone', 'classy', 'fluid', 'star', 'heart', 'cross', 'hexagon', 'stitch', 'bead', 'cube'] as const;
 export const borders = ['none', 'frame', 'botanical', 'postage', 'orbit', 'deco', 'grid', 'ticket'] as const;
 export const textures = ['none', 'paper', 'speckle', 'lines'] as const;
 export const materials = ['none', 'bamboo', 'oak', 'beans', 'ants', 'fire', 'ice', 'clouds', 'ripples', 'leaves'] as const;
+export const eyes = ['square', 'rounded', 'dots', 'diamond'] as const;
+export const effects = ['none', 'shadow', 'emboss', 'extrude', 'neon'] as const;
+export const animations = ['none', 'sweep', 'pulse'] as const;
 export type Material = typeof materials[number];
 export type Shape = typeof shapes[number];
 export type Border = typeof borders[number];
 export type Texture = typeof textures[number];
+export type Eye = typeof eyes[number];
+export type Effect = typeof effects[number];
+export type Animation = typeof animations[number];
 export type Safety = 'conservative' | 'experimental';
 export interface Recipe {
   material: Material;
@@ -13,6 +19,9 @@ export interface Recipe {
   shape: Shape;
   border: Border;
   texture: Texture;
+  eye: Eye;
+  effect: Effect;
+  animation: Animation;
   foreground: string;
   background: string;
   accent: string;
@@ -25,6 +34,11 @@ export interface StylePreset {
   description: string;
   inspiration: string;
   safety: Safety;
+  credit?: {
+    name: string;
+    url: string;
+    technique: string;
+  };
   recipe: Recipe;
 }
 export interface GenerateOptions {

@@ -47,6 +47,18 @@ test('seeded textures are deterministic and respond to the seed', () => {
   assert.equal(generateQR(options).svg, generateQR(options).svg);
   assert.notEqual(generateQR(options).svg, generateQR({ ...options, recipe: { seed: 43 } }).svg);
 });
+test('research-derived presets expose source credits and SVG-native effects', () => {
+  const credited = presets.filter(preset => preset.credit);
+  assert.equal(credited.length, 14);
+  for (const preset of credited) {
+    assert.match(preset.credit!.url, /^https:\/\//);
+    assert.ok(preset.credit!.name.length > 2);
+    assert.ok(preset.credit!.technique.length > 8);
+  }
+  assert.match(generateQR({ text: 'motion', style: 'gradient-sweep' }).svg, /<animate /);
+  assert.match(generateQR({ text: 'depth', style: 'floating-sticker' }).svg, /<filter /);
+  assert.match(generateQR({ text: 'eyes', style: 'classy-noir' }).svg, /rx="1\.15"/);
+});
 test('rejects invalid payload, colors, size, seed, style and correction', () => {
   for (const options of [
     { text: '' }, { text: 'x', recipe: { foreground: '#eeeeee' } },

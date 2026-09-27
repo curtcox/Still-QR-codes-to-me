@@ -13,6 +13,9 @@ A useful new style should add an independently controllable visual technique or 
   "shape": "petal",
   "border": "botanical",
   "texture": "paper",
+  "eye": "rounded",
+  "effect": "emboss",
+  "animation": "none",
   "foreground": "#304524",
   "background": "#fbf9ed",
   "accent": "#4d5427",
@@ -23,7 +26,7 @@ A useful new style should add an independently controllable visual technique or 
 
 Colors use six-digit hex notation. The seed is an unsigned 32-bit integer. Invalid geometry names, low contrast, dark backgrounds, and out-of-range sizes are rejected. Rendering the same payload, preset, recipe, and size with the same package version produces the same SVG. Reproducibility across future renderer or encoder changes requires pinning the package/lockfile version too.
 
-To add a preset, register it in `src/core/presets.ts`: give it a stable ID, a description of its actual mechanism, likely applications, and an honest classification. Add a new module shape in `types.ts` and `moduleSVG` in `render.ts` when it needs new geometry. The controls discover shape/border/texture names from those arrays. The UI counts presets dynamically. Add material geometry in `src/core/materials.ts` and the material name to `types.ts`. `materialModule` supplies cell-local silhouettes and microtexture; `materialField` supplies continuous grain or fractures. The renderer clips continuous detail to data cells. Material mode has a six-module illustrated surround outside the four-module quiet zone.
+To add a preset, register it in `src/core/presets.ts`: give it a stable ID, a description of its actual mechanism, likely applications, and an honest classification. If it reproduces or directly follows an outside technique, include `credit` with the source name, direct URL, and a precise technique note. Add a new module shape in `types.ts` and `moduleSVG` in `render.ts` when it needs new geometry. The controls discover shape, eye, effect, animation, border, and texture names from those arrays. The UI counts presets dynamically. Add material geometry in `src/core/materials.ts` and the material name to `types.ts`. `materialModule` supplies cell-local silhouettes and microtexture; `materialField` supplies continuous grain or fractures. The renderer clips continuous detail to data cells. Material mode has a six-module illustrated surround outside the four-module quiet zone.
 
 ## Custom module renderers
 

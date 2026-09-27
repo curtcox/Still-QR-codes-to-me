@@ -424,6 +424,15 @@ input[type=color]::-webkit-color-swatch {
   color:#66735e;
 }
 
+.style-credit {
+  display:inline-block;
+  margin-top:7px;
+  color:#465f43;
+  font-size:9px;
+  text-decoration-thickness:1px;
+  text-underline-offset:3px;
+}
+
 .badge {
   font-size:8px;
   border:1px solid #bec8ad;
@@ -717,6 +726,14 @@ input[type=color]::-webkit-color-swatch {
   color:var(--muted);
   line-height:1.5;
   margin:6px 0 8px;
+}
+
+.style-card small {
+  display:block;
+  min-height:14px;
+  margin:-2px 0 7px;
+  color:#7a866f;
+  font:8px/1.4 Arial,sans-serif;
 }
 
 .card-category {

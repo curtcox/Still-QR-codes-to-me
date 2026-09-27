@@ -1,7 +1,7 @@
 import { materialModule, materialField, materialSurround } from './materials.js';
 import QRCode from 'qrcode';
 import { getPreset } from './presets.js';
-import { borders, shapes, textures, materials, type GenerateOptions, type GeneratedQR, type ModuleContext, type Recipe } from './types.js';
+import { animations, borders, effects, eyes, shapes, textures, materials, type GenerateOptions, type GeneratedQR, type ModuleContext, type Recipe } from './types.js';
 
 export function escapeXML(value: string): string {
   return value.replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&apos;' })[c]!);
@@ -20,6 +20,7 @@ function validate(recipe: Recipe): void {
   }
   if (!shapes.includes(recipe.shape) || !borders.includes(recipe.border) || !textures.includes(recipe.texture)) throw new Error('Unknown shape, border, or texture.');
   if (!materials.includes(recipe.material)) throw new Error('Unknown material.');
+  if (!eyes.includes(recipe.eye) || !effects.includes(recipe.effect) || !animations.includes(recipe.animation)) throw new Error('Unknown finder eye, effect, or animation.');
   if (!Number.isFinite(recipe.detail) || recipe.detail < 0 || recipe.detail > 1) throw new Error('Material detail must be between 0 and 1.');
   if (typeof recipe.gradient !== 'boolean') throw new Error('gradient must be true or false.');
   if (!Number.isSafeInteger(recipe.seed) || recipe.seed < 0 || recipe.seed > 0xffffffff) throw new Error('seed must be an integer from 0 to 4294967295.');
@@ -48,7 +49,28 @@ function moduleSVG(shape: Recipe['shape'], { x, y, row, column, random, darkAt }
     case 'circuit': return circle(.43) + (darkAt(row, column + 1) ? rect(.5, .27, .5, .46) : '') + (darkAt(row, column - 1) ? rect(0, .27, .5, .46) : '') + (darkAt(row + 1, column) ? rect(.27, .5, .46, .5) : '') + (darkAt(row - 1, column) ? rect(.27, 0, .46, .5) : '');
     case 'petal': return `<path d="M${x + .05} ${y + .05}H${x + .5}Q${x + .95} ${y + .05} ${x + .95} ${y + .5}V${y + .95}H${x + .5}Q${x + .05} ${y + .95} ${x + .05} ${y + .5}Z"/>`;
     case 'halftone': return circle(.43 + random * .06);
+    case 'classy': {
+      const links = (darkAt(row, column + 1) ? rect(.5, .08, .5, .84) : '') + (darkAt(row, column - 1) ? rect(0, .08, .5, .84) : '') + (darkAt(row + 1, column) ? rect(.08, .5, .84, .5) : '') + (darkAt(row - 1, column) ? rect(.08, 0, .84, .5) : '');
+      return circle(.42) + links;
+    }
+    case 'fluid': {
+      const wobble = (random - .5) * .08;
+      return `<path d="M${x + .5} ${y + .03}C${x + .83 + wobble} ${y + .02} ${x + .99} ${y + .25} ${x + .95} ${y + .52}C${x + 1.02} ${y + .82 + wobble} ${x + .75} ${y + .99} ${x + .49} ${y + .95}C${x + .18} ${y + 1.01} ${x + .01} ${y + .76} ${x + .05} ${y + .48}C${x - .01} ${y + .2 - wobble} ${x + .24} ${y + .01} ${x + .5} ${y + .03}Z"/>`;
+    }
+    case 'star': return `<path d="M${x + .5} ${y + .015}L${x + .615} ${y + .355}L${x + .975} ${y + .355}L${x + .685} ${y + .565}L${x + .795} ${y + .93}L${x + .5} ${y + .71}L${x + .205} ${y + .93}L${x + .315} ${y + .565}L${x + .025} ${y + .355}L${x + .385} ${y + .355}Z"/>`;
+    case 'heart': return `<path d="M${x + .5} ${y + .94}C${x + .39} ${y + .79} ${x + .05} ${y + .6} ${x + .05} ${y + .31}C${x + .05} ${y + .03} ${x + .39} ${y - .01} ${x + .5} ${y + .21}C${x + .61} ${y - .01} ${x + .95} ${y + .03} ${x + .95} ${y + .31}C${x + .95} ${y + .6} ${x + .61} ${y + .79} ${x + .5} ${y + .94}Z"/>`;
+    case 'cross': return rect(.34, .02, .32, .96, .07) + rect(.02, .34, .96, .32, .07);
+    case 'hexagon': return `<path d="M${x + .25} ${y + .03}H${x + .75}L${x + .98} ${y + .5}L${x + .75} ${y + .97}H${x + .25}L${x + .02} ${y + .5}Z"/>`;
+    case 'stitch': return `<g transform="rotate(45 ${x + .5} ${y + .5})">${rect(.37, .01, .26, .98, .05)}${rect(.01, .37, .98, .26, .05)}</g>`;
+    case 'bead': return circle(.485) + `<circle cx="${x + .34}" cy="${y + .3}" r=".105" fill="white" opacity=".27"/>`;
+    case 'cube': return `<path d="M${x + .5} ${y + .01}L${x + .99} ${y + .14}V${y + .86}L${x + .5} ${y + .99}L${x + .01} ${y + .86}V${y + .14}Z"/><path d="M${x + .5} ${y + .5}V${y + .99}M${x + .5} ${y + .5}L${x + .01} ${y + .14}M${x + .5} ${y + .5}L${x + .99} ${y + .14}" fill="none" stroke="white" stroke-width=".05" opacity=".3"/>`;
   }
+}
+function finderSVG(eye: Recipe['eye'], x: number, y: number, foreground: string, background: string): string {
+  if (eye === 'dots') return `<circle cx="${x + 3.5}" cy="${y + 3.5}" r="3.5" fill="${foreground}"/><circle cx="${x + 3.5}" cy="${y + 3.5}" r="2.5" fill="${background}"/><circle cx="${x + 3.5}" cy="${y + 3.5}" r="1.5" fill="${foreground}"/>`;
+  if (eye === 'diamond') return `<path d="M${x + 3.5} ${y}L${x + 7} ${y + 3.5}L${x + 3.5} ${y + 7}L${x} ${y + 3.5}Z" fill="${foreground}"/><path d="M${x + 3.5} ${y + 1}L${x + 6} ${y + 3.5}L${x + 3.5} ${y + 6}L${x + 1} ${y + 3.5}Z" fill="${background}"/><path d="M${x + 3.5} ${y + 2}L${x + 5} ${y + 3.5}L${x + 3.5} ${y + 5}L${x + 2} ${y + 3.5}Z" fill="${foreground}"/>`;
+  const radius = eye === 'rounded' ? 1.15 : 0;
+  return `<rect x="${x}" y="${y}" width="7" height="7" rx="${radius}" fill="${foreground}"/><rect x="${x + 1}" y="${y + 1}" width="5" height="5" rx="${radius * .65}" fill="${background}"/><rect x="${x + 2}" y="${y + 2}" width="3" height="3" rx="${radius * .55}" fill="${foreground}"/>`;
 }
 /** Decorative art stays outside the solid QR plate, including its four-module quiet zone. */
 function decoration(recipe: Recipe, size: number): string {
@@ -108,13 +130,21 @@ export function generateQR(options: GenerateOptions): GeneratedQR {
   const clips: string[] = [];
   const inkId = `ink-${recipe.foreground.slice(1)}-${recipe.accent.slice(1)}`;
   const structural: string[] = [];
+  const finder: string[] = [
+    finderSVG(recipe.eye, offset, offset, recipe.foreground, recipe.background),
+    finderSVG(recipe.eye, offset + n - 7, offset, recipe.foreground, recipe.background),
+    finderSVG(recipe.eye, offset, offset + n - 7, recipe.foreground, recipe.background),
+  ];
   const dataCells: string[] = [];
   const payloadHash = Array.from(options.text).reduce((hash, char) => Math.imul(hash ^ char.codePointAt(0)!, 16777619) >>> 0, 2166136261);
   const materialId = `mat-${recipe.material}-${n}-${border}-${recipe.seed}-${payloadHash}-${errorCorrection}-${code.maskPattern}`;
   for (let row = 0; row < n; row++) for (let column = 0; column < n; column++) {
     if (!darkAt(row, column)) continue;
     const x = column + offset, y = row + offset;
-    if (code.modules.isReserved(row, column)) structural.push(`M${x} ${y}h1v1h-1z`);
+    if (code.modules.isReserved(row, column)) {
+      const inFinder = (row < 7 && column < 7) || (row < 7 && column >= n - 7) || (row >= n - 7 && column < 7);
+      if (!inFinder) structural.push(`M${x} ${y}h1v1h-1z`);
+    }
     else {
       dataCells.push(`M${x} ${y}h1v1h-1z`);
       const context = { x, y, row, column, random: randomAt(recipe.seed, row, column), darkAt };
@@ -126,7 +156,7 @@ export function generateQR(options: GenerateOptions): GeneratedQR {
     }
   }
   const warnings: string[] = [];
-  if (recipe.material !== 'none' || style.safety === 'experimental' || ['dots', 'diamond', 'weave', 'mosaic', 'circuit', 'petal', 'halftone'].includes(recipe.shape) || options.moduleRenderer) warnings.push('Experimental artwork: verify the exported code at its intended size and on real devices.');
+  if (recipe.material !== 'none' || style.safety === 'experimental' || recipe.eye !== 'square' || recipe.effect !== 'none' || recipe.animation !== 'none' || !['square', 'rounded', 'squircle', 'horizontal', 'vertical'].includes(recipe.shape) || options.moduleRenderer) warnings.push('Experimental artwork: verify the exported code at its intended size and on real devices.');
   if (size / dimension < 4) warnings.push('Small modules at this export size. Increase the resolution or shorten the payload.');
   if (errorCorrection !== 'H') warnings.push('High error correction is recommended for styled codes.');
   const contrast = Math.min(contrastRatio(recipe.foreground, recipe.background), recipe.gradient ? contrastRatio(recipe.accent, recipe.background) : Infinity);
@@ -136,6 +166,12 @@ export function generateQR(options: GenerateOptions): GeneratedQR {
   const continuous = ['oak', 'ripples', 'ice'].includes(recipe.material)
     ? `<g clip-path="url(#${materialId})" color="white" opacity="${recipe.detail * .2}">${materialField(recipe.material, dimension, recipe.seed)}</g>` : '';
   clips.push(`<clipPath id="${materialId}"><path d="${dataCells.join('')}"/></clipPath>`);
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 ${dimension} ${dimension}" role="img" aria-label="Stylized QR code"><title>${escapeXML(style.name)} QR code</title><desc>${escapeXML(options.text)}</desc><defs>${clips.join('')}<linearGradient id="${inkId}" x1="0" y1="0" x2="1" y2="1"><stop stop-color="${recipe.foreground}"/><stop offset="1" stop-color="${recipe.accent}"/></linearGradient></defs><rect width="${dimension}" height="${dimension}" fill="${recipe.background}"/>${texture(recipe, dimension)}${decoration(recipe, dimension)}${materialSurround(recipe, dimension)}<rect x="${border}" y="${border}" width="${n + 8}" height="${n + 8}" fill="${recipe.background}"/><g color="${recipe.foreground}" fill="${recipe.gradient ? `url(#${inkId})` : recipe.foreground}">${dataArt}</g>${continuous}<path d="${structural.join('')}" fill="${recipe.foreground}"/></svg>`;
+  const gradientMotion = recipe.animation === 'sweep' ? '<animate attributeName="x1" values="-1;1;-1" dur="3.8s" repeatCount="indefinite"/><animate attributeName="x2" values="0;2;0" dur="3.8s" repeatCount="indefinite"/>' : '';
+  const filterDefs = recipe.effect === 'neon' ? `<filter id="fx-${inkId}" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation=".16" result="glow"/><feMerge><feMergeNode in="glow"/><feMergeNode in="SourceGraphic"/></feMerge></filter>` : recipe.effect === 'shadow' ? `<filter id="fx-${inkId}" x="-20%" y="-20%" width="150%" height="150%"><feDropShadow dx=".12" dy=".16" stdDeviation=".08" flood-color="${recipe.accent}" flood-opacity=".5"/></filter>` : '';
+  const baseInk = `<g color="${recipe.foreground}" fill="${recipe.gradient ? `url(#${inkId})` : recipe.foreground}">${dataArt}</g>${continuous}<path d="${structural.join('')}" fill="${recipe.foreground}"/><g fill="${recipe.foreground}">${finder.join('')}</g>`;
+  const depth = recipe.effect === 'extrude' ? `<g fill="${recipe.accent}" color="${recipe.accent}" opacity=".4" transform="translate(.11 .11)">${dataArt}<path d="${structural.join('')}"/>${finder.join('')}</g>` : recipe.effect === 'emboss' ? `<g fill="white" color="white" opacity=".28" transform="translate(-.07 -.07)">${dataArt}${finder.join('')}</g><g fill="${recipe.accent}" color="${recipe.accent}" opacity=".35" transform="translate(.07 .07)">${dataArt}${finder.join('')}</g>` : '';
+  const filteredInk = recipe.effect === 'neon' || recipe.effect === 'shadow' ? `<g filter="url(#fx-${inkId})">${baseInk}</g>` : baseInk;
+  const animatedInk = recipe.animation === 'pulse' ? `<g>${filteredInk}<animate attributeName="opacity" values="1;.88;1" dur="2.4s" repeatCount="indefinite"/></g>` : filteredInk;
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 ${dimension} ${dimension}" role="img" aria-label="Stylized QR code"><title>${escapeXML(style.name)} QR code</title><desc>${escapeXML(options.text)}</desc><defs>${clips.join('')}<linearGradient id="${inkId}" x1="0" y1="0" x2="1" y2="1">${gradientMotion}<stop stop-color="${recipe.foreground}"/><stop offset="1" stop-color="${recipe.accent}"/></linearGradient>${filterDefs}</defs><rect width="${dimension}" height="${dimension}" fill="${recipe.background}"/>${texture(recipe, dimension)}${decoration(recipe, dimension)}${materialSurround(recipe, dimension)}<rect x="${border}" y="${border}" width="${n + 8}" height="${n + 8}" fill="${recipe.background}"/>${depth}${animatedInk}</svg>`;
   return { svg, recipe, style, size, moduleCount: n, version: code.version, contrast, warnings };
 }

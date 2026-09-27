@@ -1,12 +1,12 @@
 # Growing a useful collection
 
-The first milestone established a local engine, studio, CLI, twelve geometric styles, and scan feedback. The second adds nine procedural materials, local image integration, content-aware QR mask selection, and automatic scan-guided refinement. The long-term goal is a broad vocabulary of useful QR treatments with measured limitations, not a large list of cosmetic aliases.
+The first milestone established a local engine, studio, CLI, twelve geometric styles, and scan feedback. The second added nine procedural materials, local image integration, content-aware QR mask selection, and automatic scan-guided refinement. The third added 14 source-credited styles across symbols, finder eyes, craft patterns, depth, light, and motion. The long-term goal is a broad vocabulary of useful QR treatments with measured limitations, not a large list of cosmetic aliases.
 
-See [the research comparison](RESEARCH.md) for the state-of-the-art reference points and remaining gaps.
+See [the research comparison](RESEARCH.md) for image-generation reference points and remaining gaps, and the [style atlas](STYLE-ATLAS.md) for the broader source survey and implementation map.
 
 ## Next: coverage and composition
 
-- Expand rendering primitives: continuous contours, tiles with cut corners, calligraphic strokes, stippling, engraving, cross-stitch, pixel sprites, and two-tone print patterns.
+- Expand rendering primitives: continuous contours, tiles with cut corners, calligraphic strokes, stippling, engraving, pixel sprites, and two-tone print patterns.
 - Add border compositors for labels, captions, brand marks, cut lines, product tags, and accessible scan instructions, preserving the clear margin.
 - Expand palette collections: one-color print, high-contrast screen, seasonal packaging, risograph-inspired separations, metallic-look screen art.
 - Add structured payload builders for Wi-Fi, contacts, calendar events, email, SMS, and location, with correct escaping and length feedback.
