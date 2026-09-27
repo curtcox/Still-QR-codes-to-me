@@ -44,7 +44,7 @@ Reviewed September 27, 2026. This survey tracks techniques worth reproducing as 
 
 ## Implemented technique inventory
 
-The core now provides 21 module geometries, 10 recognizable materials, four finder-eye systems, five depth/light treatments, three motion modes, eight borders, four surround textures, gradients, seeded variation, and local image integration. These controls compose freely rather than being locked to their showcase presets.
+The core now provides 31 module geometries, 10 recognizable materials, four finder-eye systems, five depth/light treatments, three motion modes, eight borders, four surround textures, gradients, seeded variation, and local image integration. These controls compose freely rather than being locked to their showcase presets.
 
 The 14 research-derived presets added in this milestone store a source name, URL, and technique note in `StylePreset.credit`. The studio shows the source on each card and a clickable link beside the active preview. Existing presets without a research credit are original combinations built for this repository; generic components still have their lineage documented above.
 
@@ -73,5 +73,9 @@ The 14 research-derived presets added in this milestone store a source name, URL
 - Browser Canvas supplies a separate raster path for the interactive studio and browser tests.
 - SVG is the common rendering layer. That keeps procedural geometry inspectable, editable, printable, and animatable without a proprietary service.
 
-Useful future validation tools include [ZXing](https://github.com/zxing/zxing) and [OpenCV's QRCodeDetector](https://docs.opencv.org/4.x/de/dc3/classcv_1_1QRCodeDetector.html) as independent decoders, plus a printed test corpus measured across phones, distances, glare, curvature, and physical craft media.
+The second expansion uses [ZXing-C++ through zxing-wasm](https://github.com/Sec-ant/zxing-wasm) in an offline assessment tool. Useful future validation tools include [OpenCV's QRCodeDetector](https://docs.opencv.org/4.x/de/dc3/classcv_1_1QRCodeDetector.html) as independent decoders, plus a printed test corpus measured across phones, distances, glare, curvature, and physical craft media.
 
+
+## Second expansion
+
+The [second survey and implementation map](STYLE-RESEARCH-2.md) adds ten shapes and ten credited presets, bringing the collection to 45 presets. It also implements the previously proposed independent ZXing decoder assessment. See that report for source links, deliberate adaptations, tool choices, and reproducible commands.

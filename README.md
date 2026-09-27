@@ -2,7 +2,7 @@
 
 **A code with character.** An offline TypeScript toolkit and visual playground for distinctive QR codes that remain testable as QR codes.
 
-Thirty-five presets span **21 module geometries, 10 material modes, 4 finder-eye systems, 5 depth/light effects, and 3 motion modes**. Bamboo, oak, beans, ants, fire, ice, clouds, ripples, and leaves carry recognizable internal structure rather than palette changes. Research-derived additions cover classy joins, symbols, polygons, craft patterns, isometric blocks, embossing, shadows, neon, and animated SVG. A separate image-art mode integrates local photographs and illustrations using protected module centers and scan-guided refinement. Eight borders, four surround textures, gradients, palettes, and deterministic seeds compose with the other controls. Not every combination or payload is guaranteed to scan: the project includes real decoding checks to measure the result.
+Forty-five presets span **31 module geometries, 10 material modes, 4 finder-eye systems, 5 depth/light effects, and 3 motion modes**. Bamboo, oak, beans, ants, fire, ice, clouds, ripples, and leaves carry recognizable internal structure rather than palette changes. Research-derived additions cover classy joins, symbols, polygons, craft patterns, isometric blocks, embossing, shadows, neon, and animated SVG. A separate image-art mode integrates local photographs and illustrations using protected module centers and scan-guided refinement. Eight borders, four surround textures, gradients, palettes, and deterministic seeds compose with the other controls. Not every combination or payload is guaranteed to scan: the project includes real decoding checks to measure the result.
 
 ## Start the studio
 
@@ -18,7 +18,7 @@ Open the local URL printed by Vite. Enter a payload, pick a style, remix the con
 ```sh
 npm run build        # library/CLI → dist/; static playground → web-dist/
 npm run preview      # serve the built playground locally
-npm run gallery      # 35 styles + 3 image compositions + scan reports → examples/generated/
+npm run gallery      # 45 styles + 3 image compositions + scan reports → examples/generated/
 ```
 
 ## CLI
@@ -73,6 +73,14 @@ console.log(result.passed, result.attempts, result.svg);
 The compositor center-crops the image, selects a legal QR mask that reduces tonal conflict, and changes local brightness around data-module centers. Structural cells remain solid. Greater image freedom retains more original detail between centers. Refinement tests a finite sequence of decreasing freedom values, stopping at the first setting that passes all four conditions, or reporting failure. Even a failed result is available for inspection. Source artwork stays local; SVG output is self-contained.
 
 This is CPU-based image projection, **not a diffusion model**. Read the [research comparison](docs/RESEARCH.md) for QRBTF, Text2QR, DiffQRCoder, what we implemented, and the remaining gap. The broader [style atlas and source credits](docs/STYLE-ATLAS.md) records the vector, image, motion, depth, and craft systems surveyed and maps them to independent local implementations. The three bundled source images were made with the built-in imagegen tool; [exact prompts and provenance](public/artwork/PROVENANCE.md) are included.
+
+## More styles and an independent decoder
+
+The [second research survey](docs/STYLE-RESEARCH-2.md) reviews 15 additional or revisited tools and sources. Ten new credited presets reproduce gapped tiles, neighbor-aware contours, connected capsules, diagonal hatching, sketched curves, flowers, segmented grids, arrows, and waves. These bring the collection to 45 presets and 31 independently selectable shapes.
+
+![New styles and source credits](docs/style-expansion.png)
+
+Run `npm run assess` to compare jsQR and ZXing-C++ on all presets under four render conditions and four payloads. Results go to `examples/generated/decoder-report.json`; either decoder failing returns status 2. ZXing loads its installed WASM locally and is used only by development tools/tests. Run `npm run style-sheet` to regenerate the comparison image.
 
 ## The collection
 
@@ -139,7 +147,7 @@ npx playwright install chromium  # one-time browser install, if needed
 npm run test:browser # desktop/mobile studio, every preset's browser scan, downloads
 ```
 
-The core suite covers 140 preset/payload pairs under four scan conditions, every module shape in a mixed recipe, additional remixes, dense payloads, XML escaping, invalid recipes, seeded determinism, custom artwork clipping, structural/quiet-zone preservation, and image composition/refinement. Browser tests exercise real SVG rasterization, scan checks, recipes, downloads, filters, and a mobile viewport. GitHub Actions runs both suites.
+The core suite covers 180 preset/payload pairs under four scan conditions, every module shape in a mixed recipe, additional remixes, dense payloads, XML escaping, invalid recipes, seeded determinism, custom artwork clipping, structural/quiet-zone preservation, and image composition/refinement. Browser tests exercise real SVG rasterization, scan checks, recipes, downloads, filters, and a mobile viewport. GitHub Actions runs both suites.
 
 ## Repository map
 

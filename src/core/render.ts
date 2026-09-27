@@ -33,10 +33,30 @@ function randomAt(seed: number, row: number, column: number): number {
   n = Math.imul(n ^ (n >>> 13), 1274126177);
   return ((n ^ (n >>> 16)) >>> 0) / 4294967296;
 }
-function moduleSVG(shape: Recipe['shape'], { x, y, row, column, random, darkAt }: ModuleContext): string {
+function moduleSVG(shape: Recipe['shape'], { x, y, row, column, random, darkAt }: ModuleContext, strokeInk: string): string {
   const rect = (dx = 0, dy = 0, w = 1, h = 1, radius = 0) => `<rect x="${x + dx}" y="${y + dy}" width="${w}" height="${h}" rx="${radius}"/>`;
   const circle = (r: number) => `<circle cx="${x + .5}" cy="${y + .5}" r="${r}"/>`;
   switch (shape) {
+    // Independently drawn geometry; origins and deliberate differences are in docs/STYLE-RESEARCH-2.md.
+    case 'gapped': return rect(.1, .1, .8, .8);
+    case 'contour': {
+      const north = darkAt(row - 1, column), south = darkAt(row + 1, column);
+      const west = darkAt(row, column - 1), east = darkAt(row, column + 1);
+      const a = !north && !west ? .38 : 0, b = !north && !east ? .38 : 0;
+      const c = !south && !east ? .38 : 0, d = !south && !west ? .38 : 0;
+      return `<path d="M${x + a} ${y}H${x + 1 - b}Q${x + 1} ${y} ${x + 1} ${y + b}V${y + 1 - c}Q${x + 1} ${y + 1} ${x + 1 - c} ${y + 1}H${x + d}Q${x} ${y + 1} ${x} ${y + 1 - d}V${y + a}Q${x} ${y} ${x + a} ${y}Z"/>`;
+    }
+    case 'horizontal-pill': return rect(.02, .1, .96, .8, .4) + (darkAt(row, column - 1) ? rect(0, .1, .5, .8) : '') + (darkAt(row, column + 1) ? rect(.5, .1, .5, .8) : '');
+    case 'vertical-pill': return rect(.1, .02, .8, .96, .4) + (darkAt(row - 1, column) ? rect(.1, 0, .8, .5) : '') + (darkAt(row + 1, column) ? rect(.1, .5, .8, .5) : '');
+    case 'diagonal': return `<path d="M${x + .23} ${y + .77}L${x + .77} ${y + .23}" fill="none" stroke="${strokeInk}" stroke-width=".56" stroke-linecap="round"/>`;
+    case 'scribble': {
+      const bend = .12 + random * .16;
+      return `<path d="M${x + .22} ${y + .24}C${x + .9} ${y + bend} ${x + .1} ${y + 1 - bend} ${x + .78} ${y + .76}M${x + .25} ${y + .72}Q${x + .5} ${y + .28} ${x + .75} ${y + .3}" fill="none" stroke="${strokeInk}" stroke-width=".36" stroke-linecap="round"/>`;
+    }
+    case 'flower': return circle(.32) + [[.32,.32],[.68,.32],[.32,.68],[.68,.68]].map(([dx,dy]) => `<circle cx="${x + dx}" cy="${y + dy}" r=".29"/>`).join('');
+    case 'gridlet': return circle(.16) + [0,.49].flatMap(dy => [0,.49].map(dx => rect(.035 + dx, .035 + dy, .44, .44, .035))).join('');
+    case 'arrow': return `<path d="M${x + .04} ${y + .22}H${x + .49}V${y + .03}L${x + .97} ${y + .5}L${x + .49} ${y + .97}V${y + .78}H${x + .04}Z"/>`;
+    case 'wave': return `<path d="M${x + .03} ${y + .17}Q${x + .27} ${y + .02} ${x + .5} ${y + .17}T${x + .97} ${y + .17}V${y + .83}Q${x + .73} ${y + .98} ${x + .5} ${y + .83}T${x + .03} ${y + .83}Z"/>`;
     case 'square': return rect();
     case 'rounded': return rect(.025, .025, .95, .95, .23);
     case 'dots': return circle(.47);
@@ -152,7 +172,7 @@ export function generateQR(options: GenerateOptions): GeneratedQR {
         const id = `cell-${n}-${border}-${row}-${column}`;
         clips.push(`<clipPath id="${id}"><rect x="${x}" y="${y}" width="1" height="1"/></clipPath>`);
         paths.push(`<g clip-path="url(#${id})">${options.moduleRenderer(context)}</g>`);
-      } else paths.push(recipe.material === 'none' ? moduleSVG(recipe.shape, context) : materialModule(recipe.material, context, recipe.detail));
+      } else paths.push(recipe.material === 'none' ? moduleSVG(recipe.shape, context, recipe.gradient ? `url(#${inkId})` : recipe.foreground) : materialModule(recipe.material, context, recipe.detail));
     }
   }
   const warnings: string[] = [];

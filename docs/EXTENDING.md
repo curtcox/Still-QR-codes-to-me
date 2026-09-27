@@ -67,3 +67,7 @@ Retain the source image, payload, strength, export size, mask choice, and packag
 The core deliberately has no model or API dependency. A future natural-language adapter can return a validated `Partial<Recipe>` and call `generateQR` just like the CLI or studio. This keeps prompt interpretation outside encoding and rendering.
 
 A future asset provider can generate local textures or illustrations for a border compositor, with an explicit seed/model provenance record. Artwork must remain outside the quiet zone unless a separately validated experimental renderer is used. The current version accepts local raster images through the image compositor. It does not place arbitrary logos over the matrix, call models, or implement an AI provider. Do not present that roadmap as a working feature.
+
+## Independent decoder assessment
+
+Run `npm run assess` after adding a style to compare jsQR and ZXing-C++ under identical conditions. Both must match the exact payload; a failure is written to `examples/generated/decoder-report.json` and produces exit status 2. ZXing is development-only and its WASM loads from the installed package. See [the second survey](STYLE-RESEARCH-2.md) for implemented shapes, source attribution, and validation limits.

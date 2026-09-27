@@ -1,4 +1,4 @@
-export const shapes = ['square', 'rounded', 'dots', 'diamond', 'squircle', 'horizontal', 'vertical', 'weave', 'mosaic', 'circuit', 'petal', 'halftone', 'classy', 'fluid', 'star', 'heart', 'cross', 'hexagon', 'stitch', 'bead', 'cube'] as const;
+export const shapes = ['square', 'rounded', 'dots', 'diamond', 'squircle', 'horizontal', 'vertical', 'weave', 'mosaic', 'circuit', 'petal', 'halftone', 'classy', 'fluid', 'star', 'heart', 'cross', 'hexagon', 'stitch', 'bead', 'cube', 'gapped', 'contour', 'horizontal-pill', 'vertical-pill', 'diagonal', 'scribble', 'flower', 'gridlet', 'arrow', 'wave'] as const;
 export const borders = ['none', 'frame', 'botanical', 'postage', 'orbit', 'deco', 'grid', 'ticket'] as const;
 export const textures = ['none', 'paper', 'speckle', 'lines'] as const;
 export const materials = ['none', 'bamboo', 'oak', 'beans', 'ants', 'fire', 'ice', 'clouds', 'ripples', 'leaves'] as const;

@@ -36,7 +36,9 @@
     "gallery": "node --import tsx scripts/gallery.ts",
     "preview": "vite preview --host 127.0.0.1",
     "test:browser": "playwright test",
-    "test:pages": "playwright test --config playwright.pages.config.ts"
+    "test:pages": "playwright test --config playwright.pages.config.ts",
+    "assess": "node --import tsx scripts/assess.ts",
+    "style-sheet": "node --import tsx scripts/style-sheet.ts"
   },
   "dependencies": {
     "jsqr": "^1.4.0",
@@ -49,6 +51,7 @@
     "@types/qrcode": "^1.5.5",
     "tsx": "^4.20.0",
     "typescript": "^5.9.0",
-    "vite": "^7.1.0"
+    "vite": "^7.1.0",
+    "zxing-wasm": "^3.1.4"
   }
 }

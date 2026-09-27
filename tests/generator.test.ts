@@ -49,7 +49,7 @@ test('seeded textures are deterministic and respond to the seed', () => {
 });
 test('research-derived presets expose source credits and SVG-native effects', () => {
   const credited = presets.filter(preset => preset.credit);
-  assert.equal(credited.length, 14);
+  assert.equal(credited.length, 24);
   for (const preset of credited) {
     assert.match(preset.credit!.url, /^https:\/\//);
     assert.ok(preset.credit!.name.length > 2);
