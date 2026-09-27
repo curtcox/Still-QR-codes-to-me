@@ -80,3 +80,27 @@ test('CLI batch writes exact-payload reports, overwritable sidecars, and a conta
     assert.equal(JSON.parse(await readFile(join(out,'report.json'),'utf8')).summary.failed,1);
   } finally { await rm(dir,{recursive:true,force:true}); }
 });
+
+test('batch modulePx entries override the CLI default and transparent exports retain alpha', async () => {
+  const dir=await mkdtemp(join(tmpdir(),'film-alpha-'));
+  try {
+    const manifest=join(dir,'manifest.json'),out=join(dir,'out');
+    const base={style:'mic',text:'https://example.com',ecc:'M',mode:'shelf',caption:''};
+    await writeFile(manifest,JSON.stringify([{...base,id:'default'},{...base,id:'override',modulePx:10}]));
+    await cli('--batch',manifest,'--out-dir',out,'--module-px','8','--transparent');
+    const sharp=(await import('sharp')).default;
+    for(const [id,pitch] of [['default',8],['override',10]] as const){
+      const meta=JSON.parse(await readFile(join(out,`${id}.json`),'utf8'));
+      assert.equal(meta.modulePx,pitch); assert.equal(meta.transparentSurround,true);
+      assert.notEqual(meta.frame.left,meta.frame.right);
+      const {data,info}=await sharp(await readFile(join(out,`${id}.png`))).ensureAlpha().raw().toBuffer({resolveWithObject:true});
+      assert.equal(data[3],0); assert.equal(data[(meta.codeBox.y*info.width+meta.codeBox.x)*4+3],255);
+    }
+    await cli('alpha','--style','mic','--module-px','8','--transparent','-o',join(dir,'single.png'));
+    assert.equal((await sharp(await readFile(join(dir,'single.png'))).ensureAlpha().raw().toBuffer())[3],0);
+    await cli('--batch',manifest,'--out-dir',out,'--module-px','8','--frame','none','--transparent');
+    const bare=JSON.parse(await readFile(join(out,'override.json'),'utf8'));
+    assert.equal(bare.modulePx,10);assert.equal(bare.image.width,(bare.moduleCount+8)*10);
+    assert.deepEqual(bare.frame,{top:0,right:0,bottom:0,left:0});
+  } finally {await rm(dir,{recursive:true,force:true});}
+});

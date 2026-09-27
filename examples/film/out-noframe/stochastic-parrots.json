@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "style": "feathers",
+  "text": "https://doi.org/10.1145/3442188.3445922",
+  "transparentSurround": true,
+  "codeBox": {
+    "x": 0,
+    "y": 0,
+    "width": 296,
+    "height": 296
+  },
+  "moduleCount": 29,
+  "modulePx": 8,
+  "version": 3,
+  "ecc": "M",
+  "frame": {
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0
+  },
+  "image": {
+    "width": 296,
+    "height": 296
+  },
+  "id": "stochastic-parrots",
+  "mode": "shelf"
+}

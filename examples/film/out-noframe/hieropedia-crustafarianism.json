@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "style": "lobster-shell",
+  "text": "https://hieropedia.org/religions/crustafarianism/",
+  "transparentSurround": true,
+  "codeBox": {
+    "x": 0,
+    "y": 0,
+    "width": 392,
+    "height": 392
+  },
+  "moduleCount": 41,
+  "modulePx": 8,
+  "version": 6,
+  "ecc": "H",
+  "frame": {
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0
+  },
+  "image": {
+    "width": 392,
+    "height": 392
+  },
+  "id": "hieropedia-crustafarianism",
+  "mode": "feature"
+}

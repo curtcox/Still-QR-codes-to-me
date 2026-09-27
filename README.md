@@ -57,14 +57,15 @@ The root export is browser-compatible. The `/node` export adds Sharp-based PNG o
 
 ## Film production
 
-The [Frog or Axolotl brief and exports](examples/film/README.md) add 47 themed styles (45 new IDs plus restyled `circuit` and `honeycomb`). Frames and unlettered props sit outside the quiet zone; scanner-facing ink is flat and at least 7:1 against its paper.
+The [Frog or Axolotl brief and exports](examples/film/README.md) add 47 themed styles (45 new IDs plus restyled `circuit` and `honeycomb`). Large painted hero props sit outside the quiet zone, with up to 14 modules of frame on each side; scanner-facing ink is flat and at least 7:1 against its paper.
 
 ```sh
-npm run qr -- --batch examples/film/manifest.json --out-dir examples/film/out
+npm run qr -- --batch examples/film/manifest.json --out-dir examples/film/out --module-px 8 --transparent
+npm run qr -- --batch examples/film/manifest.json --out-dir examples/film/out-noframe --module-px 8 --transparent --frame none
 npm run qr -- 'https://example.com' --style bat --ecc M --module-px 6 --frame none -o bat.png
 ```
 
-Batch writes PNGs, geometry sidecars, per-condition reports, and a 47-style contact sheet. It checks all 117 exact manifest payloads at 380px, plus 480px for features, with jsQR and ZXing. `--module-px` gives integral module pitch; `--frame none` keeps only the code and its four-module quiet zone. Ordinary procedural PNG exports also get same-stem JSON sidecars. Single exports preserve existing files; batch exports may overwrite them. See the [film output contract](examples/film/README.md) for coordinates, exit codes, and deterministic reproduction.
+Batch writes PNGs, geometry sidecars, per-condition reports, and a 47-style contact sheet. It checks all 117 exact manifest payloads at 380px, plus 480px for features, with jsQR and ZXing. `--module-px` gives integral module pitch, with optional per-entry `modulePx` overrides. `--transparent` preserves the opaque cream plate while leaving unpainted surroundings transparent; `--frame none` keeps only the code and its four-module quiet zone. Ordinary procedural PNG exports also get same-stem JSON sidecars. Single exports preserve existing files; batch exports may overwrite them. See the [film output contract](examples/film/README.md) for coordinates, exit codes, and deterministic reproduction.
 
 ## Image integration
 

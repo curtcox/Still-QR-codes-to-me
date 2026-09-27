@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "style": "bat",
+  "text": "https://en.wikipedia.org/wiki/What_Is_It_Like_to_Be_a_Bat%3F",
+  "transparentSurround": true,
+  "codeBox": {
+    "x": 0,
+    "y": 0,
+    "width": 328,
+    "height": 328
+  },
+  "moduleCount": 33,
+  "modulePx": 8,
+  "version": 4,
+  "ecc": "M",
+  "frame": {
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0
+  },
+  "image": {
+    "width": 328,
+    "height": 328
+  },
+  "id": "nagel-bat",
+  "mode": "shelf"
+}

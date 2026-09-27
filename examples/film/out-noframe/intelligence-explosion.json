@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "style": "flame",
+  "text": "https://en.wikipedia.org/wiki/Technological_singularity",
+  "transparentSurround": true,
+  "codeBox": {
+    "x": 0,
+    "y": 0,
+    "width": 328,
+    "height": 328
+  },
+  "moduleCount": 33,
+  "modulePx": 8,
+  "version": 4,
+  "ecc": "M",
+  "frame": {
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0
+  },
+  "image": {
+    "width": 328,
+    "height": 328
+  },
+  "id": "intelligence-explosion",
+  "mode": "shelf"
+}

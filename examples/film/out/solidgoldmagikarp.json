@@ -2,25 +2,26 @@
   "schemaVersion": 1,
   "style": "gold-scales",
   "text": "https://www.lesswrong.com/posts/aPeJE8bSo6rAFoLqg",
+  "transparentSurround": true,
   "codeBox": {
-    "x": 59.07692307692308,
-    "y": 59.07692307692308,
-    "width": 361.84615384615387,
-    "height": 361.84615384615387
+    "x": 64,
+    "y": 112,
+    "width": 392,
+    "height": 392
   },
   "moduleCount": 41,
-  "modulePx": 7.384615384615385,
+  "modulePx": 8,
   "version": 6,
   "ecc": "H",
   "frame": {
-    "top": 59.07692307692308,
-    "right": 59.07692307692308,
-    "bottom": 59.07692307692308,
-    "left": 59.07692307692308
+    "top": 112,
+    "right": 64,
+    "bottom": 16,
+    "left": 64
   },
   "image": {
-    "width": 480,
-    "height": 480
+    "width": 520,
+    "height": 520
   },
   "id": "solidgoldmagikarp",
   "mode": "feature"

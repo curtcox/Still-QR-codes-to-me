@@ -2,25 +2,26 @@
   "schemaVersion": 1,
   "style": "winged-sandal",
   "text": "https://nousresearch.com/",
+  "transparentSurround": true,
   "codeBox": {
-    "x": 62.04081632653061,
-    "y": 62.04081632653061,
-    "width": 255.91836734693877,
-    "height": 255.91836734693877
+    "x": 16,
+    "y": 64,
+    "width": 264,
+    "height": 264
   },
   "moduleCount": 25,
-  "modulePx": 7.755102040816326,
+  "modulePx": 8,
   "version": 2,
   "ecc": "M",
   "frame": {
-    "top": 62.04081632653061,
-    "right": 62.04081632653061,
-    "bottom": 62.04081632653061,
-    "left": 62.04081632653061
+    "top": 64,
+    "right": 112,
+    "bottom": 64,
+    "left": 16
   },
   "image": {
-    "width": 380,
-    "height": 380
+    "width": 392,
+    "height": 392
   },
   "id": "nous-research",
   "mode": "shelf"

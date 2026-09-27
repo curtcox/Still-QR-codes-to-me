@@ -2,25 +2,26 @@
   "schemaVersion": 1,
   "style": "compass",
   "text": "https://theinsideview.ai/connor2",
+  "transparentSurround": true,
   "codeBox": {
-    "x": 67.36842105263158,
-    "y": 67.36842105263158,
-    "width": 345.2631578947368,
-    "height": 345.2631578947368
+    "x": 64,
+    "y": 112,
+    "width": 328,
+    "height": 328
   },
   "moduleCount": 33,
-  "modulePx": 8.421052631578947,
+  "modulePx": 8,
   "version": 4,
   "ecc": "H",
   "frame": {
-    "top": 67.36842105263158,
-    "right": 67.36842105263158,
-    "bottom": 67.36842105263158,
-    "left": 67.36842105263158
+    "top": 112,
+    "right": 64,
+    "bottom": 16,
+    "left": 64
   },
   "image": {
-    "width": 480,
-    "height": 480
+    "width": 456,
+    "height": 456
   },
   "id": "connor2",
   "mode": "feature"

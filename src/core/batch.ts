@@ -9,6 +9,7 @@ import type { GenerateOptions, GeneratedQR } from './types.js';
 
 export interface FilmEntry {
   id: string; style: string; text: string; ecc: 'L' | 'M' | 'Q' | 'H';
+  modulePx?: number;
   mode: 'feature' | 'shelf' | 'card'; caption: string;
 }
 export function validateManifest(input: unknown): FilmEntry[] {
@@ -18,6 +19,7 @@ export function validateManifest(input: unknown): FilmEntry[] {
     if (!entry || typeof entry !== 'object' || typeof entry.id !== 'string' || !/^[a-z0-9][a-z0-9-]*$/.test(entry.id) || ['report','sheet'].includes(entry.id) || ids.has(entry.id)) throw new Error('Manifest ids must be unique, safe filenames (report and sheet are reserved).');
     ids.add(entry.id);
     if (typeof entry.style !== 'string' || typeof entry.text !== 'string' || !entry.text || typeof entry.caption !== 'string' || !['L','M','Q','H'].includes(entry.ecc) || !['feature','shelf','card'].includes(entry.mode)) throw new Error(`Invalid manifest entry: ${entry.id}`);
+    if (entry.modulePx !== undefined && (!Number.isInteger(entry.modulePx) || entry.modulePx < 1 || entry.modulePx > 128)) throw new Error(`Invalid modulePx: ${entry.id}`);
     getPreset(entry.style);
   }
   return input as FilmEntry[];
@@ -25,27 +27,28 @@ export function validateManifest(input: unknown): FilmEntry[] {
 export function sidecar(result: GeneratedQR, text: string) {
   return { schemaVersion: 1, style: result.style.id, text, ...result.geometry };
 }
-export async function runBatch(manifestPath: string, outDir: string, options: Pick<GenerateOptions, 'modulePx' | 'frame'> = {}) {
+export async function runBatch(manifestPath: string, outDir: string, options: Pick<GenerateOptions, 'modulePx' | 'frame' | 'transparent'> = {}) {
   const entries = validateManifest(JSON.parse(await readFile(manifestPath, 'utf8')));
   // Preflight all entries before overwriting any outputs.
-  for (const entry of entries) generateQR({ text: entry.text, style: entry.style, errorCorrection: entry.ecc, ...options });
+  for (const entry of entries) generateQR({ text: entry.text, style: entry.style, errorCorrection: entry.ecc, ...options, modulePx: entry.modulePx ?? options.modulePx });
   await mkdir(outDir, { recursive: true });
   const report = [];
   const tiles: { entry: FilmEntry; png: Buffer }[] = [];
   const styles = new Set<string>();
   for (const entry of entries) {
+    const modulePx = entry.modulePx ?? options.modulePx;
     const sizes = entry.mode === 'feature' ? [380,480] : [380];
     const checks = [];
     let output: GeneratedQR | undefined;
     for (const size of sizes) {
-      const code = generateQR({ text: entry.text, style: entry.style, errorCorrection: entry.ecc, size, frame: options.frame });
+      const code = generateQR({ text: entry.text, style: entry.style, errorCorrection: entry.ecc, size, frame: options.frame, transparent: options.transparent });
       const existing = await checkScannability(code.svg, entry.text);
       const independent = await compareDecoders(code.svg, entry.text);
       checks.push({ size, existing, independent, passed: existing.every(c=>c.passed) && independent.every(c=>c.jsQR && c.zxing) });
       output = code;
     }
-    if (options.modulePx !== undefined) {
-      output = generateQR({ text: entry.text, style: entry.style, errorCorrection: entry.ecc, ...options });
+    if (modulePx !== undefined) {
+      output = generateQR({ text: entry.text, style: entry.style, errorCorrection: entry.ecc, ...options, modulePx });
       const existing = await checkScannability(output.svg, entry.text), independent = await compareDecoders(output.svg, entry.text);
       checks.push({ size: output.size, existing, independent, passed: existing.every(c=>c.passed) && independent.every(c=>c.jsQR && c.zxing) });
     }
@@ -63,7 +66,7 @@ export async function runBatch(manifestPath: string, outDir: string, options: Pi
     const conditions = check.independent.map((c,i) => `${c.condition}: ${check.existing[i].passed && c.jsQR && c.zxing ? 'PASS' : 'FAIL'} (jsQR ${check.existing[i].passed && c.jsQR ? '✓':'✗'}, ZXing ${c.zxing?'✓':'✗'})`).join('; ');
     return `| ${entry.id} | ${entry.style} | ${check.size} | ${check.passed?'PASS':'FAIL'} | ${conditions} |`;
   }));
-  await writeFile(join(outDir,'report.md'), `# Film QR scan report\n\n${summary.passed}/${summary.entries} entries passed; ${summary.styles} styles. Exact payload and manifest ECC; four conditions in both decoders. Feature entries tested at 380px and 480px.\n\n| Entry | Style | Pixels | Result | Conditions |\n| --- | --- | --- | --- | --- |\n${rows.join('\n')}\n`);
+  await writeFile(join(outDir,'report.md'), `# Film QR scan report\n\n${summary.passed}/${summary.entries} entries passed; ${summary.styles} styles. Exact payload and manifest ECC; four conditions in both decoders. Feature entries tested at 380px and 480px; whole-pixel exports additionally tested at their actual size. Transparent surrounds are composited on white for scan checks.\n\n| Entry | Style | Pixels | Result | Conditions |\n| --- | --- | --- | --- | --- |\n${rows.join('\n')}\n`);
   // Labels belong only to this review sheet, never to exported film artwork.
   const columns = 7, cell = 240, rowsCount = Math.ceil(tiles.length/columns);
   const layers = await Promise.all(tiles.map(async ({entry,png},i) => ({ input: await sharp(png).resize(220,220).png().toBuffer(), left: i%columns*cell+10, top: Math.floor(i/columns)*270+10 })));

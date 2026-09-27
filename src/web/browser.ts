@@ -10,6 +10,8 @@ export async function rasterize(svg: string, size: number, blur = false): Promis
     canvas.width = canvas.height = size;
     const ctx = canvas.getContext('2d', { willReadFrequently: true });
     if (!ctx) throw new Error('Canvas is unavailable in this browser.');
+    ctx.fillStyle = '#ffffff';
+    ctx.fillRect(0, 0, size, size);
     if (blur) ctx.filter = 'blur(0.6px)';
     ctx.drawImage(image, 0, 0, size, size);
     return canvas;

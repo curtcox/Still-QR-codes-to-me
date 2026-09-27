@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "style": "mirror",
+  "text": "https://en.wikipedia.org/wiki/Mirror_test",
+  "transparentSurround": true,
+  "codeBox": {
+    "x": 0,
+    "y": 0,
+    "width": 296,
+    "height": 296
+  },
+  "moduleCount": 29,
+  "modulePx": 8,
+  "version": 3,
+  "ecc": "M",
+  "frame": {
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0
+  },
+  "image": {
+    "width": 296,
+    "height": 296
+  },
+  "id": "mirror-test",
+  "mode": "shelf"
+}

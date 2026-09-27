@@ -2,25 +2,26 @@
   "schemaVersion": 1,
   "style": "circuit",
   "text": "https://en.wikipedia.org/wiki/Skynet_(Terminator)",
+  "transparentSurround": true,
   "codeBox": {
-    "x": 53.333333333333336,
-    "y": 53.333333333333336,
-    "width": 273.33333333333337,
-    "height": 273.33333333333337
+    "x": 64,
+    "y": 112,
+    "width": 328,
+    "height": 328
   },
   "moduleCount": 33,
-  "modulePx": 6.666666666666667,
+  "modulePx": 8,
   "version": 4,
   "ecc": "M",
   "frame": {
-    "top": 53.333333333333336,
-    "right": 53.333333333333336,
-    "bottom": 53.333333333333336,
-    "left": 53.333333333333336
+    "top": 112,
+    "right": 64,
+    "bottom": 16,
+    "left": 64
   },
   "image": {
-    "width": 380,
-    "height": 380
+    "width": 456,
+    "height": 456
   },
   "id": "skynet",
   "mode": "shelf"

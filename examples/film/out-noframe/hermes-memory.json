@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "style": "winged-sandal",
+  "text": "https://hermes-agent.nousresearch.com/docs/user-guide/features/memory",
+  "transparentSurround": true,
+  "codeBox": {
+    "x": 0,
+    "y": 0,
+    "width": 456,
+    "height": 456
+  },
+  "moduleCount": 49,
+  "modulePx": 8,
+  "version": 8,
+  "ecc": "H",
+  "frame": {
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0
+  },
+  "image": {
+    "width": 456,
+    "height": 456
+  },
+  "id": "hermes-memory",
+  "mode": "feature"
+}

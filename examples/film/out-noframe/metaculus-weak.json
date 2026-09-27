@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "style": "dial",
+  "text": "https://www.metaculus.com/questions/3479/date-weakly-general-ai-is-publicly-known/",
+  "transparentSurround": true,
+  "codeBox": {
+    "x": 0,
+    "y": 0,
+    "width": 360,
+    "height": 360
+  },
+  "moduleCount": 37,
+  "modulePx": 8,
+  "version": 5,
+  "ecc": "M",
+  "frame": {
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0
+  },
+  "image": {
+    "width": 360,
+    "height": 360
+  },
+  "id": "metaculus-weak",
+  "mode": "card"
+}

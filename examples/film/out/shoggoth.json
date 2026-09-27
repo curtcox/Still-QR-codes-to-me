@@ -2,25 +2,26 @@
   "schemaVersion": 1,
   "style": "tentacles",
   "text": "https://en.wikipedia.org/wiki/Shoggoth",
+  "transparentSurround": true,
   "codeBox": {
-    "x": 62.950819672131146,
-    "y": 62.950819672131146,
-    "width": 354.0983606557377,
-    "height": 354.0983606557377
+    "x": 64,
+    "y": 112,
+    "width": 360,
+    "height": 360
   },
   "moduleCount": 37,
-  "modulePx": 7.868852459016393,
+  "modulePx": 8,
   "version": 5,
   "ecc": "H",
   "frame": {
-    "top": 62.950819672131146,
-    "right": 62.950819672131146,
-    "bottom": 62.950819672131146,
-    "left": 62.950819672131146
+    "top": 112,
+    "right": 64,
+    "bottom": 16,
+    "left": 64
   },
   "image": {
-    "width": 480,
-    "height": 480
+    "width": 488,
+    "height": 488
   },
   "id": "shoggoth",
   "mode": "feature"

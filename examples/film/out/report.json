@@ -61,6 +61,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 424,
+          "existing": [
+            {
+              "name": "Export (424px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -80,6 +124,50 @@
           "existing": [
             {
               "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 520,
+          "existing": [
+            {
+              "name": "Export (520px)",
               "passed": true
             },
             {
@@ -175,6 +263,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 424,
+          "existing": [
+            {
+              "name": "Export (424px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -194,6 +326,50 @@
           "existing": [
             {
               "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 392,
+          "existing": [
+            {
+              "name": "Export (392px)",
               "passed": true
             },
             {
@@ -289,6 +465,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 392,
+          "existing": [
+            {
+              "name": "Export (392px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -308,6 +528,50 @@
           "existing": [
             {
               "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 456,
+          "existing": [
+            {
+              "name": "Export (456px)",
               "passed": true
             },
             {
@@ -447,6 +711,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 488,
+          "existing": [
+            {
+              "name": "Export (488px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -466,6 +774,50 @@
           "existing": [
             {
               "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 456,
+          "existing": [
+            {
+              "name": "Export (456px)",
               "passed": true
             },
             {
@@ -561,6 +913,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 456,
+          "existing": [
+            {
+              "name": "Export (456px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -580,6 +976,50 @@
           "existing": [
             {
               "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 456,
+          "existing": [
+            {
+              "name": "Export (456px)",
               "passed": true
             },
             {
@@ -675,6 +1115,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 424,
+          "existing": [
+            {
+              "name": "Export (424px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -694,6 +1178,50 @@
           "existing": [
             {
               "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 456,
+          "existing": [
+            {
+              "name": "Export (456px)",
               "passed": true
             },
             {
@@ -833,6 +1361,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 488,
+          "existing": [
+            {
+              "name": "Export (488px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -852,6 +1424,50 @@
           "existing": [
             {
               "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 456,
+          "existing": [
+            {
+              "name": "Export (456px)",
               "passed": true
             },
             {
@@ -947,6 +1563,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 456,
+          "existing": [
+            {
+              "name": "Export (456px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -966,6 +1626,50 @@
           "existing": [
             {
               "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 520,
+          "existing": [
+            {
+              "name": "Export (520px)",
               "passed": true
             },
             {
@@ -1061,6 +1765,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 552,
+          "existing": [
+            {
+              "name": "Export (552px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -1080,6 +1828,50 @@
           "existing": [
             {
               "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 552,
+          "existing": [
+            {
+              "name": "Export (552px)",
               "passed": true
             },
             {
@@ -1219,6 +2011,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 648,
+          "existing": [
+            {
+              "name": "Export (648px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -1238,6 +2074,50 @@
           "existing": [
             {
               "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 520,
+          "existing": [
+            {
+              "name": "Export (520px)",
               "passed": true
             },
             {
@@ -1333,6 +2213,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 520,
+          "existing": [
+            {
+              "name": "Export (520px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -1352,6 +2276,50 @@
           "existing": [
             {
               "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 424,
+          "existing": [
+            {
+              "name": "Export (424px)",
               "passed": true
             },
             {
@@ -1447,6 +2415,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 456,
+          "existing": [
+            {
+              "name": "Export (456px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -1466,6 +2478,50 @@
           "existing": [
             {
               "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 424,
+          "existing": [
+            {
+              "name": "Export (424px)",
               "passed": true
             },
             {
@@ -1561,6 +2617,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 456,
+          "existing": [
+            {
+              "name": "Export (456px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -1580,6 +2680,50 @@
           "existing": [
             {
               "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 456,
+          "existing": [
+            {
+              "name": "Export (456px)",
               "passed": true
             },
             {
@@ -1675,6 +2819,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 424,
+          "existing": [
+            {
+              "name": "Export (424px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -1694,6 +2882,50 @@
           "existing": [
             {
               "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 456,
+          "existing": [
+            {
+              "name": "Export (456px)",
               "passed": true
             },
             {
@@ -1789,6 +3021,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 424,
+          "existing": [
+            {
+              "name": "Export (424px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -1808,6 +3084,50 @@
           "existing": [
             {
               "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 584,
+          "existing": [
+            {
+              "name": "Export (584px)",
               "passed": true
             },
             {
@@ -1903,6 +3223,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 456,
+          "existing": [
+            {
+              "name": "Export (456px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -1922,6 +3286,50 @@
           "existing": [
             {
               "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 424,
+          "existing": [
+            {
+              "name": "Export (424px)",
               "passed": true
             },
             {
@@ -2017,6 +3425,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 456,
+          "existing": [
+            {
+              "name": "Export (456px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -2036,6 +3488,50 @@
           "existing": [
             {
               "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 456,
+          "existing": [
+            {
+              "name": "Export (456px)",
               "passed": true
             },
             {
@@ -2131,6 +3627,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 456,
+          "existing": [
+            {
+              "name": "Export (456px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -2150,6 +3690,50 @@
           "existing": [
             {
               "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 552,
+          "existing": [
+            {
+              "name": "Export (552px)",
               "passed": true
             },
             {
@@ -2245,6 +3829,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 456,
+          "existing": [
+            {
+              "name": "Export (456px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -2264,6 +3892,50 @@
           "existing": [
             {
               "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 424,
+          "existing": [
+            {
+              "name": "Export (424px)",
               "passed": true
             },
             {
@@ -2359,6 +4031,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 424,
+          "existing": [
+            {
+              "name": "Export (424px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -2378,6 +4094,50 @@
           "existing": [
             {
               "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 456,
+          "existing": [
+            {
+              "name": "Export (456px)",
               "passed": true
             },
             {
@@ -2517,6 +4277,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 520,
+          "existing": [
+            {
+              "name": "Export (520px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -2574,6 +4378,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 424,
+          "existing": [
+            {
+              "name": "Export (424px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -2593,6 +4441,50 @@
           "existing": [
             {
               "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 392,
+          "existing": [
+            {
+              "name": "Export (392px)",
               "passed": true
             },
             {
@@ -2732,6 +4624,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 584,
+          "existing": [
+            {
+              "name": "Export (584px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -2751,6 +4687,50 @@
           "existing": [
             {
               "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 392,
+          "existing": [
+            {
+              "name": "Export (392px)",
               "passed": true
             },
             {
@@ -2846,6 +4826,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 392,
+          "existing": [
+            {
+              "name": "Export (392px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -2865,6 +4889,50 @@
           "existing": [
             {
               "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 456,
+          "existing": [
+            {
+              "name": "Export (456px)",
               "passed": true
             },
             {
@@ -2960,6 +5028,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 456,
+          "existing": [
+            {
+              "name": "Export (456px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -2979,6 +5091,50 @@
           "existing": [
             {
               "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 424,
+          "existing": [
+            {
+              "name": "Export (424px)",
               "passed": true
             },
             {
@@ -3074,6 +5230,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 424,
+          "existing": [
+            {
+              "name": "Export (424px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -3093,6 +5293,50 @@
           "existing": [
             {
               "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 392,
+          "existing": [
+            {
+              "name": "Export (392px)",
               "passed": true
             },
             {
@@ -3188,6 +5432,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 424,
+          "existing": [
+            {
+              "name": "Export (424px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -3207,6 +5495,50 @@
           "existing": [
             {
               "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 488,
+          "existing": [
+            {
+              "name": "Export (488px)",
               "passed": true
             },
             {
@@ -3302,6 +5634,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 456,
+          "existing": [
+            {
+              "name": "Export (456px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -3321,6 +5697,50 @@
           "existing": [
             {
               "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 456,
+          "existing": [
+            {
+              "name": "Export (456px)",
               "passed": true
             },
             {
@@ -3416,6 +5836,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 456,
+          "existing": [
+            {
+              "name": "Export (456px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -3435,6 +5899,50 @@
           "existing": [
             {
               "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 456,
+          "existing": [
+            {
+              "name": "Export (456px)",
               "passed": true
             },
             {
@@ -3574,6 +6082,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 520,
+          "existing": [
+            {
+              "name": "Export (520px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -3593,6 +6145,50 @@
           "existing": [
             {
               "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 424,
+          "existing": [
+            {
+              "name": "Export (424px)",
               "passed": true
             },
             {
@@ -3688,6 +6284,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 456,
+          "existing": [
+            {
+              "name": "Export (456px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -3707,6 +6347,50 @@
           "existing": [
             {
               "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 456,
+          "existing": [
+            {
+              "name": "Export (456px)",
               "passed": true
             },
             {
@@ -3802,6 +6486,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 552,
+          "existing": [
+            {
+              "name": "Export (552px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -3821,6 +6549,50 @@
           "existing": [
             {
               "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 424,
+          "existing": [
+            {
+              "name": "Export (424px)",
               "passed": true
             },
             {
@@ -3916,6 +6688,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 424,
+          "existing": [
+            {
+              "name": "Export (424px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -3935,6 +6751,50 @@
           "existing": [
             {
               "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 424,
+          "existing": [
+            {
+              "name": "Export (424px)",
               "passed": true
             },
             {
@@ -4030,6 +6890,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 424,
+          "existing": [
+            {
+              "name": "Export (424px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -4049,6 +6953,50 @@
           "existing": [
             {
               "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 456,
+          "existing": [
+            {
+              "name": "Export (456px)",
               "passed": true
             },
             {
@@ -4188,6 +7136,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 552,
+          "existing": [
+            {
+              "name": "Export (552px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -4207,6 +7199,50 @@
           "existing": [
             {
               "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 520,
+          "existing": [
+            {
+              "name": "Export (520px)",
               "passed": true
             },
             {
@@ -4302,6 +7338,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 584,
+          "existing": [
+            {
+              "name": "Export (584px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -4321,6 +7401,50 @@
           "existing": [
             {
               "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 552,
+          "existing": [
+            {
+              "name": "Export (552px)",
               "passed": true
             },
             {
@@ -4460,6 +7584,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 488,
+          "existing": [
+            {
+              "name": "Export (488px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -4479,6 +7647,50 @@
           "existing": [
             {
               "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 424,
+          "existing": [
+            {
+              "name": "Export (424px)",
               "passed": true
             },
             {
@@ -4574,6 +7786,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 456,
+          "existing": [
+            {
+              "name": "Export (456px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -4593,6 +7849,50 @@
           "existing": [
             {
               "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 552,
+          "existing": [
+            {
+              "name": "Export (552px)",
               "passed": true
             },
             {
@@ -4688,6 +7988,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 552,
+          "existing": [
+            {
+              "name": "Export (552px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -4707,6 +8051,50 @@
           "existing": [
             {
               "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 456,
+          "existing": [
+            {
+              "name": "Export (456px)",
               "passed": true
             },
             {
@@ -4802,6 +8190,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 456,
+          "existing": [
+            {
+              "name": "Export (456px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -4821,6 +8253,50 @@
           "existing": [
             {
               "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 456,
+          "existing": [
+            {
+              "name": "Export (456px)",
               "passed": true
             },
             {
@@ -4916,6 +8392,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 456,
+          "existing": [
+            {
+              "name": "Export (456px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -4935,6 +8455,50 @@
           "existing": [
             {
               "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 456,
+          "existing": [
+            {
+              "name": "Export (456px)",
               "passed": true
             },
             {
@@ -5074,6 +8638,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 488,
+          "existing": [
+            {
+              "name": "Export (488px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -5093,6 +8701,50 @@
           "existing": [
             {
               "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 456,
+          "existing": [
+            {
+              "name": "Export (456px)",
               "passed": true
             },
             {
@@ -5188,6 +8840,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 456,
+          "existing": [
+            {
+              "name": "Export (456px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -5207,6 +8903,50 @@
           "existing": [
             {
               "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 520,
+          "existing": [
+            {
+              "name": "Export (520px)",
               "passed": true
             },
             {
@@ -5302,6 +9042,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 488,
+          "existing": [
+            {
+              "name": "Export (488px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -5321,6 +9105,50 @@
           "existing": [
             {
               "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 424,
+          "existing": [
+            {
+              "name": "Export (424px)",
               "passed": true
             },
             {
@@ -5416,6 +9244,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 456,
+          "existing": [
+            {
+              "name": "Export (456px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -5435,6 +9307,50 @@
           "existing": [
             {
               "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 456,
+          "existing": [
+            {
+              "name": "Export (456px)",
               "passed": true
             },
             {
@@ -5530,6 +9446,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 424,
+          "existing": [
+            {
+              "name": "Export (424px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -5549,6 +9509,50 @@
           "existing": [
             {
               "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 424,
+          "existing": [
+            {
+              "name": "Export (424px)",
               "passed": true
             },
             {
@@ -5644,6 +9648,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 424,
+          "existing": [
+            {
+              "name": "Export (424px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -5663,6 +9711,50 @@
           "existing": [
             {
               "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 456,
+          "existing": [
+            {
+              "name": "Export (456px)",
               "passed": true
             },
             {
@@ -5758,6 +9850,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 424,
+          "existing": [
+            {
+              "name": "Export (424px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -5777,6 +9913,50 @@
           "existing": [
             {
               "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 520,
+          "existing": [
+            {
+              "name": "Export (520px)",
               "passed": true
             },
             {
@@ -5872,6 +10052,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 424,
+          "existing": [
+            {
+              "name": "Export (424px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -5891,6 +10115,50 @@
           "existing": [
             {
               "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 424,
+          "existing": [
+            {
+              "name": "Export (424px)",
               "passed": true
             },
             {
@@ -5986,6 +10254,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 456,
+          "existing": [
+            {
+              "name": "Export (456px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -6005,6 +10317,50 @@
           "existing": [
             {
               "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 424,
+          "existing": [
+            {
+              "name": "Export (424px)",
               "passed": true
             },
             {
@@ -6100,6 +10456,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 488,
+          "existing": [
+            {
+              "name": "Export (488px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -6157,6 +10557,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 456,
+          "existing": [
+            {
+              "name": "Export (456px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -6176,6 +10620,50 @@
           "existing": [
             {
               "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 456,
+          "existing": [
+            {
+              "name": "Export (456px)",
               "passed": true
             },
             {
@@ -6315,6 +10803,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 456,
+          "existing": [
+            {
+              "name": "Export (456px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -6334,6 +10866,50 @@
           "existing": [
             {
               "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 552,
+          "existing": [
+            {
+              "name": "Export (552px)",
               "passed": true
             },
             {
@@ -6429,6 +11005,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 584,
+          "existing": [
+            {
+              "name": "Export (584px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -6448,6 +11068,50 @@
           "existing": [
             {
               "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 552,
+          "existing": [
+            {
+              "name": "Export (552px)",
               "passed": true
             },
             {
@@ -6543,6 +11207,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 488,
+          "existing": [
+            {
+              "name": "Export (488px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -6562,6 +11270,50 @@
           "existing": [
             {
               "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 488,
+          "existing": [
+            {
+              "name": "Export (488px)",
               "passed": true
             },
             {
@@ -6657,6 +11409,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 520,
+          "existing": [
+            {
+              "name": "Export (520px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -6676,6 +11472,50 @@
           "existing": [
             {
               "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 456,
+          "existing": [
+            {
+              "name": "Export (456px)",
               "passed": true
             },
             {
@@ -6771,6 +11611,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 424,
+          "existing": [
+            {
+              "name": "Export (424px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -6790,6 +11674,50 @@
           "existing": [
             {
               "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 392,
+          "existing": [
+            {
+              "name": "Export (392px)",
               "passed": true
             },
             {
@@ -6885,6 +11813,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 456,
+          "existing": [
+            {
+              "name": "Export (456px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -6904,6 +11876,50 @@
           "existing": [
             {
               "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 552,
+          "existing": [
+            {
+              "name": "Export (552px)",
               "passed": true
             },
             {
@@ -6999,6 +12015,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 424,
+          "existing": [
+            {
+              "name": "Export (424px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -7056,6 +12116,50 @@
             }
           ],
           "passed": true
+        },
+        {
+          "size": 552,
+          "existing": [
+            {
+              "name": "Export (552px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
         }
       ]
     },
@@ -7075,6 +12179,50 @@
           "existing": [
             {
               "name": "Export (380px)",
+              "passed": true
+            },
+            {
+              "name": "Reduced (256px)",
+              "passed": true
+            },
+            {
+              "name": "Blur (256px, σ 0.6)",
+              "passed": true
+            },
+            {
+              "name": "Low contrast (256px)",
+              "passed": true
+            }
+          ],
+          "independent": [
+            {
+              "condition": "export",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "reduced",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "blur",
+              "jsQR": true,
+              "zxing": true
+            },
+            {
+              "condition": "contrast",
+              "jsQR": true,
+              "zxing": true
+            }
+          ],
+          "passed": true
+        },
+        {
+          "size": 520,
+          "existing": [
+            {
+              "name": "Export (520px)",
               "passed": true
             },
             {

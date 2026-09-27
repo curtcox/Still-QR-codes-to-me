@@ -2,25 +2,26 @@
   "schemaVersion": 1,
   "style": "lobster-shell",
   "text": "https://en.wikipedia.org/wiki/Moltbook",
+  "transparentSurround": true,
   "codeBox": {
-    "x": 57.35849056603774,
-    "y": 57.35849056603774,
-    "width": 265.2830188679245,
-    "height": 265.2830188679245
+    "x": 16,
+    "y": 64,
+    "width": 296,
+    "height": 296
   },
   "moduleCount": 29,
-  "modulePx": 7.169811320754717,
+  "modulePx": 8,
   "version": 3,
   "ecc": "M",
   "frame": {
-    "top": 57.35849056603774,
-    "right": 57.35849056603774,
-    "bottom": 57.35849056603774,
-    "left": 57.35849056603774
+    "top": 64,
+    "right": 112,
+    "bottom": 64,
+    "left": 16
   },
   "image": {
-    "width": 380,
-    "height": 380
+    "width": 424,
+    "height": 424
   },
   "id": "moltbook-wiki",
   "mode": "shelf"

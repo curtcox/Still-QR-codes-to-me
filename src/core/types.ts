@@ -49,6 +49,8 @@ export interface GenerateOptions {
   size?: number;
   modulePx?: number;
   frame?: 'none' | 'preset';
+  /** Keep the QR plate opaque; omit only the surrounding canvas background. */
+  transparent?: boolean;
   errorCorrection?: 'L' | 'M' | 'Q' | 'H';
   /** Trusted code hook. Replaces data-module artwork only; structural modules remain intact. */
   moduleRenderer?: ModuleRenderer;
@@ -73,6 +75,7 @@ export interface GeneratedQR {
   contrast: number;
   warnings: string[];
   geometry: {
+    transparentSurround: boolean;
     codeBox: { x: number; y: number; width: number; height: number };
     moduleCount: number; modulePx: number; version: number; ecc: 'L' | 'M' | 'Q' | 'H';
     frame: { top: number; right: number; bottom: number; left: number };

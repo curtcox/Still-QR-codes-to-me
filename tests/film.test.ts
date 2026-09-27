@@ -19,8 +19,10 @@ test('film manifest has all 117 exact payloads and 47 unique styles', () => {
   }
 });
 for (const entry of manifest) test(`film ${entry.id}: exact payload at required ECC and film sizes`, async () => {
-  for (const size of entry.mode === 'feature' ? [380,480] : [380]) {
-    const code=generateQR({text:entry.text,style:entry.style,errorCorrection:entry.ecc,size});
+  const variants = [...(entry.mode === 'feature' ? [380,480] : [380]).map(size=>({size})), {modulePx:entry.modulePx ?? 8,transparent:true}, {modulePx:entry.modulePx ?? 8,transparent:true,frame:'none' as const}];
+  for (const variant of variants) {
+    const code=generateQR({text:entry.text,style:entry.style,errorCorrection:entry.ecc,...variant});
+    const size=code.size;
     const existing=await checkScannability(code.svg,entry.text), independent=await compareDecoders(code.svg,entry.text);
     assert.ok(existing.every(c=>c.passed), `${size}: ${JSON.stringify(existing)}`);
     assert.ok(independent.every(c=>c.jsQR && c.zxing),`${size}: ${JSON.stringify(independent)}`);
@@ -37,13 +39,13 @@ test('every film scene preserves the quiet zone and reserved non-finder cells ex
     const paper=rgb(result.recipe.background), ink=rgb(result.recipe.foreground);
     const pixel=(x:number,y:number)=>[...data.subarray((y*info.width+x)*3,(y*info.width+x)*3+3)];
     const b=result.geometry.codeBox;
-    assert.equal(b.x,32); assert.equal(b.width,(matrix.size+8)*4);
+    assert.ok(Object.values(result.geometry.frame).every(value=>Number.isInteger(value) && value<=56)); assert.equal(b.width,(matrix.size+8)*4);
     for(let y=b.y;y<b.y+b.height;y++) for(let x: number=b.x;x<b.x+b.width;x++) {
       if(x<b.x+16 || x>=b.x+b.width-16 || y<b.y+16 || y>=b.y+b.height-16) assert.deepEqual(pixel(x,y),paper,`${style}: quiet zone ${x},${y}`);
     }
     for(let row=0;row<matrix.size;row++)for(let col=0;col<matrix.size;col++) {
       const finder=(row<7&&col<7)||(row<7&&col>=matrix.size-7)||(row>=matrix.size-7&&col<7);
-      if(matrix.isReserved(row,col)&&!finder) assert.deepEqual(pixel(48+col*4+2,48+row*4+2),matrix.get(row,col)?ink:paper,style);
+      if(matrix.isReserved(row,col)&&!finder) assert.deepEqual(pixel(b.x+16+col*4+2,b.y+16+row*4+2),matrix.get(row,col)?ink:paper,style);
     }
     const bare=generateQR({text,style,errorCorrection:'M',modulePx:4,frame:'none'});
     assert.equal(bare.size,(matrix.size+8)*4); assert.equal(bare.geometry.codeBox.x,0);
@@ -62,4 +64,24 @@ test('whole-pixel metadata, determinism and film guardrails', () => {
   assert.throws(()=>generateQR({...options,recipe:{foreground:'#777777'}}));
   for (const id of ['../escape','report','sheet']) assert.throws(()=>validateManifest([{...manifest[0],id}]));
   assert.throws(()=>validateManifest([manifest[0],manifest[0]]));
+});
+
+test('hero props preserve opaque cream plates and transparent empty surrounds', async () => {
+  for (const style of filmStyles) {
+    const result=generateQR({text:'Transparent hero',style,modulePx:4,transparent:true});
+    assert.equal(result.geometry.transparentSurround,true);
+    assert.equal((result.svg.match(/data-film-hero=/g)??[]).length,1);
+    const {data,info}=await sharp(Buffer.from(result.svg)).ensureAlpha().raw().toBuffer({resolveWithObject:true});
+    const b=result.geometry.codeBox;
+    const alpha=(x:number,y:number)=>data[(y*info.width+x)*4+3];
+    assert.equal(alpha(0,0),0,style);
+    for(let y=b.y;y<b.y+b.height;y++)for(let x:number=b.x;x<b.x+b.width;x++) assert.equal(alpha(x,y),255,`${style}: opaque plate`);
+    const outer=[];
+    for(let y=0;y<info.height;y++)for(let x=0;x<info.width;x++)if(x<b.x||x>=b.x+b.width||y<b.y||y>=b.y+b.height)outer.push(alpha(x,y));
+    assert.ok(outer.some(a=>a===255),`${style}: visible hero`);
+    assert.ok(outer.some(a=>a===0),`${style}: empty transparent surround`);
+  }
+  assert.equal(getPreset('mic').recipe.background,'#F3EBDC');
+  assert.throws(()=>validateManifest([{...manifest[0],modulePx:2.5}]));
+  assert.throws(()=>validateManifest([{...manifest[0],modulePx:0}]));
 });

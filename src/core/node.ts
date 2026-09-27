@@ -17,7 +17,7 @@ export async function checkScannability(svg: string, text: string): Promise<Scan
   ];
   const results: ScanResult[] = [];
   for (const test of cases) {
-    let pipeline = sharp(input).resize(test.size, test.size);
+    let pipeline = sharp(input).flatten({ background: '#ffffff' }).resize(test.size, test.size);
     if (test.blur) pipeline = pipeline.blur(.6);
     const { data, info } = await pipeline.ensureAlpha().raw().toBuffer({ resolveWithObject: true });
     const pixels = new Uint8ClampedArray(data);

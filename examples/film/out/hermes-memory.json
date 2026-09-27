@@ -2,25 +2,26 @@
   "schemaVersion": 1,
   "style": "winged-sandal",
   "text": "https://hermes-agent.nousresearch.com/docs/user-guide/features/memory",
+  "transparentSurround": true,
   "codeBox": {
-    "x": 52.602739726027394,
-    "y": 52.602739726027394,
-    "width": 374.7945205479452,
-    "height": 374.7945205479452
+    "x": 16,
+    "y": 64,
+    "width": 456,
+    "height": 456
   },
   "moduleCount": 49,
-  "modulePx": 6.575342465753424,
+  "modulePx": 8,
   "version": 8,
   "ecc": "H",
   "frame": {
-    "top": 52.602739726027394,
-    "right": 52.602739726027394,
-    "bottom": 52.602739726027394,
-    "left": 52.602739726027394
+    "top": 64,
+    "right": 112,
+    "bottom": 64,
+    "left": 16
   },
   "image": {
-    "width": 480,
-    "height": 480
+    "width": 584,
+    "height": 584
   },
   "id": "hermes-memory",
   "mode": "feature"

@@ -1,4 +1,4 @@
-import { filmScene } from './film.js';
+import { filmScene, filmExtent } from './film.js';
 import { materialModule, materialField, materialSurround } from './materials.js';
 import QRCode from 'qrcode';
 import { getPreset } from './presets.js';
@@ -141,6 +141,7 @@ function texture(recipe: Recipe, size: number): string {
 export function generateQR(options: GenerateOptions): GeneratedQR {
   if (typeof options.text !== 'string' || options.text.length === 0) throw new Error('Enter a URL or some text to encode.');
   let size = options.size ?? 1024;
+  if (options.transparent !== undefined && typeof options.transparent !== 'boolean') throw new Error('transparent must be boolean.');
   if (options.frame !== undefined && !['none', 'preset'].includes(options.frame)) throw new Error('Frame must be none or preset.');
   if (options.modulePx !== undefined && (!Number.isInteger(options.modulePx) || options.modulePx < 1 || options.modulePx > 128)) throw new Error('modulePx must be an integer from 1 to 128.');
   if (!Number.isInteger(size) || size < 128 || size > 4096) throw new Error('Export size must be an integer between 128 and 4096 pixels.');
@@ -154,7 +155,8 @@ export function generateQR(options: GenerateOptions): GeneratedQR {
   const code = QRCode.create(options.text, { errorCorrectionLevel: errorCorrection });
   const n = code.modules.size;
   const border = options.frame === 'none' ? 0 : recipe.border.startsWith('film-') ? 8 : recipe.material !== 'none' ? 6 : recipe.border === 'none' && recipe.texture === 'none' ? 0 : 4;
-  const offset = border + 4, dimension = n + offset * 2;
+  const frame = options.frame !== 'none' && recipe.border.startsWith('film-') ? filmExtent(recipe.border.slice(5)) : { top: border, right: border, bottom: border, left: border };
+  const offsetX = frame.left + 4, offsetY = frame.top + 4, dimension = n + 8 + frame.left + frame.right;
   if (options.modulePx !== undefined) {
     if (options.size !== undefined) throw new Error('Choose size or modulePx, not both.');
     size = dimension * options.modulePx;
@@ -166,16 +168,16 @@ export function generateQR(options: GenerateOptions): GeneratedQR {
   const inkId = `ink-${recipe.foreground.slice(1)}-${recipe.accent.slice(1)}`;
   const structural: string[] = [];
   const finder: string[] = [
-    finderSVG(recipe.eye, offset, offset, recipe.foreground, recipe.background),
-    finderSVG(recipe.eye, offset + n - 7, offset, recipe.foreground, recipe.background),
-    finderSVG(recipe.eye, offset, offset + n - 7, recipe.foreground, recipe.background),
+    finderSVG(recipe.eye, offsetX, offsetY, recipe.foreground, recipe.background),
+    finderSVG(recipe.eye, offsetX + n - 7, offsetY, recipe.foreground, recipe.background),
+    finderSVG(recipe.eye, offsetX, offsetY + n - 7, recipe.foreground, recipe.background),
   ];
   const dataCells: string[] = [];
   const payloadHash = Array.from(options.text).reduce((hash, char) => Math.imul(hash ^ char.codePointAt(0)!, 16777619) >>> 0, 2166136261);
   const materialId = `mat-${recipe.material}-${n}-${border}-${recipe.seed}-${payloadHash}-${errorCorrection}-${code.maskPattern}`;
   for (let row = 0; row < n; row++) for (let column = 0; column < n; column++) {
     if (!darkAt(row, column)) continue;
-    const x = column + offset, y = row + offset;
+    const x = column + offsetX, y = row + offsetY;
     if (code.modules.isReserved(row, column)) {
       const inFinder = (row < 7 && column < 7) || (row < 7 && column >= n - 7) || (row >= n - 7 && column < 7);
       if (!inFinder) structural.push(`M${x} ${y}h1v1h-1z`);
@@ -207,10 +209,10 @@ export function generateQR(options: GenerateOptions): GeneratedQR {
   const depth = recipe.effect === 'extrude' ? `<g fill="${recipe.accent}" color="${recipe.accent}" opacity=".4" transform="translate(.11 .11)">${dataArt}<path d="${structural.join('')}"/>${finder.join('')}</g>` : recipe.effect === 'emboss' ? `<g fill="white" color="white" opacity=".28" transform="translate(-.07 -.07)">${dataArt}${finder.join('')}</g><g fill="${recipe.accent}" color="${recipe.accent}" opacity=".35" transform="translate(.07 .07)">${dataArt}${finder.join('')}</g>` : '';
   const filteredInk = recipe.effect === 'neon' || recipe.effect === 'shadow' ? `<g filter="url(#fx-${inkId})">${baseInk}</g>` : baseInk;
   const animatedInk = recipe.animation === 'pulse' ? `<g>${filteredInk}<animate attributeName="opacity" values="1;.88;1" dur="2.4s" repeatCount="indefinite"/></g>` : filteredInk;
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 ${dimension} ${dimension}" role="img" aria-label="Stylized QR code"><title>${escapeXML(style.name)} QR code</title><desc>${escapeXML(options.text)}</desc><defs>${clips.join('')}<linearGradient id="${inkId}" x1="0" y1="0" x2="1" y2="1">${gradientMotion}<stop stop-color="${recipe.foreground}"/><stop offset="1" stop-color="${recipe.accent}"/></linearGradient>${filterDefs}</defs><rect width="${dimension}" height="${dimension}" fill="${recipe.background}"/>${options.frame === 'none' ? '' : recipe.border.startsWith('film-') ? filmScene(recipe.border.slice(5), dimension, recipe) : texture(recipe, dimension) + decoration(recipe, dimension) + materialSurround(recipe, dimension)}<rect x="${border}" y="${border}" width="${n + 8}" height="${n + 8}" fill="${recipe.background}"/>${depth}${animatedInk}</svg>`;
-  const scale = size / dimension, extent = border * scale;
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 ${dimension} ${dimension}" role="img" aria-label="Stylized QR code"><title>${escapeXML(style.name)} QR code</title><desc>${escapeXML(options.text)}</desc><defs>${clips.join('')}<linearGradient id="${inkId}" x1="0" y1="0" x2="1" y2="1">${gradientMotion}<stop stop-color="${recipe.foreground}"/><stop offset="1" stop-color="${recipe.accent}"/></linearGradient>${filterDefs}</defs>${options.transparent ? '' : `<rect width="${dimension}" height="${dimension}" fill="${recipe.background}"/>`}${options.frame === 'none' ? '' : recipe.border.startsWith('film-') ? filmScene(recipe.border.slice(5), dimension, recipe, frame) : texture(recipe, dimension) + decoration(recipe, dimension) + materialSurround(recipe, dimension)}<rect x="${frame.left}" y="${frame.top}" width="${n + 8}" height="${n + 8}" fill="${recipe.background}"/>${depth}${animatedInk}</svg>`;
+  const scale = size / dimension;
   return { svg, recipe, style, size, moduleCount: n, version: code.version, contrast, warnings,
-    geometry: { codeBox: { x: extent, y: extent, width: (n + 8) * scale, height: (n + 8) * scale },
+    geometry: { transparentSurround: options.transparent ?? false, codeBox: { x: frame.left * scale, y: frame.top * scale, width: (n + 8) * scale, height: (n + 8) * scale },
       moduleCount: n, modulePx: scale, version: code.version, ecc: errorCorrection,
-      frame: { top: extent, right: extent, bottom: extent, left: extent }, image: { width: size, height: size } } };
+      frame: { top: frame.top * scale, right: frame.right * scale, bottom: frame.bottom * scale, left: frame.left * scale }, image: { width: size, height: size } } };
 }

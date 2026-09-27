@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "style": "blueprint",
+  "text": "https://www.technologyreview.com/2026/08/18/1142188/ai-recursive-self-improvement/",
+  "transparentSurround": true,
+  "codeBox": {
+    "x": 0,
+    "y": 0,
+    "width": 360,
+    "height": 360
+  },
+  "moduleCount": 37,
+  "modulePx": 8,
+  "version": 5,
+  "ecc": "M",
+  "frame": {
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0
+  },
+  "image": {
+    "width": 360,
+    "height": 360
+  },
+  "id": "mittr-rsi",
+  "mode": "shelf"
+}

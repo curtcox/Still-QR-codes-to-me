@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "style": "calendar",
+  "text": "https://www.apolo.us/blog-posts/ai-2027-in-2026-one-year-left-for-humanity",
+  "transparentSurround": true,
+  "codeBox": {
+    "x": 0,
+    "y": 0,
+    "width": 360,
+    "height": 360
+  },
+  "moduleCount": 37,
+  "modulePx": 8,
+  "version": 5,
+  "ecc": "M",
+  "frame": {
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0
+  },
+  "image": {
+    "width": 360,
+    "height": 360
+  },
+  "id": "apolo-ai2027",
+  "mode": "shelf"
+}

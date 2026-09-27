@@ -2,25 +2,26 @@
   "schemaVersion": 1,
   "style": "two-mics",
   "text": "https://www.nytimes.com/2023/02/16/technology/bing-chatbot-microsoft-chatgpt.html",
+  "transparentSurround": true,
   "codeBox": {
-    "x": 49.83606557377049,
-    "y": 49.83606557377049,
-    "width": 280.327868852459,
-    "height": 280.327868852459
+    "x": 16,
+    "y": 64,
+    "width": 360,
+    "height": 360
   },
   "moduleCount": 37,
-  "modulePx": 6.229508196721311,
+  "modulePx": 8,
   "version": 5,
   "ecc": "M",
   "frame": {
-    "top": 49.83606557377049,
-    "right": 49.83606557377049,
-    "bottom": 49.83606557377049,
-    "left": 49.83606557377049
+    "top": 64,
+    "right": 112,
+    "bottom": 64,
+    "left": 16
   },
   "image": {
-    "width": 380,
-    "height": 380
+    "width": 488,
+    "height": 488
   },
   "id": "roose-sydney",
   "mode": "shelf"

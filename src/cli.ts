@@ -7,6 +7,7 @@ import { checkScannability, toPNG, loadArtwork, imageQR, refineImageQR } from '.
 
 async function main() {
   const { values, positionals } = parseArgs({ allowPositionals: true, options: {
+    transparent: { type: 'boolean' },
     ecc: { type: 'string' }, 'module-px': { type: 'string' }, frame: { type: 'string' },
     batch: { type: 'string' }, 'out-dir': { type: 'string' },
     artwork: { type: 'string' }, strength: { type: 'string', default: '0.7' }, refine: { type: 'boolean' },
@@ -21,6 +22,7 @@ Usage: still-qr "https://example.com" --style botanical -o code.svg --check
        still-qr "Hello" --recipe recipe.json -o code.png --size 1024
        still-qr --list
 
+--transparent  Transparent surround; preserves the opaque quiet-zone plate
 --ecc     L, M, Q, or H (default: H; batch uses each manifest ECC)
 --module-px N  Integer pixels per module; determines size (cannot combine --size)
 --frame   none or preset; none exports just the code and its quiet zone
@@ -51,13 +53,13 @@ Payload and artwork stay local. No network calls or API keys required.`);
   if (values.batch) {
     if (!values['out-dir'] || positionals.length || values.out || values.style || values.recipe || values.artwork || values.ecc || values.size || values.refine) throw new Error('--batch requires --out-dir and takes its payloads, ECC and sizes from the manifest.');
     const { runBatch } = await import('./core/batch.js');
-    const summary = await runBatch(values.batch, values['out-dir'], { modulePx, frame: values.frame as GenerateOptions['frame'] });
+    const summary = await runBatch(values.batch, values['out-dir'], { modulePx, transparent: values.transparent, frame: values.frame as GenerateOptions['frame'] });
     console.error(`${summary.passed}/${summary.entries} entries passed; ${summary.styles} styles`);
     if (summary.failed) process.exitCode = 2;
     return;
   }
   if (values['out-dir']) throw new Error('--out-dir requires --batch.');
-  if (values.artwork && (values.ecc || values.frame || modulePx !== undefined)) throw new Error('--ecc, --frame and --module-px currently require procedural output.');
+  if (values.artwork && (values.ecc || values.frame || values.transparent || modulePx !== undefined)) throw new Error('--ecc, --frame and --module-px currently require procedural output.');
   if (positionals.length !== 1) throw new Error('Supply one quoted payload. Run with --help for usage.');
   if (values.out && !['.svg', '.png'].includes(extname(values.out).toLowerCase())) throw new Error('Output filename must end in .svg or .png.');
   const recipe = values.recipe ? JSON.parse(await readFile(values.recipe, 'utf8')) as Partial<Recipe> : undefined;
@@ -76,7 +78,7 @@ Payload and artwork stay local. No network calls or API keys required.`);
       if (!refined.passed) process.exitCode = 2;
       result = { svg: refined.svg, warnings: ['Image SVG embeds raster artwork. Test at intended physical size.'] };
     } else result = { ...(await imageQR(options)), warnings: ['Experimental image integration. Use --check or --refine.'] };
-  } else result = generated = generateQR({ text, style: values.style, size: values.size === undefined ? undefined : Number(values.size), recipe, modulePx, frame: values.frame as GenerateOptions['frame'], errorCorrection: values.ecc as GenerateOptions['errorCorrection'] });
+  } else result = generated = generateQR({ text, style: values.style, size: values.size === undefined ? undefined : Number(values.size), recipe, modulePx, transparent: values.transparent, frame: values.frame as GenerateOptions['frame'], errorCorrection: values.ecc as GenerateOptions['errorCorrection'] });
   for (const warning of result.warnings) console.error(`Note: ${warning}`);
   if (values.out) {
     const isPNG = extname(values.out).toLowerCase() === '.png';

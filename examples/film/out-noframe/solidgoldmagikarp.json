@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "style": "gold-scales",
+  "text": "https://www.lesswrong.com/posts/aPeJE8bSo6rAFoLqg",
+  "transparentSurround": true,
+  "codeBox": {
+    "x": 0,
+    "y": 0,
+    "width": 392,
+    "height": 392
+  },
+  "moduleCount": 41,
+  "modulePx": 8,
+  "version": 6,
+  "ecc": "H",
+  "frame": {
+    "top": 0,
+    "right": 0,
+    "bottom": 0,
+    "left": 0
+  },
+  "image": {
+    "width": 392,
+    "height": 392
+  },
+  "id": "solidgoldmagikarp",
+  "mode": "feature"
+}

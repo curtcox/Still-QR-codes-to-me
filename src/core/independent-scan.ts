@@ -13,7 +13,7 @@ export async function compareDecoders(svg: string, text: string) {
   const small = Math.min(width, 256);
   const results = [];
   for (const condition of ['export', 'reduced', 'blur', 'contrast'] as const) {
-    let pipeline = sharp(input).resize(condition === 'export' ? width : small);
+    let pipeline = sharp(input).flatten({ background: '#ffffff' }).resize(condition === 'export' ? width : small);
     if (condition === 'blur') pipeline = pipeline.blur(.6);
     const { data, info } = await pipeline.ensureAlpha().raw().toBuffer({ resolveWithObject: true });
     const rgba = new Uint8ClampedArray(data);
