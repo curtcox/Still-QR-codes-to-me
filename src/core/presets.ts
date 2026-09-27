@@ -1,5 +1,5 @@
 import type { Recipe, StylePreset } from './types.js';
-const base: Recipe = { shape: 'square', border: 'frame', texture: 'none', foreground: '#172f2a', background: '#fffdf5', accent: '#385b47', gradient: false, seed: 42 };
+const base: Recipe = { material: 'none', detail: .65, shape: 'square', border: 'frame', texture: 'none', foreground: '#172f2a', background: '#fffdf5', accent: '#385b47', gradient: false, seed: 42 };
 const preset = (id: string, name: string, description: string, inspiration: string, recipe: Partial<Recipe>, safety: StylePreset['safety'] = 'conservative'): StylePreset => ({ id, name, description, inspiration, safety, recipe: { ...base, ...recipe } });
 export const presets: readonly StylePreset[] = [
   preset('editorial', 'Editorial', 'Crisp ink, warm stock, and a double-rule frame.', 'Book jackets · menus · invitations', {}),
@@ -14,6 +14,15 @@ export const presets: readonly StylePreset[] = [
   preset('circuit', 'Circuit', 'Connected traces and contact points in deep teal.', 'Electronics · workshops · hardware', { shape: 'circuit', border: 'grid', foreground: '#123d3f', accent: '#13534c', background: '#effcf8' }, 'experimental'),
   preset('botanical', 'Botanical', 'Leaf-like modules framed by delicate growing stems.', 'Florists · tea · natural products', { shape: 'petal', border: 'botanical', foreground: '#304524', accent: '#4d5427', background: '#fbf9ed', texture: 'paper' }, 'experimental'),
   preset('letterpress', 'Letterpress', 'Variable ink dots and a perforated postage border.', 'Postcards · zines · heritage brands', { shape: 'halftone', border: 'postage', foreground: '#512d29', accent: '#65382e', background: '#fff5e6', texture: 'speckle' }, 'experimental'),
+  preset('bamboo', 'Bamboo', 'Segmented canes with joints, longitudinal fibers, and a woven bamboo surround.', 'Tea houses · gardens · natural packaging', { material: 'bamboo', border: 'none', foreground: '#23451c', accent: '#56742d', background: '#fafbe9' }, 'experimental'),
+  preset('oak', 'Oak', 'Carved end grain, elongated fibers, and knots flow across the code.', 'Woodworkers · furniture · distilleries', { material: 'oak', border: 'none', foreground: '#4d2c16', accent: '#85602e', background: '#fff4df' }, 'experimental'),
+  preset('beans', 'Beans', 'Roasted beans with curved center creases, rounded volume, and seeded rotation.', 'Coffee roasters · cafés · food labels', { material: 'beans', border: 'none', foreground: '#3d221a', accent: '#79543b', background: '#fff5e8' }, 'experimental'),
+  preset('ants', 'Ants', 'Six-legged silhouettes with antennae and segmented bodies form a busy colony.', 'Ecology · museums · field guides', { material: 'ants', border: 'none', foreground: '#2b2521', accent: '#766050', background: '#faf7ec' }, 'experimental'),
+  preset('fire', 'Fire', 'Curling flame tongues, ember highlights, and a flickering flame surround.', 'Hot sauce · festivals · kitchens', { material: 'fire', border: 'none', foreground: '#7a2412', accent: '#d05d17', background: '#fff5e5' }, 'experimental'),
+  preset('ice', 'Ice', 'Fractured crystal facets with branching cracks and reflective edges.', 'Winter events · cold drinks · science', { material: 'ice', border: 'none', foreground: '#184362', accent: '#438ba8', background: '#f1fcff' }, 'experimental'),
+  preset('clouds', 'Clouds', 'Billowing storm-cloud silhouettes, overlapping lobes, and soft highlights.', 'Weather · travel · dream journals', { material: 'clouds', border: 'none', foreground: '#364358', accent: '#7185a0', background: '#f7fbff' }, 'experimental'),
+  preset('ripples', 'Ripples', 'Overlapping wave fronts travel through a continuous watery surface.', 'Spas · pools · conservation', { material: 'ripples', border: 'none', foreground: '#164957', accent: '#3b8492', background: '#effdff' }, 'experimental'),
+  preset('leaves', 'Leaves', 'Interleaved leaf silhouettes with central ribs and branching veins.', 'Nurseries · botanical collections · tea', { material: 'leaves', border: 'none', foreground: '#28451d', accent: '#638139', background: '#f7fbe9' }, 'experimental'),
 ];
 export function getPreset(id = 'editorial'): StylePreset {
   const value = presets.find(p => p.id === id);

@@ -1,6 +1,7 @@
+import { materialModule, materialField, materialSurround } from './materials.js';
 import QRCode from 'qrcode';
 import { getPreset } from './presets.js';
-import { borders, shapes, textures, type GenerateOptions, type GeneratedQR, type ModuleContext, type Recipe } from './types.js';
+import { borders, shapes, textures, materials, type GenerateOptions, type GeneratedQR, type ModuleContext, type Recipe } from './types.js';
 
 export function escapeXML(value: string): string {
   return value.replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&apos;' })[c]!);
@@ -18,6 +19,8 @@ function validate(recipe: Recipe): void {
     if (!/^#[0-9a-f]{6}$/i.test(recipe[key])) throw new Error(`${key} must be a six-digit hex color, such as #173e35.`);
   }
   if (!shapes.includes(recipe.shape) || !borders.includes(recipe.border) || !textures.includes(recipe.texture)) throw new Error('Unknown shape, border, or texture.');
+  if (!materials.includes(recipe.material)) throw new Error('Unknown material.');
+  if (!Number.isFinite(recipe.detail) || recipe.detail < 0 || recipe.detail > 1) throw new Error('Material detail must be between 0 and 1.');
   if (typeof recipe.gradient !== 'boolean') throw new Error('gradient must be true or false.');
   if (!Number.isSafeInteger(recipe.seed) || recipe.seed < 0 || recipe.seed > 0xffffffff) throw new Error('seed must be an integer from 0 to 4294967295.');
   if (luminance(recipe.background) < .65) throw new Error('Choose a light background to keep the QR clear margin readable.');
@@ -98,34 +101,41 @@ export function generateQR(options: GenerateOptions): GeneratedQR {
   validate(recipe);
   const code = QRCode.create(options.text, { errorCorrectionLevel: errorCorrection });
   const n = code.modules.size;
-  const border = recipe.border === 'none' && recipe.texture === 'none' ? 0 : 4;
+  const border = recipe.material !== 'none' ? 6 : recipe.border === 'none' && recipe.texture === 'none' ? 0 : 4;
   const offset = border + 4, dimension = n + offset * 2;
   const darkAt = (row: number, column: number) => row >= 0 && column >= 0 && row < n && column < n && !!code.modules.get(row, column);
   const paths: string[] = [];
   const clips: string[] = [];
   const inkId = `ink-${recipe.foreground.slice(1)}-${recipe.accent.slice(1)}`;
   const structural: string[] = [];
+  const dataCells: string[] = [];
+  const payloadHash = Array.from(options.text).reduce((hash, char) => Math.imul(hash ^ char.codePointAt(0)!, 16777619) >>> 0, 2166136261);
+  const materialId = `mat-${recipe.material}-${n}-${border}-${recipe.seed}-${payloadHash}-${errorCorrection}-${code.maskPattern}`;
   for (let row = 0; row < n; row++) for (let column = 0; column < n; column++) {
     if (!darkAt(row, column)) continue;
     const x = column + offset, y = row + offset;
     if (code.modules.isReserved(row, column)) structural.push(`M${x} ${y}h1v1h-1z`);
     else {
+      dataCells.push(`M${x} ${y}h1v1h-1z`);
       const context = { x, y, row, column, random: randomAt(recipe.seed, row, column), darkAt };
       if (options.moduleRenderer) {
         const id = `cell-${n}-${border}-${row}-${column}`;
         clips.push(`<clipPath id="${id}"><rect x="${x}" y="${y}" width="1" height="1"/></clipPath>`);
         paths.push(`<g clip-path="url(#${id})">${options.moduleRenderer(context)}</g>`);
-      } else paths.push(moduleSVG(recipe.shape, context));
+      } else paths.push(recipe.material === 'none' ? moduleSVG(recipe.shape, context) : materialModule(recipe.material, context, recipe.detail));
     }
   }
   const warnings: string[] = [];
-  if (style.safety === 'experimental' || ['dots', 'diamond', 'weave', 'mosaic', 'circuit', 'petal', 'halftone'].includes(recipe.shape) || options.moduleRenderer) warnings.push('Experimental artwork: verify the exported code at its intended size and on real devices.');
+  if (recipe.material !== 'none' || style.safety === 'experimental' || ['dots', 'diamond', 'weave', 'mosaic', 'circuit', 'petal', 'halftone'].includes(recipe.shape) || options.moduleRenderer) warnings.push('Experimental artwork: verify the exported code at its intended size and on real devices.');
   if (size / dimension < 4) warnings.push('Small modules at this export size. Increase the resolution or shorten the payload.');
   if (errorCorrection !== 'H') warnings.push('High error correction is recommended for styled codes.');
   const contrast = Math.min(contrastRatio(recipe.foreground, recipe.background), recipe.gradient ? contrastRatio(recipe.accent, recipe.background) : Infinity);
   // Each module gets its own clip. Custom artwork cannot paint neighboring light or structural cells.
   // Hooks are trusted code: scripts, external resources, and SVG filters are not sandboxed here.
   const dataArt = paths.join('');
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 ${dimension} ${dimension}" role="img" aria-label="Stylized QR code"><title>${escapeXML(style.name)} QR code</title><desc>${escapeXML(options.text)}</desc><defs>${clips.join('')}<linearGradient id="${inkId}" x1="0" y1="0" x2="1" y2="1"><stop stop-color="${recipe.foreground}"/><stop offset="1" stop-color="${recipe.accent}"/></linearGradient></defs><rect width="${dimension}" height="${dimension}" fill="${recipe.background}"/>${texture(recipe, dimension)}${decoration(recipe, dimension)}<rect x="${border}" y="${border}" width="${n + 8}" height="${n + 8}" fill="${recipe.background}"/><g fill="${recipe.gradient ? `url(#${inkId})` : recipe.foreground}">${dataArt}</g><path d="${structural.join('')}" fill="${recipe.foreground}"/></svg>`;
+  const continuous = ['oak', 'ripples', 'ice'].includes(recipe.material)
+    ? `<g clip-path="url(#${materialId})" color="white" opacity="${recipe.detail * .2}">${materialField(recipe.material, dimension, recipe.seed)}</g>` : '';
+  clips.push(`<clipPath id="${materialId}"><path d="${dataCells.join('')}"/></clipPath>`);
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 ${dimension} ${dimension}" role="img" aria-label="Stylized QR code"><title>${escapeXML(style.name)} QR code</title><desc>${escapeXML(options.text)}</desc><defs>${clips.join('')}<linearGradient id="${inkId}" x1="0" y1="0" x2="1" y2="1"><stop stop-color="${recipe.foreground}"/><stop offset="1" stop-color="${recipe.accent}"/></linearGradient></defs><rect width="${dimension}" height="${dimension}" fill="${recipe.background}"/>${texture(recipe, dimension)}${decoration(recipe, dimension)}${materialSurround(recipe, dimension)}<rect x="${border}" y="${border}" width="${n + 8}" height="${n + 8}" fill="${recipe.background}"/><g color="${recipe.foreground}" fill="${recipe.gradient ? `url(#${inkId})` : recipe.foreground}">${dataArt}</g>${continuous}<path d="${structural.join('')}" fill="${recipe.foreground}"/></svg>`;
   return { svg, recipe, style, size, moduleCount: n, version: code.version, contrast, warnings };
 }

@@ -6,7 +6,7 @@ import { mkdtemp, readFile, writeFile, rm } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 const exec = promisify(execFile);
-const cli = (...args: string[]) => exec(process.execPath, ['--import', 'tsx', 'src/cli.ts', ...args]);
+const cli = (...args: string[]) => exec(process.execPath, ['--import', 'tsx', 'src/cli.ts', ...args], { maxBuffer: 16 * 1024 * 1024 });
 test('CLI exports a checked PNG from a saved recipe and preserves existing files', async () => {
   const dir = await mkdtemp(join(tmpdir(), 'still-qr-'));
   try {
@@ -31,4 +31,11 @@ test('CLI emits valid SVG on stdout, escapes metadata and rejects invalid option
 test('CLI reports a nonzero scan result without discarding the experimental output', async () => {
   const text = 'https://example.com/?data=' + '0123456789abc'.repeat(45);
   await assert.rejects(cli(text, '--size', '128', '--check'), (error: any) => error.code === 2 && error.stderr.includes('FAIL') && error.stdout.startsWith('<svg'));
+});
+
+test('CLI creates a self-contained image SVG and reports refinement outcome', async () => {
+  const result = await cli('https://example.com/hello', '--artwork', 'public/artwork/bamboo-grove.png', '--strength', '0.9', '--refine');
+  assert.ok(result.stdout.includes('data:image/png;base64,'));
+  assert.ok(result.stderr.includes('all checks passed'));
+  await assert.rejects(cli('x', '--refine'), (error: any) => error.code === 1 && error.stderr.includes('--artwork'));
 });

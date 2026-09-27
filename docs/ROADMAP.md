@@ -1,6 +1,8 @@
 # Growing a useful collection
 
-The first milestone establishes a local engine, visual studio, CLI, composable recipes, twelve mechanisms, and scan feedback. The long-term goal is a broad vocabulary of useful QR treatments with measured limitations, not a large list of cosmetic aliases.
+The first milestone established a local engine, studio, CLI, twelve geometric styles, and scan feedback. The second adds nine procedural materials, local image integration, content-aware QR mask selection, and automatic scan-guided refinement. The long-term goal is a broad vocabulary of useful QR treatments with measured limitations, not a large list of cosmetic aliases.
+
+See [the research comparison](RESEARCH.md) for the state-of-the-art reference points and remaining gaps.
 
 ## Next: coverage and composition
 
@@ -22,6 +24,6 @@ The first milestone establishes a local engine, visual studio, CLI, composable r
 - Natural-language descriptions mapped to constrained recipes, with understandable control choices.
 - Optional generated textures and illustrations through local models or explicitly configured providers.
 - Search combinations for visual objectives subject to scan checks, with exact recipe provenance.
-- Investigate embedded imagery, negative-space motifs, and controlled distortion as separate experimental techniques, with honest failure rates.
+- Extend existing image integration with QR-conditioned scene generation, negative-space motifs, and controlled distortion, with honest failure rates.
 
 No finite first milestone can support every describable treatment. Each new family should bring an extensible mechanism, useful examples, and evidence about when it works.

@@ -15,3 +15,17 @@ for (const preset of presets) {
 }
 await writeFile(new URL('scan-report.json', directory), JSON.stringify(report, null, 2) + '\n');
 if (report.some(r => r.checks.some(c => !c.passed))) process.exitCode = 2;
+const { readFile } = await import('node:fs/promises');
+const { loadArtwork, refineImageQR } = await import('../src/core/node.js');
+const imageReport = [];
+for (const id of ['bamboo-grove', 'glacial-ice', 'embers']) {
+  const text = 'https://example.com/hello';
+  const artwork = await loadArtwork(await readFile(new URL(`../public/artwork/${id}.png`, import.meta.url)));
+  const result = await refineImageQR({ text, artwork, strength: .9, size: 1024 });
+  await writeFile(new URL(`image-${id}.svg`, directory), result.svg);
+  await writeFile(new URL(`image-${id}.png`, directory), await toPNG(result.svg));
+  imageReport.push({ source: id, payload: text, strength: result.strength, maskPattern: result.maskPattern, passed: result.passed, attempts: result.attempts });
+  console.log(`image-${id}: ${result.passed ? 'PASS' : 'FAIL'} at freedom ${result.strength.toFixed(2)}`);
+  if (!result.passed) process.exitCode = 2;
+}
+await writeFile(new URL('image-scan-report.json', directory), JSON.stringify(imageReport, null, 2) + '\n');

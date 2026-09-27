@@ -1,11 +1,15 @@
 export const shapes = ['square', 'rounded', 'dots', 'diamond', 'squircle', 'horizontal', 'vertical', 'weave', 'mosaic', 'circuit', 'petal', 'halftone'] as const;
 export const borders = ['none', 'frame', 'botanical', 'postage', 'orbit', 'deco', 'grid', 'ticket'] as const;
 export const textures = ['none', 'paper', 'speckle', 'lines'] as const;
+export const materials = ['none', 'bamboo', 'oak', 'beans', 'ants', 'fire', 'ice', 'clouds', 'ripples', 'leaves'] as const;
+export type Material = typeof materials[number];
 export type Shape = typeof shapes[number];
 export type Border = typeof borders[number];
 export type Texture = typeof textures[number];
 export type Safety = 'conservative' | 'experimental';
 export interface Recipe {
+  material: Material;
+  detail: number;
   shape: Shape;
   border: Border;
   texture: Texture;

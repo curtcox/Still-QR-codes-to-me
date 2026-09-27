@@ -1,4 +1,6 @@
 export { generateQR, contrastRatio } from './render.js';
 export { presets, getPreset } from './presets.js';
-export { shapes, borders, textures } from './types.js';
-export type { GenerateOptions, GeneratedQR, Recipe, StylePreset, Shape, Border, Texture, Safety, ModuleContext, ModuleRenderer } from './types.js';
+export { shapes, borders, textures, materials } from './types.js';
+export type { GenerateOptions, GeneratedQR, Recipe, StylePreset, Shape, Border, Texture, Material, Safety, ModuleContext, ModuleRenderer } from './types.js';
+export { composeArtwork, artworkSVG } from './artwork.js';
+export type { RasterArtwork, ArtworkOptions, ArtworkQR } from './artwork.js';
