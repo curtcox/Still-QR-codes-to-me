@@ -2,6 +2,7 @@ import { generateQR, presets, getPreset, shapes, borders, textures, materials, t
 import { download, rasterize, scan, readArtwork, renderArtwork } from './browser.js';
 import './style.css';
 
+const artworkURL = (name: string) => `${import.meta.env.BASE_URL}artwork/${name}.png`;
 const app = document.querySelector<HTMLDivElement>('#app')!;
 const options = (values: readonly string[]) => values.map(v => `<option value="${v}">${v[0].toUpperCase() + v.slice(1)}</option>`).join('');
 app.innerHTML = `
@@ -12,7 +13,7 @@ app.innerHTML = `
 <div class="controls"><div class="section-label"><span>01 / MAKE IT YOURS</span><button id="reset" class="text-button">Reset ↺</button></div>
 <label class="field-label" for="payload">Where should it lead?</label><textarea id="payload" rows="2" spellcheck="false">https://example.com/hello</textarea><p class="field-hint">A link, a note, a Wi-Fi string. Whatever opens a door.</p>
 <div class="mode-picker"><label>Rendering mode<select id="mode"><option value="material">Shapes & materials</option><option value="image">Image art</option></select></label></div>
-<div id="image-controls" hidden><p class="field-hint">Let a photograph or illustration become the code. Source artwork stays on this device.</p><div class="sample-artworks"><button data-art="bamboo-grove" aria-label="Use bamboo artwork"><img src="/artwork/bamboo-grove.png" alt="" loading="lazy">Bamboo</button><button data-art="glacial-ice" aria-label="Use ice artwork"><img src="/artwork/glacial-ice.png" alt="" loading="lazy">Ice</button><button data-art="embers" aria-label="Use fire artwork"><img src="/artwork/embers.png" alt="" loading="lazy">Fire</button></div><label class="upload-label">Choose PNG, JPEG or WebP<input id="art-file" type="file" accept="image/png,image/jpeg,image/webp"></label><p id="art-name" class="field-hint">No artwork selected.</p><label class="slider-label">Image freedom <output id="strength-value">70%</output><input id="strength" type="range" min="0" max="1" step=".05" value=".7"></label><p class="field-hint">More freedom reveals the image between module centers. Refine for scanning to find a tested balance.</p><button id="refine" class="check-button" disabled>Refine for scanning ↗</button></div>
+<div id="image-controls" hidden><p class="field-hint">Let a photograph or illustration become the code. Source artwork stays on this device.</p><div class="sample-artworks"><button data-art="bamboo-grove" aria-label="Use bamboo artwork"><img src="${artworkURL('bamboo-grove')}" alt="" loading="lazy">Bamboo</button><button data-art="glacial-ice" aria-label="Use ice artwork"><img src="${artworkURL('glacial-ice')}" alt="" loading="lazy">Ice</button><button data-art="embers" aria-label="Use fire artwork"><img src="${artworkURL('embers')}" alt="" loading="lazy">Fire</button></div><label class="upload-label">Choose PNG, JPEG or WebP<input id="art-file" type="file" accept="image/png,image/jpeg,image/webp"></label><p id="art-name" class="field-hint">No artwork selected.</p><label class="slider-label">Image freedom <output id="strength-value">70%</output><input id="strength" type="range" min="0" max="1" step=".05" value=".7"></label><p class="field-hint">More freedom reveals the image between module centers. Refine for scanning to find a tested balance.</p><button id="refine" class="check-button" disabled>Refine for scanning ↗</button></div>
 <div id="material-controls"><div class="control-heading">Material & surface</div><label class="field-label">Material<select id="material">${options(materials)}</select></label><label class="slider-label">Surface detail<input id="detail" type="range" min="0" max="1" step=".05"></label><p class="field-hint">Materials replace module shapes with fibers, grain, veins, facets, or organic silhouettes.</p>
 <div class="control-heading">The essentials</div>
 <div class="field-grid"><label>Module shape<select id="shape">${options(shapes)}</select></label><label>Border<select id="border">${options(borders)}</select></label></div>
@@ -167,7 +168,7 @@ async function useArtwork(file: Blob, name: string, ticket = ++artworkLoad) {
 input('art-file').addEventListener('change', () => { const file = input('art-file').files?.[0]; if (file) void useArtwork(file, file.name); });
 document.querySelectorAll<HTMLButtonElement>('[data-art]').forEach(button => button.addEventListener('click', async () => {
   const ticket = ++artworkLoad;
-  try { const response = await fetch(`/artwork/${button.dataset.art}.png`); if (!response.ok) throw new Error('Sample unavailable'); await useArtwork(await response.blob(), `${button.textContent} · generated reference artwork`, ticket); }
+  try { const response = await fetch(artworkURL(button.dataset.art!)); if (!response.ok) throw new Error('Sample unavailable'); await useArtwork(await response.blob(), `${button.textContent} · generated reference artwork`, ticket); }
   catch (error) { toast(String(error)); }
 }));
 el('refine').addEventListener('click', async () => {

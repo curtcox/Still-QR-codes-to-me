@@ -142,3 +142,20 @@ The core suite covers 84 preset/payload pairs under four scan conditions, additi
 - `docs/` — extension contract and roadmap
 
 MIT licensed. No accounts, tracking, hosted redirects, paid APIs, or AI models are required. Runtime prompt-to-image generation and natural-language interpretation are not implemented; existing images can be imported and integrated.
+
+## GitHub Pages deployment
+
+The `Deploy GitHub Pages` workflow in `.github/workflows/pages.yml` checks the project, builds `web-dist/`, tests the production site in Chromium, and deploys it on pushes to `main`. It can also be run manually from the Actions tab. Deployment runs only from `main`.
+
+One-time setup: in the repository's **Settings → Pages → Build and deployment**, select **GitHub Actions** as the source. See [GitHub's publishing-source documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site). No personal access token or deployment secret is needed; the deployment job uses the built-in GitHub token and OIDC permissions.
+
+For this repository, the default Pages URL is `https://curtcox.github.io/Still-QR-codes-to-me/`. The workflow reads the actual base path from `configure-pages`, supporting both repository paths and configured custom domains. Artwork thumbnails and image loading use Vite's base URL. Local development continues to use `/`.
+
+Reproduce the repository-path build and deployment smoke test locally:
+
+```sh
+PAGES_BASE_PATH=/Still-QR-codes-to-me/ npm run build
+PAGES_BASE_PATH=/Still-QR-codes-to-me/ npm run test:pages
+```
+
+Run `npm run build` again to return the local production output to the root path.
