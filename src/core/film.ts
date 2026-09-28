@@ -92,7 +92,43 @@ export function filmScene(id: string, size: number, recipe: Recipe, extent: Film
     case 'oom-bars': art=side(R(3,195,18,39,gold,1)+R(27,149,18,85,red,1)+R(51,90,18,144,blue,1)+R(75,12,18,222,green,1)+P('M87 12H93V234H87ZM63 90H69V234H63ZM39 149H45V234H39ZM15 195H21V234H15Z',shade,'none')+L('M2 237H97',edge,4));break;
     case 'feathers': art=side(P('M35 232L43 136Q7 110 16 70Q12 39 44 19Q68 8 81 31L90 40L72 54Q90 116 59 142L52 236Z',green)+P('M44 71Q85 63 72 123L59 142L52 236L43 207L50 137Q27 113 44 71Z','#526747','none')+P('M76 28Q99 26 96 52L80 46L73 54Z',gold)+C(65,31,4,edge)+P('M40 100Q43 71 61 79L66 122Z',blue)+L('M26 153H76',shade,8)+L('M40 138V153M53 139V153',edge,4));break;
     case 'grass': art=side(P('M15 233Q17 134 4 63Q36 79 38 168Q35 69 52 6Q70 70 57 173Q71 84 96 57Q93 164 83 233Z',green)+P('M52 6Q70 70 57 173Q71 84 96 57Q78 198 61 233H42Z','#556846','none')+L('M51 221L52 47M27 220L19 105M66 220L83 105',cream,2));break;
-    case 'lobster-shell': art=side(P('M34 26L25 3M65 26L78 3','none',edge,4)+P('M29 20Q51 7 72 20Q93 60 75 152L87 206L52 235L16 208L28 153Q8 61 29 20Z',red)+P('M61 16Q93 60 75 152L87 206L52 235L48 209Q77 79 61 16Z','#914932','none')+[64,92,120,149,179,206].map(y=>L(`M24 ${y}Q52 ${y+14} 78 ${y}`,edge,4)).join('')+C(36,32,4,edge)+C(65,32,4,edge));break;
+    case 'lobster-shell': {
+      const shell = '#c95039', darkShell = '#843f32', gleam = '#efaa78';
+      // Three-quarter lobster: oversized unequal pincers lead the silhouette,
+      // with bent arms and walking legs separate from the tapering, fanned tail.
+      const legs = [
+        'M43 132L19 143L7 164', 'M42 144L16 162L9 181',
+        'M42 156L19 178L18 194', 'M44 166L30 188L31 204',
+        'M65 130L84 143L94 164', 'M65 142L86 161L94 180',
+        'M61 155L80 178L85 195', 'M56 166L68 190L67 206',
+      ].map(d=>L(d,edge,5)+L(d,shell,2.6)).join('');
+      const antennae = L('M53 116Q28 70 28 9M60 115Q86 67 97 11',edge,3.8)+
+        L('M53 116Q28 70 28 9M60 115Q86 67 97 11',shell,2);
+      const arms = P('M47 131L23 116L20 91L30 88L36 109L54 119Z',shell)+
+        P('M62 123L76 101L75 80L86 77L88 104L71 136Z',darkShell)+
+        C(29,111,6,shell)+C(81,102,6,shell);
+      const claws =
+        // Open crusher: the deep negative-space V reads as a pincer at small sizes.
+        P('M23 99Q5 93 5 74Q3 55 12 36L22 66L31 72L39 58L38 29Q53 42 48 64Q44 75 43 84Q39 99 23 99Z',shell)+
+        P('M23 99Q40 100 43 84Q45 72 48 64L31 79L21 78Z',darkShell,'none')+
+        L('M11 73Q10 62 13 55',gleam,4)+
+        // Smaller cutter, nearly closed; its long seam remains clearly visible.
+        P('M77 87Q61 80 62 62Q64 42 75 29L78 51L86 58L87 27Q100 42 96 63Q95 82 84 89Z',shell)+
+        P('M84 87Q96 78 96 63Q99 47 92 37L88 65L77 74Z',darkShell,'none')+
+        L('M78 51L86 62L81 70',edge,2.6)+L('M68 61L72 47',gleam,3.5);
+      const body = P('M48 115L56 100L64 115Q78 123 69 146L59 172Q51 183 39 172Q29 156 36 134Q40 120 48 115Z',shell)+
+        P('M61 118Q76 128 66 151L58 173Q49 182 43 174L52 149Z',darkShell,'none')+
+        L('M42 138Q43 127 49 124',gleam,4)+L('M36 149Q49 159 65 151',edge,3)+
+        C(46,115,3.5,edge)+C(65,114,3.5,edge);
+      const tail = P('M39 166Q50 176 60 167L58 183L52 195L46 205L41 217L25 215L27 200L30 184Z',shell)+
+        P('M49 175L60 167L58 183L52 195L46 205L41 217L34 215L38 197Z',darkShell,'none')+
+        L('M33 182Q43 189 57 183M29 195Q39 201 51 196M27 206Q35 212 45 207',edge,3)+
+        P('M30 209Q19 203 9 214L7 228Q22 236 33 226Q38 239 51 234L61 221Q53 207 41 213L37 207Z',shell)+
+        P('M33 215L33 226Q38 239 51 234L61 221L42 226Z',darkShell,'none')+
+        L('M28 216L16 226M38 216L47 227',gleam,2.8);
+      art=place(antennae+legs+arms+tail+body+claws, size-13.5, extent.top-7, 13, plate+6, 100, 240);
+      break;
+    }
     case 'mask': art=top(P('M57 6Q98 -4 142 7L137 54Q126 88 100 97Q69 85 61 56Z',cream)+P('M109 3L142 7L137 54Q126 88 100 97Q121 48 109 3Z','#c4a588','none')+P('M70 33Q81 24 91 34L88 42L72 41ZM111 34Q124 24 133 34L130 41L113 42Z',edge)+L('M100 39L93 58H105M79 70Q101 86 122 67',shade,3)+G(R(0,0,47,75,cream,1)+[8,20,32].map(x=>R(x,0,7,44,edge,0)).join(''),'translate(5 18) rotate(-9)'));break;
     case 'gills': art=top(P('M51 54Q55 20 101 19Q145 20 150 54Q143 87 101 88Q59 88 51 54Z','#e5a6a3')+P('M58 60Q104 83 146 52Q145 93 99 91Q70 86 58 60Z','#bd747d','none')+L('M52 36L24 9M52 50L11 46M54 65L25 88M148 36L176 9M148 50L189 46M146 65L175 88','#b05d70',9)+[0,1].map(i=>G(L('M23 7L21 21M31 15L39 6M12 44L20 57M27 46L33 32M25 87L25 71M36 76L47 84','#d28998',5),i?'translate(200 0) scale(-1 1)':'')).join('')+C(79,50,4,edge)+C(123,50,4,edge)+L('M90 65Q101 73 114 63',edge,3));break;
     case 'honeycomb': art=top(P('M12 22L38 8L66 23V56L39 73L12 58ZM66 23L94 7L123 23V56L95 73L66 56ZM123 23L151 8L180 23V56L152 73L123 56Z',gold)+P('M39 25L52 32V49L39 58L25 49V32ZM95 25L109 32V49L95 58L81 49V32ZM151 25L166 32V49L151 58L138 49V32Z',shade)+P('M38 73Q43 78 39 96Q29 90 38 73',gold));break;
